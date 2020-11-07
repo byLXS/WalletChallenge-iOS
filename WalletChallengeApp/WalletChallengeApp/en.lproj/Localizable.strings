@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  WalletChallengeApp
+
+  Created by Robert on 03.11.2020.
+  Copyright © 2020 Robert. All rights reserved.
+*/
+
+"noInternetConnection" = "Нет подключения к интернету";
+"main" = "Главная";
