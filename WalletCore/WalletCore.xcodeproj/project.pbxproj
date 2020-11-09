@@ -12,7 +12,6 @@
 		FA1033492551F6E30014825B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033482551F6E30014825B /* Account.swift */; };
 		FA10334C2551F7C20014825B /* WalletApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10334B2551F7C20014825B /* WalletApi.framework */; };
 		FA10334D2551F7C20014825B /* WalletApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA10334B2551F7C20014825B /* WalletApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA58B21625560584003FC1D4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B21525560584003FC1D4 /* ImageCache.swift */; };
 		FA58B218255605A8003FC1D4 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B217255605A8003FC1D4 /* ImageLoader.swift */; };
 		FA58B21B25570249003FC1D4 /* WalletDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA58B21925570249003FC1D4 /* WalletDatabase.xcdatamodeld */; };
 		FA58B22925571EF8003FC1D4 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B22825571EF8003FC1D4 /* CoreDataHelper.swift */; };
@@ -47,7 +46,6 @@
 		FA1033462551F5850014825B /* AccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWorker.swift; sourceTree = "<group>"; };
 		FA1033482551F6E30014825B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FA10334B2551F7C20014825B /* WalletApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA58B21525560584003FC1D4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		FA58B217255605A8003FC1D4 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FA58B21A25570249003FC1D4 /* WalletChallengeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalletChallengeApp.xcdatamodel; sourceTree = "<group>"; };
 		FA58B22825571EF8003FC1D4 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = Source/Cache/CoreDataHelper.swift; sourceTree = SOURCE_ROOT; };
@@ -124,7 +122,6 @@
 		FA58B21425560577003FC1D4 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				FA58B21525560584003FC1D4 /* ImageCache.swift */,
 				FA58B217255605A8003FC1D4 /* ImageLoader.swift */,
 			);
 			path = Cache;
@@ -284,7 +281,6 @@
 				FADDE6732552FCF300934B8D /* CardWorker.swift in Sources */,
 				FA58B22925571EF8003FC1D4 /* CoreDataHelper.swift in Sources */,
 				FA58B218255605A8003FC1D4 /* ImageLoader.swift in Sources */,
-				FA58B21625560584003FC1D4 /* ImageCache.swift in Sources */,
 				FA58B21B25570249003FC1D4 /* WalletDatabase.xcdatamodeld in Sources */,
 				FA58B22C255738F1003FC1D4 /* CardEntity.swift in Sources */,
 				FA58B22E2557394E003FC1D4 /* TextureEntity.swift in Sources */,
