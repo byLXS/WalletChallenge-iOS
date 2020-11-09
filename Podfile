@@ -12,3 +12,4 @@ target 'WalletChallengeApp' do
    project 'WalletChallengeApp/WalletChallengeApp.project'
    application_pods
 end
+

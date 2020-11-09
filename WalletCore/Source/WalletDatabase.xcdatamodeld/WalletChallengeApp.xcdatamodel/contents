@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CardEntity" representedClassName="WalletCore.CardEntity" syncable="YES">
+        <attribute name="kind" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <relationship name="texture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextureEntity" inverseName="card" inverseEntity="TextureEntity"/>
+    </entity>
+    <entity name="TextureEntity" representedClassName="WalletCore.TextureEntity" syncable="YES">
+        <attribute name="back" optional="YES" attributeType="String"/>
+        <attribute name="front" optional="YES" attributeType="String"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="texture" inverseEntity="CardEntity"/>
+    </entity>
+    <elements>
+        <element name="CardEntity" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="TextureEntity" positionX="-54" positionY="18" width="128" height="88"/>
+    </elements>
+</model>

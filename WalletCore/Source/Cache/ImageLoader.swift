@@ -1,5 +1,7 @@
 import Foundation
 import UIKit.UIImage
+import Kingfisher
+
 
 public final class ImageLoader {
     public static let shared = ImageLoader()
@@ -11,17 +13,9 @@ public final class ImageLoader {
     }
 
     public func loadImage(from url: URL, completion: @escaping (UIImage?) -> ()) {
-        if let image = cache[url] {
+        KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
             completion(image)
-        } else {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                guard let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200, let mimeType = response?.mimeType, mimeType.hasPrefix("image"), let data = data, error == nil, let image = UIImage(data: data) else { return completion(nil) }
-                self.cache[url] = image
-                DispatchQueue.main.async() {
-                    completion(image)
-                }
-            }.resume()
-        }
+        })
         
     }
 }

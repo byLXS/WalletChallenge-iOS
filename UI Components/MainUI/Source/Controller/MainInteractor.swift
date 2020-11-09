@@ -43,7 +43,9 @@ class MainInteractor: MainInteractorProtocol {
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ()) {
         if let url = URL(string: cardList[indexPath.row].texture.front) {
             ImageLoader.shared.loadImage(from: url, completion: { (image) in
-                completion(image)
+                DispatchQueue.main.async {
+                    completion(image)
+                }
             })
         }
     }

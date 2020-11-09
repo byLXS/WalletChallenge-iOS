@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93973093BFD24F4A4708DC1B /* Pods_WalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84340169FF0EF90DE0F7DDEC /* Pods_WalletCore.framework */; };
 		FA1033472551F5850014825B /* AccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033462551F5850014825B /* AccountWorker.swift */; };
 		FA1033492551F6E30014825B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033482551F6E30014825B /* Account.swift */; };
 		FA10334C2551F7C20014825B /* WalletApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10334B2551F7C20014825B /* WalletApi.framework */; };
 		FA10334D2551F7C20014825B /* WalletApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA10334B2551F7C20014825B /* WalletApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA58B21625560584003FC1D4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B21525560584003FC1D4 /* ImageCache.swift */; };
 		FA58B218255605A8003FC1D4 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B217255605A8003FC1D4 /* ImageLoader.swift */; };
-		FA58B21B25570249003FC1D4 /* WalletChallengeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA58B21925570249003FC1D4 /* WalletChallengeApp.xcdatamodeld */; };
+		FA58B21B25570249003FC1D4 /* WalletDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA58B21925570249003FC1D4 /* WalletDatabase.xcdatamodeld */; };
+		FA58B22925571EF8003FC1D4 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B22825571EF8003FC1D4 /* CoreDataHelper.swift */; };
+		FA58B22C255738F1003FC1D4 /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B22B255738F1003FC1D4 /* CardEntity.swift */; };
+		FA58B22E2557394E003FC1D4 /* TextureEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B22D2557394E003FC1D4 /* TextureEntity.swift */; };
+		FA58B235255755F9003FC1D4 /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B234255755F9003FC1D4 /* WalletPresentationData.framework */; };
+		FA58B236255755F9003FC1D4 /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B234255755F9003FC1D4 /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA58B23825575BC7003FC1D4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B23725575BC7003FC1D4 /* CoreDataManager.swift */; };
 		FADA38842550AEE100FA910F /* WalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA38822550AEE100FA910F /* WalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADDE6732552FCF300934B8D /* CardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE6722552FCF300934B8D /* CardWorker.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA58B236255755F9003FC1D4 /* WalletPresentationData.framework in Embed Frameworks */,
 				FA10334D2551F7C20014825B /* WalletApi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -33,12 +41,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		44BDD0C0D86E96827DCF0118 /* Pods-WalletCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCore.release.xcconfig"; path = "../Pods/Target Support Files/Pods-WalletCore/Pods-WalletCore.release.xcconfig"; sourceTree = "<group>"; };
+		84340169FF0EF90DE0F7DDEC /* Pods_WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B3030417D1980122483D5F /* Pods-WalletCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCore.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-WalletCore/Pods-WalletCore.debug.xcconfig"; sourceTree = "<group>"; };
 		FA1033462551F5850014825B /* AccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWorker.swift; sourceTree = "<group>"; };
 		FA1033482551F6E30014825B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FA10334B2551F7C20014825B /* WalletApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA58B21525560584003FC1D4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		FA58B217255605A8003FC1D4 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FA58B21A25570249003FC1D4 /* WalletChallengeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WalletChallengeApp.xcdatamodel; sourceTree = "<group>"; };
+		FA58B22825571EF8003FC1D4 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = Source/Cache/CoreDataHelper.swift; sourceTree = SOURCE_ROOT; };
+		FA58B22B255738F1003FC1D4 /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardEntity.swift; path = Source/Cache/CardEntity.swift; sourceTree = SOURCE_ROOT; };
+		FA58B22D2557394E003FC1D4 /* TextureEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextureEntity.swift; path = Source/Cache/TextureEntity.swift; sourceTree = SOURCE_ROOT; };
+		FA58B234255755F9003FC1D4 /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA58B23725575BC7003FC1D4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = Source/Cache/CoreDataManager.swift; sourceTree = SOURCE_ROOT; };
+		FA58B2552559DFCF003FC1D4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA58B25B2559E28B003FC1D4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA58B25E2559E295003FC1D4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA387F2550AEE100FA910F /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA38822550AEE100FA910F /* WalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletCore.h; sourceTree = "<group>"; };
 		FADA38832550AEE100FA910F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA58B235255755F9003FC1D4 /* WalletPresentationData.framework in Frameworks */,
 				FA10334C2551F7C20014825B /* WalletApi.framework in Frameworks */,
+				93973093BFD24F4A4708DC1B /* Pods_WalletCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206B3656590C5C5E22F21705 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4B3030417D1980122483D5F /* Pods-WalletCore.debug.xcconfig */,
+				44BDD0C0D86E96827DCF0118 /* Pods-WalletCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA1033442551F56B0014825B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FA58B21925570249003FC1D4 /* WalletChallengeApp.xcdatamodeld */,
+				FA58B22525571EB9003FC1D4 /* Database */,
+				FA58B21925570249003FC1D4 /* WalletDatabase.xcdatamodeld */,
 				FA58B21425560577003FC1D4 /* Cache */,
 				FA1033452551F5760014825B /* Account */,
 				FADDE6722552FCF300934B8D /* CardWorker.swift */,
@@ -80,7 +111,12 @@
 		FA10334A2551F7C20014825B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA58B25E2559E295003FC1D4 /* Kingfisher.framework */,
+				FA58B25B2559E28B003FC1D4 /* Kingfisher.framework */,
+				FA58B2552559DFCF003FC1D4 /* Kingfisher.framework */,
+				FA58B234255755F9003FC1D4 /* WalletPresentationData.framework */,
 				FA10334B2551F7C20014825B /* WalletApi.framework */,
+				84340169FF0EF90DE0F7DDEC /* Pods_WalletCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +130,25 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		FA58B22525571EB9003FC1D4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FA58B22A25571F8F003FC1D4 /* Models */,
+				FA58B22825571EF8003FC1D4 /* CoreDataHelper.swift */,
+				FA58B23725575BC7003FC1D4 /* CoreDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FA58B22A25571F8F003FC1D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA58B22B255738F1003FC1D4 /* CardEntity.swift */,
+				FA58B22D2557394E003FC1D4 /* TextureEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FADA38752550AEE100FA910F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +156,7 @@
 				FADA38812550AEE100FA910F /* WalletCore */,
 				FADA38802550AEE100FA910F /* Products */,
 				FA10334A2551F7C20014825B /* Frameworks */,
+				206B3656590C5C5E22F21705 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADA38872550AEE100FA910F /* Build configuration list for PBXNativeTarget "WalletCore" */;
 			buildPhases = (
+				4E3BAD6849A8F3C6F996A08F /* [CP] Check Pods Manifest.lock */,
 				FADA387A2550AEE100FA910F /* Headers */,
 				FADA387B2550AEE100FA910F /* Sources */,
 				FADA387C2550AEE100FA910F /* Frameworks */,
@@ -197,6 +254,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E3BAD6849A8F3C6F996A08F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FADA387B2550AEE100FA910F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -204,9 +282,13 @@
 			files = (
 				FA1033472551F5850014825B /* AccountWorker.swift in Sources */,
 				FADDE6732552FCF300934B8D /* CardWorker.swift in Sources */,
+				FA58B22925571EF8003FC1D4 /* CoreDataHelper.swift in Sources */,
 				FA58B218255605A8003FC1D4 /* ImageLoader.swift in Sources */,
 				FA58B21625560584003FC1D4 /* ImageCache.swift in Sources */,
-				FA58B21B25570249003FC1D4 /* WalletChallengeApp.xcdatamodeld in Sources */,
+				FA58B21B25570249003FC1D4 /* WalletDatabase.xcdatamodeld in Sources */,
+				FA58B22C255738F1003FC1D4 /* CardEntity.swift in Sources */,
+				FA58B22E2557394E003FC1D4 /* TextureEntity.swift in Sources */,
+				FA58B23825575BC7003FC1D4 /* CoreDataManager.swift in Sources */,
 				FA1033492551F6E30014825B /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +418,7 @@
 		};
 		FADA38882550AEE100FA910F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B3030417D1980122483D5F /* Pods-WalletCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +446,7 @@
 		};
 		FADA38892550AEE100FA910F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BDD0C0D86E96827DCF0118 /* Pods-WalletCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -411,13 +495,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FA58B21925570249003FC1D4 /* WalletChallengeApp.xcdatamodeld */ = {
+		FA58B21925570249003FC1D4 /* WalletDatabase.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FA58B21A25570249003FC1D4 /* WalletChallengeApp.xcdatamodel */,
 			);
 			currentVersion = FA58B21A25570249003FC1D4 /* WalletChallengeApp.xcdatamodel */;
-			path = WalletChallengeApp.xcdatamodeld;
+			path = WalletDatabase.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

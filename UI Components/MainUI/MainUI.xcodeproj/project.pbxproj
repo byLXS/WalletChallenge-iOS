@@ -12,6 +12,8 @@
 		FA10335E2551FEC90014825B /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10335D2551FEC90014825B /* MainInteractor.swift */; };
 		FA1033602551FED30014825B /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10335F2551FED30014825B /* MainBuilder.swift */; };
 		FA58B2032555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B2022555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift */; };
+		FA58B22325571AE5003FC1D4 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B22225571AE5003FC1D4 /* CommonUI.framework */; };
+		FA58B22425571AE5003FC1D4 /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B22225571AE5003FC1D4 /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAC28C6425549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C6325549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift */; };
 		FAC28C662554A134009267A7 /* MainViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C652554A134009267A7 /* MainViewController+UICollectionViewDelegate.swift */; };
 		FADA381A2550A7ED00FA910F /* MainUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA38182550A7ED00FA910F /* MainUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA58B22425571AE5003FC1D4 /* CommonUI.framework in Embed Frameworks */,
 				FADDE6682552ECB200934B8D /* RSThemeKit.framework in Embed Frameworks */,
 				FA1033572551FE360014825B /* WalletCore.framework in Embed Frameworks */,
 			);
@@ -43,6 +46,7 @@
 		FA10335D2551FEC90014825B /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		FA10335F2551FED30014825B /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		FA58B2022555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		FA58B22225571AE5003FC1D4 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC28C6325549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		FAC28C652554A134009267A7 /* MainViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		FADA38152550A7ED00FA910F /* MainUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MainUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA58B22325571AE5003FC1D4 /* CommonUI.framework in Frameworks */,
 				FADDE6672552ECB200934B8D /* RSThemeKit.framework in Frameworks */,
 				FA1033562551FE360014825B /* WalletCore.framework in Frameworks */,
 			);
@@ -81,6 +86,7 @@
 		FA1033542551FE360014825B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA58B22225571AE5003FC1D4 /* CommonUI.framework */,
 				FADDE6662552ECB200934B8D /* RSThemeKit.framework */,
 				FA1033552551FE360014825B /* WalletCore.framework */,
 			);

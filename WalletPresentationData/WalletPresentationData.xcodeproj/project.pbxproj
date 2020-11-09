@@ -18,6 +18,7 @@
 		FA10332C2551EF7B0014825B /* WalletPresentationData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletPresentationData.h; sourceTree = "<group>"; };
 		FA10332D2551EF7B0014825B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1033352551EF970014825B /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FA58B2302557469F003FC1D4 /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC28C6025549A9E009267A7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		FADDE6752552FDE500934B8D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +40,7 @@
 				FA1033342551EF8D0014825B /* Source */,
 				FA10332B2551EF7B0014825B /* WalletPresentationData */,
 				FA10332A2551EF7B0014825B /* Products */,
+				FA58B22F2557469F003FC1D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +68,14 @@
 				FA1033352551EF970014825B /* Strings.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		FA58B22F2557469F003FC1D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA58B2302557469F003FC1D4 /* WalletCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FADDE6742552FDDB00934B8D /* Model */ = {
