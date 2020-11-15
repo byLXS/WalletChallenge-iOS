@@ -14,7 +14,7 @@ public struct CardResponse: Codable {
 
 extension CardResponse {
     func convertResponseInPresentationModel() -> Card {
-        return Card(number: number, kind: kind, texture: texture.convertResponseInPresentationModel())
+        return Card(number: number, kind: kind, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind))
     }
 }
 

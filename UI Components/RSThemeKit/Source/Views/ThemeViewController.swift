@@ -4,7 +4,7 @@ open class ThemeViewController: UIViewController {
     
     var current = UIStatusBarStyle.default
     
-    override public var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         if #available(iOS 13, *) {
             if ThemeManager.isDarkAppearance {
                 if ThemeType.light.identifier() == ThemeManager.currentTheme.identifier {
@@ -17,7 +17,7 @@ open class ThemeViewController: UIViewController {
         return current
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addThemeObserver()
     }

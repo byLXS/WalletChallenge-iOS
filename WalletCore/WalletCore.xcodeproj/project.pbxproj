@@ -22,6 +22,7 @@
 		FA58B23825575BC7003FC1D4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B23725575BC7003FC1D4 /* CoreDataManager.swift */; };
 		FADA38842550AEE100FA910F /* WalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA38822550AEE100FA910F /* WalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADDE6732552FCF300934B8D /* CardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE6722552FCF300934B8D /* CardWorker.swift */; };
+		FAF8ED992560913300537719 /* BarcodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8ED982560913300537719 /* BarcodeEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		FADA38822550AEE100FA910F /* WalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletCore.h; sourceTree = "<group>"; };
 		FADA38832550AEE100FA910F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADDE6722552FCF300934B8D /* CardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorker.swift; sourceTree = "<group>"; };
+		FAF8ED982560913300537719 /* BarcodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				FA58B22B255738F1003FC1D4 /* CardEntity.swift */,
 				FA58B22D2557394E003FC1D4 /* TextureEntity.swift */,
+				FAF8ED982560913300537719 /* BarcodeEntity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1033472551F5850014825B /* AccountWorker.swift in Sources */,
+				FAF8ED992560913300537719 /* BarcodeEntity.swift in Sources */,
 				FADDE6732552FCF300934B8D /* CardWorker.swift in Sources */,
 				FA58B22925571EF8003FC1D4 /* CoreDataHelper.swift in Sources */,
 				FA58B218255605A8003FC1D4 /* ImageLoader.swift in Sources */,

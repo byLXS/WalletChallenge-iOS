@@ -36,7 +36,8 @@ public class MainViewController: ThemeViewController {
     
     public override func decorator(theme: ThemeModel) {
         super.decorator(theme: theme)
-        self.view.backgroundColor = theme.tableViewColor
+        self.collectionView.backgroundColor = theme.backgroundColor
+        self.view.backgroundColor = theme.backgroundColor
         visualEffectView.effect = theme.blurEffect
     }
 

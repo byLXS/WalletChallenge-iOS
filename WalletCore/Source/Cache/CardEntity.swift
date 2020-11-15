@@ -9,11 +9,11 @@ public class CardEntity: NSManagedObject, CDHelperEntity {
     @NSManaged public var number: String
     @NSManaged public var kind: String
     @NSManaged public var texture: TextureEntity
-    
+    @NSManaged public var barcode: BarcodeEntity
     
     static public func save(data: [Card], completion: @escaping () -> ()) {
          CDHelper.backgroundContext?.perform({
-            let entityList = data.convertEntityInPresentationData()
+            _ = data.convertEntityInPresentationData()
             CDHelper.synchronize()
          })
     }
@@ -22,7 +22,7 @@ public class CardEntity: NSManagedObject, CDHelperEntity {
 extension CardEntity {
     
     public func convertEntityInPresentationData() -> Card {
-        return Card(number: number, kind: kind, texture: texture.convertEntityInPresentationData())
+        return Card(number: number, kind: kind, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData())
     }
 }
 
@@ -44,6 +44,7 @@ extension Card {
         entity.kind = kind
         entity.number = number
         entity.texture = texture.convertResponseInEntity()
+        entity.barcode = barcode.convertResponseInEntity()
         return entity
     }
 }

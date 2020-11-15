@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailViewController" customModule="CardDetailUI" customModuleProvider="target">
+            <connections>
+                <outlet property="cardView" destination="nfC-bA-IM2" id="Vtr-3W-iAE"/>
+                <outlet property="ean13ImageView" destination="sEK-G4-uxo" id="pDQ-xx-l6p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-Sb-jKB">
+                    <rect key="frame" x="364" y="64" width="30" height="30"/>
+                    <state key="normal" image="cancel_circle_image"/>
+                    <connections>
+                        <action selector="skipScreen" destination="-1" eventType="touchUpInside" id="euh-eo-251"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-bA-IM2" customClass="CardView" customModule="CommonUI">
+                    <rect key="frame" x="40" y="124" width="334" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Aze-ih-DbJ"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sEK-G4-uxo">
+                    <rect key="frame" x="40" y="344" width="334" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="sMG-6W-Mnz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sEK-G4-uxo" secondAttribute="trailing" constant="40" id="3EZ-0p-8JC"/>
+                <constraint firstItem="nfC-bA-IM2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="6jo-DI-qL1"/>
+                <constraint firstItem="c7j-Sb-jKB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="C8u-ZW-ra4"/>
+                <constraint firstItem="sEK-G4-uxo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Fel-tl-joJ"/>
+                <constraint firstItem="nfC-bA-IM2" firstAttribute="top" secondItem="c7j-Sb-jKB" secondAttribute="bottom" constant="30" id="WBF-SS-nnm"/>
+                <constraint firstItem="sEK-G4-uxo" firstAttribute="top" secondItem="nfC-bA-IM2" secondAttribute="bottom" constant="20" id="flA-bh-yN1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c7j-Sb-jKB" secondAttribute="trailing" constant="20" id="r7m-ac-ACk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nfC-bA-IM2" secondAttribute="trailing" constant="40" id="s9Z-A0-yH0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="88" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel_circle_image" width="30" height="30"/>
+    </resources>
+</document>

@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B041255C675D00CFD6C2 /* CardProtocol.swift */; };
+		FA14B044255C688500CFD6C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B043255C688500CFD6C2 /* CardView.swift */; };
 		FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B2072555FA98003FC1D4 /* Squircle.swift */; };
 		FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20A2555FA98003FC1D4 /* CGPoint+Delta.swift */; };
 		FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20B2555FA98003FC1D4 /* Checkpoints.swift */; };
 		FA58B2132555FA98003FC1D4 /* Squircle+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20C2555FA98003FC1D4 /* Squircle+Internal.swift */; };
+		FA77F0F3255F5BC000E8906C /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77F0F2255F5BC000E8906C /* CardPresentationController.swift */; };
+		FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */; };
+		FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */; };
+		FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */; };
 		FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C6A2554A1DE009267A7 /* CardLargeCollectionViewCell.swift */; };
 		FADA382F2550AA1600FA910F /* CommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA382D2550AA1600FA910F /* CommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */; };
@@ -33,10 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA14B041255C675D00CFD6C2 /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
+		FA14B043255C688500CFD6C2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA58B2072555FA98003FC1D4 /* Squircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squircle.swift; sourceTree = "<group>"; };
 		FA58B20A2555FA98003FC1D4 /* CGPoint+Delta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Delta.swift"; sourceTree = "<group>"; };
 		FA58B20B2555FA98003FC1D4 /* Checkpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkpoints.swift; sourceTree = "<group>"; };
 		FA58B20C2555FA98003FC1D4 /* Squircle+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Squircle+Internal.swift"; sourceTree = "<group>"; };
+		FA77F0F2255F5BC000E8906C /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
+		FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitioningDelegate.swift; sourceTree = "<group>"; };
+		FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDismissingAnimationTransitioning.swift; sourceTree = "<group>"; };
+		FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentingAnimationTransitioning.swift; sourceTree = "<group>"; };
 		FAC28C6A2554A1DE009267A7 /* CardLargeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLargeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FADA382A2550AA1600FA910F /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA382D2550AA1600FA910F /* CommonUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUI.h; sourceTree = "<group>"; };
@@ -57,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA14B040255C673100CFD6C2 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FA14B041255C675D00CFD6C2 /* CardProtocol.swift */,
+				FA14B043255C688500CFD6C2 /* CardView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		FA58B2042555FA65003FC1D4 /* Squircle */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +95,26 @@
 				FA58B20C2555FA98003FC1D4 /* Squircle+Internal.swift */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		FA58B2612559F391003FC1D4 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				FA86C23D255B1AD400EBA974 /* CardTransition */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		FA86C23D255B1AD400EBA974 /* CardTransition */ = {
+			isa = PBXGroup;
+			children = (
+				FA14B040255C673100CFD6C2 /* Card */,
+				FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */,
+				FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */,
+				FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */,
+				FA77F0F2255F5BC000E8906C /* CardPresentationController.swift */,
+			);
+			path = CardTransition;
 			sourceTree = "<group>";
 		};
 		FAC28C672554A175009267A7 /* Views */ = {
@@ -130,6 +171,7 @@
 		FADDE6692552EE4E00934B8D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FA58B2612559F391003FC1D4 /* Transition */,
 				FA58B2042555FA65003FC1D4 /* Squircle */,
 				FAC28C672554A175009267A7 /* Views */,
 				FADDE66A2552EE5E00934B8D /* Extensions */,
@@ -234,12 +276,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */,
 				FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */,
+				FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */,
 				FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */,
 				FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */,
 				FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */,
+				FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */,
 				FA58B2132555FA98003FC1D4 /* Squircle+Internal.swift in Sources */,
 				FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */,
+				FA14B044255C688500CFD6C2 /* CardView.swift in Sources */,
+				FA77F0F3255F5BC000E8906C /* CardPresentationController.swift in Sources */,
+				FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
