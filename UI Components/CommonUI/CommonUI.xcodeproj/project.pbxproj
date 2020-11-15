@@ -97,12 +97,12 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
-		FA58B2612559F391003FC1D4 /* Transition */ = {
+		FA58B2612559F391003FC1D4 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
 				FA86C23D255B1AD400EBA974 /* CardTransition */,
 			);
-			path = Transition;
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 		FA86C23D255B1AD400EBA974 /* CardTransition */ = {
@@ -171,7 +171,7 @@
 		FADDE6692552EE4E00934B8D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FA58B2612559F391003FC1D4 /* Transition */,
+				FA58B2612559F391003FC1D4 /* Transitions */,
 				FA58B2042555FA65003FC1D4 /* Squircle */,
 				FAC28C672554A175009267A7 /* Views */,
 				FADDE66A2552EE5E00934B8D /* Extensions */,

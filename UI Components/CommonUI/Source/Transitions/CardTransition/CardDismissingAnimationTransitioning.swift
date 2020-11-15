@@ -17,7 +17,6 @@ class CardDismissingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
 
         self.cardView.isHidden = true
         let containerView = transitionContext.containerView
-        let finalFrameForPresentedView = transitionContext.finalFrame(for: fromController)
         let startRect = (fromController as? CardPresentedProtocol)?.finalRect ?? CGRect.zero
         let toController = transitionContext.viewController(forKey: .to)
         let snapshotView = toController?.view.snapshotView(afterScreenUpdates: true)

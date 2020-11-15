@@ -34,6 +34,9 @@ class CardPresentingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
         
         let cardViewCopy = CardView.getCardCopy(cardView: cardView)
         
+        let presentedCardView = (toController as? CardProtocol)?.getCardView()
+        presentedCardView?.isHidden = true
+        
         cardViewCopy.frame = self.startRect
         containerView.addSubview(cardViewCopy)
         
@@ -52,7 +55,9 @@ class CardPresentingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
         }, completion: nil)
         UIView.animate(withDuration: 0.4, delay: 0.6, animations: {
             toController.view.alpha = 1
+            presentedCardView?.isHidden = false
         }, completion: { finished in
+            presentedCardView?.isHidden = false
             self.cardView.isHidden = false
             cardViewCopy.removeFromSuperview()
             transitionContext.completeTransition(finished)
