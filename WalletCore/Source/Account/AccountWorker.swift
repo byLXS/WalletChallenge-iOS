@@ -16,7 +16,7 @@ public class AccountWorker {
         CardEntity.asynchronouslyFindAll() { (entityList) in
             var cardList = entityList.convertEntityInPresentationData()
             guard !cardList.isEmpty else { return }
-            cardList = cardList.sorted(by: {$0.number > $1.number})
+            cardList = cardList.sorted(by: {$0.number < $1.number})
             self.account.cardList = cardList
             DispatchQueue.main.async {
                 completionSuccess(cardList)
@@ -27,17 +27,20 @@ public class AccountWorker {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let data):
-                    let cardList = data.convertEntityInPresentationData()
+                    let cardList = data.convertEntityInPresentationData().sorted(by: {$0.number < $1.number})
                     self.account.cardList = cardList
                     
                     CardEntity.destroy() {
                         CardEntity.save(data: self.account.cardList) {
                         }
                     }
-                    
-                    completionSuccess(cardList)
+                    DispatchQueue.main.async {
+                        completionSuccess(cardList)
+                    }
                 case .failure( _):
-                    completionFailure(.alert)
+                    DispatchQueue.main.async {
+                        completionFailure(.alert)
+                    }
                 }
             }
         }

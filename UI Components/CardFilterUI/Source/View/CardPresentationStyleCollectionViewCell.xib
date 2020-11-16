@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardPresentationStyleCollectionViewCell" customModule="CardFilterUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="we1-9p-JTF" userLabel="MediumView" customClass="SmallView" customModule="CardFilterUI" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="358" height="140"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuG-Hw-39h" userLabel="SmallView">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vw1-rY-nj0">
+                                <rect key="frame" x="184" y="75" width="184" height="75"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AsX-st-1RE" customClass="SmallView" customModule="CardFilterUI" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="174" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AsX-st-1RE" firstAttribute="leading" secondItem="Vw1-rY-nj0" secondAttribute="leading" constant="5" id="RyF-sV-ecv"/>
+                                    <constraint firstAttribute="bottom" secondItem="AsX-st-1RE" secondAttribute="bottom" constant="5" id="UQX-TM-OLD"/>
+                                    <constraint firstItem="AsX-st-1RE" firstAttribute="top" secondItem="Vw1-rY-nj0" secondAttribute="top" constant="5" id="V4f-2X-AaA"/>
+                                    <constraint firstAttribute="trailing" secondItem="AsX-st-1RE" secondAttribute="trailing" constant="5" id="Vhg-im-gfB"/>
+                                    <constraint firstAttribute="height" constant="75" id="w2r-2v-a5p"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOs-jS-dfm">
+                                <rect key="frame" x="0.0" y="75" width="184" height="75"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Uc-Icc" customClass="SmallView" customModule="CardFilterUI" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="174" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5Vy-Uc-Icc" firstAttribute="leading" secondItem="YOs-jS-dfm" secondAttribute="leading" constant="5" id="Tuw-il-S3S"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Vy-Uc-Icc" secondAttribute="bottom" constant="5" id="XDb-Gl-rtp"/>
+                                    <constraint firstAttribute="height" constant="75" id="vTz-Ef-azL"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Vy-Uc-Icc" secondAttribute="trailing" constant="5" id="vco-Y1-zka"/>
+                                    <constraint firstItem="5Vy-Uc-Icc" firstAttribute="top" secondItem="YOs-jS-dfm" secondAttribute="top" constant="5" id="yN9-BK-bKb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mI6-ee-u5v">
+                                <rect key="frame" x="184" y="0.0" width="184" height="75"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yow-yy-Uf1" customClass="SmallView" customModule="CardFilterUI" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="174" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yow-yy-Uf1" firstAttribute="leading" secondItem="mI6-ee-u5v" secondAttribute="leading" constant="5" id="BTX-E3-4e3"/>
+                                    <constraint firstAttribute="trailing" secondItem="yow-yy-Uf1" secondAttribute="trailing" constant="5" id="Biw-Zu-wV7"/>
+                                    <constraint firstAttribute="height" constant="75" id="O6Q-2b-fDZ"/>
+                                    <constraint firstItem="yow-yy-Uf1" firstAttribute="top" secondItem="mI6-ee-u5v" secondAttribute="top" constant="5" id="mVu-cL-esN"/>
+                                    <constraint firstAttribute="bottom" secondItem="yow-yy-Uf1" secondAttribute="bottom" constant="5" id="uXR-hi-PxY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5K-nd-fil">
+                                <rect key="frame" x="0.0" y="0.0" width="184" height="75"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0w4-XL-hIX" customClass="SmallView" customModule="CardFilterUI" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="174" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="0RL-cn-1gD"/>
+                                    <constraint firstItem="0w4-XL-hIX" firstAttribute="leading" secondItem="o5K-nd-fil" secondAttribute="leading" constant="5" id="0SX-Ww-LM7"/>
+                                    <constraint firstAttribute="trailing" secondItem="0w4-XL-hIX" secondAttribute="trailing" constant="5" id="HUv-Lv-cuj"/>
+                                    <constraint firstAttribute="bottom" secondItem="0w4-XL-hIX" secondAttribute="bottom" constant="5" id="Ici-Cb-cwg"/>
+                                    <constraint firstItem="0w4-XL-hIX" firstAttribute="top" secondItem="o5K-nd-fil" secondAttribute="top" constant="5" id="W5Y-o7-P4l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vw1-rY-nj0" firstAttribute="leading" secondItem="YOs-jS-dfm" secondAttribute="trailing" id="3G6-ew-vqT"/>
+                            <constraint firstItem="mI6-ee-u5v" firstAttribute="top" secondItem="OuG-Hw-39h" secondAttribute="top" id="5rv-uJ-Vab"/>
+                            <constraint firstAttribute="trailing" secondItem="Vw1-rY-nj0" secondAttribute="trailing" id="8VS-dX-Iua"/>
+                            <constraint firstItem="YOs-jS-dfm" firstAttribute="leading" secondItem="OuG-Hw-39h" secondAttribute="leading" id="9sG-5M-TsU"/>
+                            <constraint firstItem="YOs-jS-dfm" firstAttribute="width" secondItem="OuG-Hw-39h" secondAttribute="width" multiplier="0.5" id="DKl-Mx-fAB"/>
+                            <constraint firstAttribute="bottom" secondItem="Vw1-rY-nj0" secondAttribute="bottom" id="IdE-Id-jfG"/>
+                            <constraint firstItem="o5K-nd-fil" firstAttribute="top" secondItem="OuG-Hw-39h" secondAttribute="top" id="Pta-Qm-QRR"/>
+                            <constraint firstItem="Vw1-rY-nj0" firstAttribute="width" secondItem="OuG-Hw-39h" secondAttribute="width" multiplier="0.5" id="YMX-KM-QFd"/>
+                            <constraint firstItem="mI6-ee-u5v" firstAttribute="width" secondItem="OuG-Hw-39h" secondAttribute="width" multiplier="0.5" id="b3T-Py-3Bn"/>
+                            <constraint firstItem="Vw1-rY-nj0" firstAttribute="top" secondItem="mI6-ee-u5v" secondAttribute="bottom" id="mCF-zt-5jr"/>
+                            <constraint firstItem="mI6-ee-u5v" firstAttribute="leading" secondItem="o5K-nd-fil" secondAttribute="trailing" id="mZH-XK-F4f"/>
+                            <constraint firstAttribute="trailing" secondItem="mI6-ee-u5v" secondAttribute="trailing" id="rcY-fF-PdN"/>
+                            <constraint firstAttribute="bottom" secondItem="YOs-jS-dfm" secondAttribute="bottom" id="snb-XH-kSO"/>
+                            <constraint firstItem="o5K-nd-fil" firstAttribute="width" secondItem="OuG-Hw-39h" secondAttribute="width" multiplier="0.5" id="wfV-zO-nn0"/>
+                            <constraint firstItem="o5K-nd-fil" firstAttribute="leading" secondItem="OuG-Hw-39h" secondAttribute="leading" id="xNg-G9-56j"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="top" secondItem="OuG-Hw-39h" secondAttribute="top" id="7XQ-d4-FoC"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="OuG-Hw-39h" secondAttribute="trailing" id="GT1-Dy-koC"/>
+                <constraint firstItem="OuG-Hw-39h" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="GgB-sE-pUz"/>
+                <constraint firstItem="we1-9p-JTF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="JAF-QQ-FWe"/>
+                <constraint firstAttribute="bottom" secondItem="OuG-Hw-39h" secondAttribute="bottom" id="P62-wM-1dh"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="we1-9p-JTF" secondAttribute="trailing" constant="5" id="YPJ-Ku-75C"/>
+                <constraint firstItem="we1-9p-JTF" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="5" id="beN-Fh-B9t"/>
+                <constraint firstAttribute="bottom" secondItem="we1-9p-JTF" secondAttribute="bottom" constant="5" id="xQS-qP-u8u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="368" height="213"/>
+            <connections>
+                <outlet property="mediumView" destination="we1-9p-JTF" id="Ibz-2s-2Dc"/>
+                <outlet property="smallView" destination="OuG-Hw-39h" id="sDD-a3-v9i"/>
+            </connections>
+            <point key="canvasLocation" x="295.6521739130435" y="163.39285714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

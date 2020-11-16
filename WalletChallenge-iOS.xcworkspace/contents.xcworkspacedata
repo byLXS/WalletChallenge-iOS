@@ -8,6 +8,9 @@
       location = "group:UI Components"
       name = "UI Components">
       <FileRef
+         location = "group:CardFilterUI/CardFilterUI.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:CardDetailUI/CardDetailUI.xcodeproj">
       </FileRef>
       <FileRef

@@ -14,6 +14,14 @@
 		FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20B2555FA98003FC1D4 /* Checkpoints.swift */; };
 		FA58B2132555FA98003FC1D4 /* Squircle+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20C2555FA98003FC1D4 /* Squircle+Internal.swift */; };
 		FA77F0F3255F5BC000E8906C /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77F0F2255F5BC000E8906C /* CardPresentationController.swift */; };
+		FA80733325630B0C000A5DB3 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733225630B0C000A5DB3 /* UIStackView+Extensions.swift */; };
+		FA80733625631928000A5DB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA80733525631928000A5DB3 /* Images.xcassets */; };
+		FA80734025631B4E000A5DB3 /* SPLarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733825631B4E000A5DB3 /* SPLarkController.swift */; };
+		FA80734125631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733B25631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift */; };
+		FA80734225631B4E000A5DB3 /* SPLarkPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733C25631B4E000A5DB3 /* SPLarkPresentationController.swift */; };
+		FA80734325631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733D25631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift */; };
+		FA80734425631B4E000A5DB3 /* SPLarkTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733E25631B4E000A5DB3 /* SPLarkTransitioningDelegate.swift */; };
+		FA80734525631B4E000A5DB3 /* SPLarkControllerExtenshion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80733F25631B4E000A5DB3 /* SPLarkControllerExtenshion.swift */; };
 		FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */; };
 		FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */; };
 		FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */; };
@@ -22,6 +30,9 @@
 		FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */; };
 		FADDE66F2552EE8A00934B8D /* RSThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADDE66E2552EE8A00934B8D /* RSThemeKit.framework */; };
 		FADDE6702552EE8A00934B8D /* RSThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FADDE66E2552EE8A00934B8D /* RSThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAF8ED9C256132E500537719 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8ED9B256132E500537719 /* AddButton.swift */; };
+		FAF8EDAA2561595400537719 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EDA92561595400537719 /* NibLoadable.swift */; };
+		FAF8EE062561F3A800537719 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EE052561F3A800537719 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +57,14 @@
 		FA58B20B2555FA98003FC1D4 /* Checkpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkpoints.swift; sourceTree = "<group>"; };
 		FA58B20C2555FA98003FC1D4 /* Squircle+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Squircle+Internal.swift"; sourceTree = "<group>"; };
 		FA77F0F2255F5BC000E8906C /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
+		FA80733225630B0C000A5DB3 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		FA80733525631928000A5DB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA80733825631B4E000A5DB3 /* SPLarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPLarkController.swift; sourceTree = "<group>"; };
+		FA80733B25631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPLarkPresentingAnimationController.swift; sourceTree = "<group>"; };
+		FA80733C25631B4E000A5DB3 /* SPLarkPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPLarkPresentationController.swift; sourceTree = "<group>"; };
+		FA80733D25631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPLarkDismissingAnimationController.swift; sourceTree = "<group>"; };
+		FA80733E25631B4E000A5DB3 /* SPLarkTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPLarkTransitioningDelegate.swift; sourceTree = "<group>"; };
+		FA80733F25631B4E000A5DB3 /* SPLarkControllerExtenshion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPLarkControllerExtenshion.swift; sourceTree = "<group>"; };
 		FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitioningDelegate.swift; sourceTree = "<group>"; };
 		FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDismissingAnimationTransitioning.swift; sourceTree = "<group>"; };
 		FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentingAnimationTransitioning.swift; sourceTree = "<group>"; };
@@ -55,6 +74,9 @@
 		FADA382E2550AA1600FA910F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		FADDE66E2552EE8A00934B8D /* RSThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF8ED9B256132E500537719 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		FAF8EDA92561595400537719 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		FAF8EE052561F3A800537719 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +122,39 @@
 		FA58B2612559F391003FC1D4 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				FA80733725631B4E000A5DB3 /* SPLarkController */,
 				FA86C23D255B1AD400EBA974 /* CardTransition */,
 			);
 			path = Transitions;
+			sourceTree = "<group>";
+		};
+		FA80733425631918000A5DB3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FA80733525631928000A5DB3 /* Images.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FA80733725631B4E000A5DB3 /* SPLarkController */ = {
+			isa = PBXGroup;
+			children = (
+				FA80733825631B4E000A5DB3 /* SPLarkController.swift */,
+				FA80733A25631B4E000A5DB3 /* TransitioningDelegate */,
+				FA80733F25631B4E000A5DB3 /* SPLarkControllerExtenshion.swift */,
+			);
+			path = SPLarkController;
+			sourceTree = "<group>";
+		};
+		FA80733A25631B4E000A5DB3 /* TransitioningDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA80733B25631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift */,
+				FA80733C25631B4E000A5DB3 /* SPLarkPresentationController.swift */,
+				FA80733D25631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift */,
+				FA80733E25631B4E000A5DB3 /* SPLarkTransitioningDelegate.swift */,
+			);
+			path = TransitioningDelegate;
 			sourceTree = "<group>";
 		};
 		FA86C23D255B1AD400EBA974 /* CardTransition */ = {
@@ -120,7 +172,9 @@
 		FAC28C672554A175009267A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8ED9A256132BE00537719 /* Buttons */,
 				FAC28C682554A17C009267A7 /* List */,
+				FAF8EDA92561595400537719 /* NibLoadable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +198,7 @@
 		FADA38202550AA1500FA910F = {
 			isa = PBXGroup;
 			children = (
+				FA80733425631918000A5DB3 /* Resource */,
 				FADDE6692552EE4E00934B8D /* Source */,
 				FADA382C2550AA1600FA910F /* CommonUI */,
 				FADA382B2550AA1600FA910F /* Products */,
@@ -183,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */,
+				FAF8EE052561F3A800537719 /* UIView+Extensions.swift */,
+				FA80733225630B0C000A5DB3 /* UIStackView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +250,14 @@
 				FADDE66E2552EE8A00934B8D /* RSThemeKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAF8ED9A256132BE00537719 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8ED9B256132E500537719 /* AddButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA80733625631928000A5DB3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,17 +342,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF8EE062561F3A800537719 /* UIView+Extensions.swift in Sources */,
+				FA80733325630B0C000A5DB3 /* UIStackView+Extensions.swift in Sources */,
 				FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */,
+				FA80734325631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift in Sources */,
 				FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */,
 				FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */,
 				FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */,
 				FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */,
 				FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */,
+				FA80734225631B4E000A5DB3 /* SPLarkPresentationController.swift in Sources */,
+				FA80734125631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift in Sources */,
 				FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */,
+				FA80734025631B4E000A5DB3 /* SPLarkController.swift in Sources */,
 				FA58B2132555FA98003FC1D4 /* Squircle+Internal.swift in Sources */,
 				FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */,
+				FAF8EDAA2561595400537719 /* NibLoadable.swift in Sources */,
 				FA14B044255C688500CFD6C2 /* CardView.swift in Sources */,
 				FA77F0F3255F5BC000E8906C /* CardPresentationController.swift in Sources */,
+				FA80734425631B4E000A5DB3 /* SPLarkTransitioningDelegate.swift in Sources */,
+				FAF8ED9C256132E500537719 /* AddButton.swift in Sources */,
+				FA80734525631B4E000A5DB3 /* SPLarkControllerExtenshion.swift in Sources */,
 				FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -44,13 +44,38 @@ public class MainViewController: ThemeViewController {
     func setupNavigationBar() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.searchController = searchController
+        
+        let button = AddButton()
+        button.setup()
+        button.setTitle(Strings.add, for: .normal)
+        button.addTarget(self, action: #selector(addCard), for: .touchUpInside)
+        button.frame = CGRect(x: 0, y: 0, width: 53, height: 28)
+        let barButton = UIBarButtonItem(customView: button)
+        
+        self.navigationItem.leftBarButtonItem = barButton
+        
+        let userImage = getImage(named: "user_image", anyClass: type(of: self))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: userImage, style: .done, target: self, action: #selector(openSettings))
     }
+    
     func setupCollectionView() {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(CardLargeCollectionViewCell.self, forCellWithReuseIdentifier: CardLargeCollectionViewCell.identifier)
+        collectionView.register(MainCollectionReusableView.nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionReusableView.name)
     }
 
+    @objc func addCard() {
+        print(1)
+    }
+    
+    @objc func openSettings() {
+        print(2)
+    }
+    
+    @objc func showFilterScreen() {
+        self.router?.presentFilterScreen()
+    }
 }
 
 extension MainViewController: MainDisplayLogic {
@@ -59,4 +84,11 @@ extension MainViewController: MainDisplayLogic {
     }
     
     
+}
+extension MainViewController: CardFilterDelegate {
+    public func apply(filter: CardFilter) {
+        self.interactor?.cardFilter = filter
+        self.interactor?.reloadItems()
+        self.collectionView.reloadData()
+    }
 }

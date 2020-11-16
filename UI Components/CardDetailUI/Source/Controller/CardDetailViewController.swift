@@ -1,10 +1,11 @@
 import UIKit
 import RSThemeKit
 import CommonUI
+import WalletPresentationData
 
 public class CardDetailViewController: ThemeViewController {
     
-    
+    @IBOutlet public var cancelButton: UIButton!
     @IBOutlet public var cardView: CardView!
     @IBOutlet public weak var ean13ImageView: UIImageView!
     
@@ -12,8 +13,7 @@ public class CardDetailViewController: ThemeViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+        cancelButton.setImage(getImage(named: "cancel_circle_image", anyClass: CardLargeCollectionViewCell.self), for: .normal)
         interactor?.getCardImage(completion: { [weak self] (image) in
             self?.cardView.imageView.image = image
         })

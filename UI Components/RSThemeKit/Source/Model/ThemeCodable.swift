@@ -11,7 +11,7 @@ import Foundation
 struct ThemeCodable: Codable {
     let identifier: String
     let textColor: String
-    let detailtTextColor: String
+    let detailTextColor: String
     let tintColor: String
     let switchTintColor: String
     let backgroundColor: String
@@ -26,4 +26,5 @@ struct ThemeCodable: Codable {
     let switchBackgroundColor: String
     let keyboardAppearance: Int
     let blurEffect: Int
+    let stackViewDisabled: String
 }

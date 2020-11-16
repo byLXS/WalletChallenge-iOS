@@ -11,6 +11,8 @@
 		FA1033362551EF970014825B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033352551EF970014825B /* Strings.swift */; };
 		FAC28C6125549A9E009267A7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C6025549A9E009267A7 /* Error.swift */; };
 		FADDE6762552FDE500934B8D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE6752552FDE500934B8D /* Card.swift */; };
+		FAF8EDA425613AF400537719 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EDA325613AF400537719 /* Global.swift */; };
+		FAF8EDF22561C8FA00537719 /* CardFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EDF12561C8FA00537719 /* CardFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		FA58B2302557469F003FC1D4 /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC28C6025549A9E009267A7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		FADDE6752552FDE500934B8D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FAF8EDA325613AF400537719 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		FAF8EDF12561C8FA00537719 /* CardFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				FADDE6742552FDDB00934B8D /* Model */,
 				FA1033352551EF970014825B /* Strings.swift */,
+				FAF8EDA325613AF400537719 /* Global.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FADDE6752552FDE500934B8D /* Card.swift */,
+				FAF8EDF12561C8FA00537719 /* CardFilter.swift */,
 				FAC28C6025549A9E009267A7 /* Error.swift */,
 			);
 			path = Model;
@@ -167,6 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF8EDA425613AF400537719 /* Global.swift in Sources */,
+				FAF8EDF22561C8FA00537719 /* CardFilter.swift in Sources */,
 				FA1033362551EF970014825B /* Strings.swift in Sources */,
 				FAC28C6125549A9E009267A7 /* Error.swift in Sources */,
 				FADDE6762552FDE500934B8D /* Card.swift in Sources */,

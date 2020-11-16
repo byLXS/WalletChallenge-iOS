@@ -3,6 +3,11 @@ import CommonUI
 import UIKit
 
 extension MainViewController: UICollectionViewDataSource {
+    
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return interactor?.numberOfItemsInSection(section: section) ?? 0
     }
@@ -12,5 +17,10 @@ extension MainViewController: UICollectionViewDataSource {
         return cell
     }
     
+    public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MainCollectionReusableView.name, for: indexPath) as! MainCollectionReusableView
+        headerView.filterButton.addTarget(self, action: #selector(showFilterScreen), for: .touchUpInside)
+        return headerView
+    }
     
 }

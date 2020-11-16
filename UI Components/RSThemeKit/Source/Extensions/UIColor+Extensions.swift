@@ -171,6 +171,21 @@ extension UIColor {
 
     }
     
+    static var systemStackViewColor: UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return grayDarkColor
+                } else {
+                    return grayLightColor
+                }
+            }
+        } else {
+            return grayLightColor
+        }
+
+    }
+    
     static var whiteColor: UIColor {
         return UIColor(cgColor: #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1))
     }

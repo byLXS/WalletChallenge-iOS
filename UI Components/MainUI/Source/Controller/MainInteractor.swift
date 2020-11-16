@@ -4,7 +4,9 @@ import UIKit.UIImage
 import WalletCore
 
 protocol MainInteractorProtocol {
+    var cardFilter: CardFilter { get set }
     func fetchCardList()
+    func reloadItems()
     func numberOfItemsInSection(section: Int) -> Int
     func getCard(indexPath: IndexPath) -> Card
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ())
@@ -16,24 +18,38 @@ class MainInteractor: MainInteractorProtocol {
     
     let accountWorker: AccountWorker
     
-    var cardList: [Card] {
-        return accountWorker.account.cardList
-    }
+    var cardFilter: CardFilter
+    
+    var cardList: [Card] = []
     
     init(accountWorker: AccountWorker) {
         self.accountWorker = accountWorker
+        self.cardFilter = CardFilter(cardPresentationStyle: .medium, cardType: .all)
     }
     
     func fetchCardList() {
         accountWorker.fetchCardList(completionSuccess: { (cards) in
+            self.cardList = self.accountWorker.account.cardList
             self.presenter?.reloadList()
         }) { (_) in
             
         }
     }
     
+    func reloadItems() {
+        let allCardList = accountWorker.account.cardList
+        switch cardFilter.cardType {
+        case .all:
+            self.cardList = allCardList
+        case .certificate:
+            self.cardList = allCardList.filter({$0.kind == .certificate})
+        case .loyalty:
+            self.cardList = allCardList.filter({$0.kind == .loyalty})
+        }
+    }
+    
     func numberOfItemsInSection(section: Int) -> Int {
-        return accountWorker.account.cardList.count
+        return cardList.count
     }
     
     func getCard(indexPath: IndexPath) -> Card {

@@ -14,7 +14,15 @@ public struct CardResponse: Codable {
 
 extension CardResponse {
     func convertResponseInPresentationModel() -> Card {
-        return Card(number: number, kind: kind, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind))
+        let cardType = CardType(rawValue: kind) ?? .none
+        switch cardType {
+        case .loyalty:
+            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), grade: loyaltyCard?.grade ?? "", balance: loyaltyCard?.balance ?? 0)
+        case .certificate:
+            return CertificateCard(number: number, kind: .certificate, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), value: certificate?.value ?? 0, expireDate: certificate?.expireDate ?? "")
+        case .none:
+            return DefaultCard(number: number, kind: .none, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind))
+        }
     }
 }
 

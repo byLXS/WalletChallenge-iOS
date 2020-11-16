@@ -25,6 +25,13 @@
 		FADDE6652552EC3700934B8D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE6642552EC3700934B8D /* MainRouter.swift */; };
 		FADDE6672552ECB200934B8D /* RSThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADDE6662552ECB200934B8D /* RSThemeKit.framework */; };
 		FADDE6682552ECB200934B8D /* RSThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FADDE6662552ECB200934B8D /* RSThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAF8ED9E2561365A00537719 /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8ED9D2561365A00537719 /* WalletPresentationData.framework */; };
+		FAF8ED9F2561365A00537719 /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8ED9D2561365A00537719 /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAF8EDA225613A4200537719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF8EDA125613A4200537719 /* Images.xcassets */; };
+		FAF8EDA72561592B00537719 /* MainCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EDA52561592B00537719 /* MainCollectionReusableView.swift */; };
+		FAF8EDA82561592B00537719 /* MainCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF8EDA62561592B00537719 /* MainCollectionReusableView.xib */; };
+		FAF8EDC8256161A200537719 /* CardFilterUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8EDC7256161A200537719 /* CardFilterUI.framework */; };
+		FAF8EDC9256161A200537719 /* CardFilterUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8EDC7256161A200537719 /* CardFilterUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,8 +42,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA58B22425571AE5003FC1D4 /* CommonUI.framework in Embed Frameworks */,
+				FAF8ED9F2561365A00537719 /* WalletPresentationData.framework in Embed Frameworks */,
 				FA86C27C255B3B6C00EBA974 /* CardDetailUI.framework in Embed Frameworks */,
 				FADDE6682552ECB200934B8D /* RSThemeKit.framework in Embed Frameworks */,
+				FAF8EDC9256161A200537719 /* CardFilterUI.framework in Embed Frameworks */,
 				FA1033572551FE360014825B /* WalletCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -61,6 +70,11 @@
 		FADDE6602552EB7F00934B8D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		FADDE6642552EC3700934B8D /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		FADDE6662552ECB200934B8D /* RSThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF8ED9D2561365A00537719 /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF8EDA125613A4200537719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAF8EDA52561592B00537719 /* MainCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionReusableView.swift; sourceTree = "<group>"; };
+		FAF8EDA62561592B00537719 /* MainCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionReusableView.xib; sourceTree = "<group>"; };
+		FAF8EDC7256161A200537719 /* CardFilterUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardFilterUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +83,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA58B22325571AE5003FC1D4 /* CommonUI.framework in Frameworks */,
+				FAF8ED9E2561365A00537719 /* WalletPresentationData.framework in Frameworks */,
 				FA86C27B255B3B6C00EBA974 /* CardDetailUI.framework in Frameworks */,
 				FADDE6672552ECB200934B8D /* RSThemeKit.framework in Frameworks */,
+				FAF8EDC8256161A200537719 /* CardFilterUI.framework in Frameworks */,
 				FA1033562551FE360014825B /* WalletCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +107,8 @@
 		FA1033542551FE360014825B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8EDC7256161A200537719 /* CardFilterUI.framework */,
+				FAF8ED9D2561365A00537719 /* WalletPresentationData.framework */,
 				FA86C27A255B3B6C00EBA974 /* CardDetailUI.framework */,
 				FA58B22225571AE5003FC1D4 /* CommonUI.framework */,
 				FADDE6662552ECB200934B8D /* RSThemeKit.framework */,
@@ -124,6 +142,7 @@
 		FADA380B2550A7ED00FA910F = {
 			isa = PBXGroup;
 			children = (
+				FAF8EDA025613A1F00537719 /* Resource */,
 				FA1033512551FDA20014825B /* Source */,
 				FADA38172550A7ED00FA910F /* MainUI */,
 				FADA38162550A7ED00FA910F /* Products */,
@@ -152,8 +171,18 @@
 			isa = PBXGroup;
 			children = (
 				FADDE6602552EB7F00934B8D /* MainViewController.xib */,
+				FAF8EDA52561592B00537719 /* MainCollectionReusableView.swift */,
+				FAF8EDA62561592B00537719 /* MainCollectionReusableView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FAF8EDA025613A1F00537719 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8EDA125613A4200537719 /* Images.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +257,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADDE6622552EB7F00934B8D /* MainViewController.xib in Resources */,
+				FAF8EDA225613A4200537719 /* Images.xcassets in Resources */,
+				FAF8EDA82561592B00537719 /* MainCollectionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +274,7 @@
 				FA1033602551FED30014825B /* MainBuilder.swift in Sources */,
 				FA58B2032555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
 				FAC28C662554A134009267A7 /* MainViewController+UICollectionViewDelegate.swift in Sources */,
+				FAF8EDA72561592B00537719 /* MainCollectionReusableView.swift in Sources */,
 				FADDE65E2552C7D900934B8D /* MainPresenter.swift in Sources */,
 				FADDE6612552EB7F00934B8D /* MainViewController.swift in Sources */,
 				FAC28C6425549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift in Sources */,

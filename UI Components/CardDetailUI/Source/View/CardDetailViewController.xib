@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailViewController" customModule="CardDetailUI" customModuleProvider="target">
             <connections>
+                <outlet property="cancelButton" destination="c7j-Sb-jKB" id="Kln-WZ-dOM"/>
                 <outlet property="cardView" destination="nfC-bA-IM2" id="Vtr-3W-iAE"/>
                 <outlet property="ean13ImageView" destination="sEK-G4-uxo" id="pDQ-xx-l6p"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

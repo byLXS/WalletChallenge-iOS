@@ -9,7 +9,19 @@
         <attribute name="kind" optional="YES" attributeType="String"/>
         <attribute name="number" optional="YES" attributeType="String"/>
         <relationship name="barcode" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BarcodeEntity" inverseName="card" inverseEntity="BarcodeEntity"/>
+        <relationship name="certificateCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CertificateCardEntity" inverseName="card" inverseEntity="CertificateCardEntity"/>
+        <relationship name="loyaltyCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LoyaltyCardEntity" inverseName="card" inverseEntity="LoyaltyCardEntity"/>
         <relationship name="texture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextureEntity" inverseName="card" inverseEntity="TextureEntity"/>
+    </entity>
+    <entity name="CertificateCardEntity" representedClassName="WalletCore.CertificateCardEntity" syncable="YES">
+        <attribute name="expireDate" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="certificateCard" inverseEntity="CardEntity"/>
+    </entity>
+    <entity name="LoyaltyCardEntity" representedClassName="WalletCore.LoyaltyCardEntity" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="grade" optional="YES" attributeType="String"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="loyaltyCard" inverseEntity="CardEntity"/>
     </entity>
     <entity name="TextureEntity" representedClassName="WalletCore.TextureEntity" syncable="YES">
         <attribute name="back" optional="YES" attributeType="String"/>
@@ -17,8 +29,10 @@
         <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="texture" inverseEntity="CardEntity"/>
     </entity>
     <elements>
-        <element name="CardEntity" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="TextureEntity" positionX="-54" positionY="18" width="128" height="88"/>
         <element name="BarcodeEntity" positionX="-63" positionY="27" width="128" height="88"/>
+        <element name="CardEntity" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="TextureEntity" positionX="-54" positionY="18" width="128" height="88"/>
+        <element name="LoyaltyCardEntity" positionX="-45" positionY="45" width="128" height="88"/>
+        <element name="CertificateCardEntity" positionX="-36" positionY="63" width="128" height="88"/>
     </elements>
 </model>

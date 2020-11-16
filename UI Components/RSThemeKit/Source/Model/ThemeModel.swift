@@ -4,7 +4,7 @@ import UIKit
 public struct ThemeModel {
     public var identifier: String
     public let textColor: UIColor
-    public let detailtTextColor: UIColor
+    public let detailTextColor: UIColor
     public let tintColor: UIColor
     public let switchTintColor: UIColor
     public let backgroundColor: UIColor
@@ -19,11 +19,12 @@ public struct ThemeModel {
     public let switchBackgroundColor: UIColor
     public let keyboardAppearance: UIKeyboardAppearance
     public let blurEffect: UIBlurEffect
+    public let stackViewDisabled: UIColor
     
-    public init(identifier: String, textColor: UIColor, detailtTextColor: UIColor, tintColor: UIColor, switchTintColor: UIColor, backgroundColor: UIColor, tableViewColor: UIColor, cellBackgroundColor: UIColor, separatorColor: UIColor, navigationBarColor: UIColor, statusBarStyle: UIStatusBarStyle, indicatorStyle: UIScrollView.IndicatorStyle, selectionStyleColor: UIColor, accessoryTypeViewColor: UIColor, switchBackgroundColor: UIColor, keyboardAppearance: UIKeyboardAppearance, blurEffect: UIBlurEffect) {
+    public init(identifier: String, textColor: UIColor, detailTextColor: UIColor, tintColor: UIColor, switchTintColor: UIColor, backgroundColor: UIColor, tableViewColor: UIColor, cellBackgroundColor: UIColor, separatorColor: UIColor, navigationBarColor: UIColor, statusBarStyle: UIStatusBarStyle, indicatorStyle: UIScrollView.IndicatorStyle, selectionStyleColor: UIColor, accessoryTypeViewColor: UIColor, switchBackgroundColor: UIColor, keyboardAppearance: UIKeyboardAppearance, blurEffect: UIBlurEffect, stackViewDisabled: UIColor) {
         self.identifier = identifier
         self.textColor = textColor
-        self.detailtTextColor = detailtTextColor
+        self.detailTextColor = detailTextColor
         self.tintColor = tintColor
         self.switchTintColor = switchTintColor
         self.backgroundColor = backgroundColor
@@ -38,5 +39,6 @@ public struct ThemeModel {
         self.switchBackgroundColor = switchBackgroundColor
         self.keyboardAppearance = keyboardAppearance
         self.blurEffect = blurEffect
+        self.stackViewDisabled = stackViewDisabled
     }
 }

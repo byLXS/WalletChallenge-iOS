@@ -6,5 +6,12 @@
   Copyright © 2020 Robert. All rights reserved.
 */
 
-"noInternetConnection" = "Нет подключения к интернету";
-"main" = "Главная";
+"noInternetConnection" = "No internet connection";
+"add" = "Add";
+"main" = "Main";
+"myCard" = "My card";
+"filter" = "Filter";
+"apply" = "Apply";
+"all" = "all";
+"loyalty" = "Loyalty";
+"certificate" = "certificate";
