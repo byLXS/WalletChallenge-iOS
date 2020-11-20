@@ -2,14 +2,13 @@ import Foundation
 import UIKit
 import RSThemeKit
 
-open class AddButton: UIButton {
+open class AddButton: SuperEllipseButton {
     
     public func setup() {
         self.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
         self.contentEdgeInsets.left = 10
         self.contentEdgeInsets.right = 10
-        self.layer.cornerRadius = 12
-        self.clipsToBounds = true
+        defaultCornerRadius = 12
         addThemeObserver()
     }
     

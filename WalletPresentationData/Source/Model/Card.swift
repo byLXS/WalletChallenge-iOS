@@ -11,6 +11,7 @@ public protocol Card {
     var kind: CardType { get }
     var texture: Texture { get }
     var barcode: Barcode { get }
+    var issuer: Issuer { get }
 }
 
 public struct Texture {
@@ -33,20 +34,32 @@ public struct Barcode {
     }
 }
 
+public struct Issuer {
+    public let name: String
+    public let categories: [String]
+    
+    public init(name: String, categories: [String]) {
+        self.name = name
+        self.categories = categories
+    }
+}
+
 
 public struct LoyaltyCard: Card {
     public var number: String
     public var kind: CardType
     public var texture: Texture
     public var barcode: Barcode
+    public var issuer: Issuer
     public var grade: String
     public var balance: Int
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, grade: String, balance: Int) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, grade: String, balance: Int) {
         self.number = number
         self.kind = kind
         self.texture = texture
         self.barcode = barcode
+        self.issuer = issuer
         self.grade = grade
         self.balance = balance
     }
@@ -58,14 +71,16 @@ public struct CertificateCard: Card {
     public var kind: CardType
     public var texture: Texture
     public var barcode: Barcode
+    public var issuer: Issuer
     public var value: Int
     public var expireDate: String
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, value: Int, expireDate: String) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, value: Int, expireDate: String) {
         self.number = number
         self.kind = kind
         self.texture = texture
         self.barcode = barcode
+        self.issuer = issuer
         self.value = value
         self.expireDate = expireDate
     }
@@ -77,12 +92,14 @@ public struct DefaultCard: Card {
     public var kind: CardType
     public var texture: Texture
     public var barcode: Barcode
+    public var issuer: Issuer
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer) {
         self.number = number
         self.kind = kind
         self.texture = texture
         self.barcode = barcode
+        self.issuer = issuer
     }
     
 }

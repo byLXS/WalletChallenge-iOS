@@ -1,5 +1,6 @@
 import UIKit
 import RSThemeKit
+import WalletPresentationData
 
 public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
   
@@ -9,11 +10,10 @@ public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
     
     public func setup() {
         if cardView == nil {
-            let view = CardView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width - 80, height: 200))
+            let view = CardView(frame: CGRect(x: 0, y: 0, width: CardLayout.width, height: CardLayout.height))
             view.isOpaque = false
             self.addSubview(view)
-            view.superEllipse(cornerRadius: 14)
-            view.imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width - 80, height: 200)
+            view.imageView.frame = CGRect(x: 0, y: 0, width: CardLayout.width, height: CardLayout.height)
             view.imageView.center = view.center
             view.imageView.isOpaque = false
             view.imageView.contentMode = .scaleToFill
@@ -26,6 +26,11 @@ public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
     
     public func getCardView() -> CardView? {
         return cardView
+    }
+    
+    public override func decorator(theme: ThemeModel) {
+        super.decorator(theme: theme)
+        backgroundColor = theme.backgroundColor
     }
 
 }

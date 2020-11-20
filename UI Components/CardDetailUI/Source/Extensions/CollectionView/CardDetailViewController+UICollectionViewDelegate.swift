@@ -1,0 +1,25 @@
+import Foundation
+import UIKit
+import CommonUI 
+extension CardDetailViewController: UICollectionViewDelegate {
+    
+    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let cell = cell as? CardLargeCollectionViewCell else { return }
+        cell.setup()
+        cardDetailHeaderView.cardView = cell.cardView
+        cell.cardView?.imageView.image = nil
+        interactor?.loadImage(indexPath: indexPath, completion: { (image) in
+            cell.cardView?.imageView.image = image
+        })
+    }
+    
+    public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let index = Int(targetContentOffset.move().x / (view.frame.width - 40))
+        
+        
+        interactor?.selectItem(index: index)
+        setupStackView()
+        
+    }
+    
+}

@@ -5,8 +5,8 @@ import RSThemeKit
 
 class CardPresentationStyleCollectionViewCell: UICollectionViewCell, NibLoadable {
     
-    @IBOutlet weak var smallView: UIView!
-    @IBOutlet weak var mediumView: UIView!
+    @IBOutlet weak var smallView: CardStyleView!
+    @IBOutlet weak var mediumView: CardStyleView!
     
     var style: CardPresentationStyle = .medium
 
@@ -23,11 +23,12 @@ class CardPresentationStyleCollectionViewCell: UICollectionViewCell, NibLoadable
             mediumView.isHidden = false
             smallView.isHidden = true
         }
+        mediumView.defaultCornerRadius = 22
     }
 
 }
 
-class SmallView: UIView {
+class CardStyleView: SuperEllipseView {
     
     override func awakeFromNib() {
         super.awakeFromNib()

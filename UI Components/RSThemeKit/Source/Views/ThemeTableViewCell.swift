@@ -2,7 +2,7 @@ import UIKit
 
 open class ThemeTableCell: UITableViewCell {
 
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         addThemeObserver()
     }

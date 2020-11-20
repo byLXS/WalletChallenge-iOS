@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import WalletPresentationData
 
 //extension MainViewController: UICollectionViewDelegateFlowLayout {
 //
@@ -11,9 +12,8 @@ import UIKit
 
 private let spacing : CGFloat = 10
 private let screenWidth = UIScreen.main.bounds.maxX
-private let cellHeight : CGFloat = 200
-private let smallSize = CGSize(width: (screenWidth - 3 * spacing) / 2, height: cellHeight)
-private let mediumSize = CGSize(width: UIScreen.main.bounds.size.width - 80, height: 200)
+private let smallSize = CGSize(width: (screenWidth - 3 * spacing) / 2, height: CardLayout.height)
+private let mediumSize = CGSize(width: CardLayout.width, height: CardLayout.height)
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     

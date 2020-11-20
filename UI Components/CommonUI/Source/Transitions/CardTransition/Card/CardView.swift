@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-open class CardView: UIView {
+open class CardView: SuperEllipseView {
     
     public var imageView = UIImageView()
     

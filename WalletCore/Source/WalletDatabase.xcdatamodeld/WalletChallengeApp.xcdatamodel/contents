@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="BarcodeEntity" representedClassName="WalletCore.BarcodeEntity" syncable="YES">
         <attribute name="kind" optional="YES" attributeType="String"/>
         <attribute name="number" optional="YES" attributeType="String"/>
@@ -10,6 +10,7 @@
         <attribute name="number" optional="YES" attributeType="String"/>
         <relationship name="barcode" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BarcodeEntity" inverseName="card" inverseEntity="BarcodeEntity"/>
         <relationship name="certificateCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CertificateCardEntity" inverseName="card" inverseEntity="CertificateCardEntity"/>
+        <relationship name="issuer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IssuerEntity" inverseName="card" inverseEntity="IssuerEntity"/>
         <relationship name="loyaltyCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LoyaltyCardEntity" inverseName="card" inverseEntity="LoyaltyCardEntity"/>
         <relationship name="texture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextureEntity" inverseName="card" inverseEntity="TextureEntity"/>
     </entity>
@@ -17,6 +18,11 @@
         <attribute name="expireDate" optional="YES" attributeType="String"/>
         <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="certificateCard" inverseEntity="CardEntity"/>
+    </entity>
+    <entity name="IssuerEntity" representedClassName="WalletCore.IssuerEntity" syncable="YES">
+        <attribute name="categories" optional="YES" attributeType="Transformable" customClassName="WalletCore.[String]"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="issuer" inverseEntity="CardEntity"/>
     </entity>
     <entity name="LoyaltyCardEntity" representedClassName="WalletCore.LoyaltyCardEntity" syncable="YES">
         <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -30,9 +36,10 @@
     </entity>
     <elements>
         <element name="BarcodeEntity" positionX="-63" positionY="27" width="128" height="88"/>
-        <element name="CardEntity" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="TextureEntity" positionX="-54" positionY="18" width="128" height="88"/>
-        <element name="LoyaltyCardEntity" positionX="-45" positionY="45" width="128" height="88"/>
+        <element name="CardEntity" positionX="-63" positionY="-18" width="128" height="148"/>
         <element name="CertificateCardEntity" positionX="-36" positionY="63" width="128" height="88"/>
+        <element name="LoyaltyCardEntity" positionX="-45" positionY="45" width="128" height="88"/>
+        <element name="TextureEntity" positionX="-54" positionY="18" width="128" height="88"/>
+        <element name="IssuerEntity" positionX="-54" positionY="54" width="128" height="88"/>
     </elements>
 </model>

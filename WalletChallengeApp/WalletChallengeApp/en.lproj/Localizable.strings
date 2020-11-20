@@ -12,6 +12,10 @@
 "myCard" = "My card";
 "filter" = "Filter";
 "apply" = "Apply";
-"all" = "all";
+"all" = "All";
 "loyalty" = "Loyalty";
-"certificate" = "certificate";
+"certificate" = "Certificate";
+"grade" = "Grade";
+"balance" = "Balance";
+"value" = "Value";
+"expireDate" = "Expire Date";

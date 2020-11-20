@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B041255C675D00CFD6C2 /* CardProtocol.swift */; };
 		FA14B044255C688500CFD6C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B043255C688500CFD6C2 /* CardView.swift */; };
+		FA40D71D256851FE0098CA2A /* SuperEllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40D71C256851FE0098CA2A /* SuperEllipseView.swift */; };
 		FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B2072555FA98003FC1D4 /* Squircle.swift */; };
 		FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20A2555FA98003FC1D4 /* CGPoint+Delta.swift */; };
 		FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20B2555FA98003FC1D4 /* Checkpoints.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		FA14B041255C675D00CFD6C2 /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
 		FA14B043255C688500CFD6C2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA40D71C256851FE0098CA2A /* SuperEllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperEllipseView.swift; sourceTree = "<group>"; };
 		FA58B2072555FA98003FC1D4 /* Squircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squircle.swift; sourceTree = "<group>"; };
 		FA58B20A2555FA98003FC1D4 /* CGPoint+Delta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Delta.swift"; sourceTree = "<group>"; };
 		FA58B20B2555FA98003FC1D4 /* Checkpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkpoints.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		FAC28C672554A175009267A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA40D71C256851FE0098CA2A /* SuperEllipseView.swift */,
 				FAF8ED9A256132BE00537719 /* Buttons */,
 				FAC28C682554A17C009267A7 /* List */,
 				FAF8EDA92561595400537719 /* NibLoadable.swift */,
@@ -347,6 +350,7 @@
 				FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */,
 				FA80734325631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift in Sources */,
 				FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */,
+				FA40D71D256851FE0098CA2A /* SuperEllipseView.swift in Sources */,
 				FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */,
 				FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */,
 				FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */,

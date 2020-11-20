@@ -11,6 +11,20 @@
 		FA10333C2551F1290014825B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA10333E2551F1290014825B /* Localizable.strings */; };
 		FA1033622552009F0014825B /* WRootUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033612552009F0014825B /* WRootUI.framework */; };
 		FA1033632552009F0014825B /* WRootUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033612552009F0014825B /* WRootUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DDE25651E13009F6906 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DDD25651E13009F6906 /* CommonUI.framework */; };
+		FA354DDF25651E13009F6906 /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DDD25651E13009F6906 /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DE125651E2C009F6906 /* WalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE025651E2C009F6906 /* WalletCore.framework */; };
+		FA354DE225651E2C009F6906 /* WalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE025651E2C009F6906 /* WalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DE425651E45009F6906 /* MainUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE325651E45009F6906 /* MainUI.framework */; };
+		FA354DE525651E45009F6906 /* MainUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE325651E45009F6906 /* MainUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DE725651E4A009F6906 /* CardFilterUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE625651E4A009F6906 /* CardFilterUI.framework */; };
+		FA354DE825651E4A009F6906 /* CardFilterUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE625651E4A009F6906 /* CardFilterUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DEA25651E4D009F6906 /* CardDetailUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE925651E4D009F6906 /* CardDetailUI.framework */; };
+		FA354DEB25651E4D009F6906 /* CardDetailUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DE925651E4D009F6906 /* CardDetailUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DED25651E6D009F6906 /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEC25651E6D009F6906 /* WalletPresentationData.framework */; };
+		FA354DEE25651E6D009F6906 /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEC25651E6D009F6906 /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA354DF025651E8D009F6906 /* WalletApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEF25651E8D009F6906 /* WalletApi.framework */; };
+		FA354DF125651E8D009F6906 /* WalletApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEF25651E8D009F6906 /* WalletApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FADA3790255087B800FA910F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA378F255087B800FA910F /* AppDelegate.swift */; };
 		FADA3794255087B800FA910F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA3793255087B800FA910F /* ViewController.swift */; };
 		FADA3797255087B800FA910F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA3795255087B800FA910F /* Main.storyboard */; };
@@ -27,7 +41,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA354DDF25651E13009F6906 /* CommonUI.framework in Embed Frameworks */,
+				FA354DEB25651E4D009F6906 /* CardDetailUI.framework in Embed Frameworks */,
 				FA1033632552009F0014825B /* WRootUI.framework in Embed Frameworks */,
+				FA354DE525651E45009F6906 /* MainUI.framework in Embed Frameworks */,
+				FA354DF125651E8D009F6906 /* WalletApi.framework in Embed Frameworks */,
+				FA354DE225651E2C009F6906 /* WalletCore.framework in Embed Frameworks */,
+				FA354DE825651E4A009F6906 /* CardFilterUI.framework in Embed Frameworks */,
+				FA354DEE25651E6D009F6906 /* WalletPresentationData.framework in Embed Frameworks */,
 				FADA380625509D6700FA910F /* RSThemeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -43,6 +64,13 @@
 		FA1033392551F0F60014825B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FA10333D2551F1290014825B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA1033612552009F0014825B /* WRootUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WRootUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DDD25651E13009F6906 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DE025651E2C009F6906 /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DE325651E45009F6906 /* MainUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MainUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DE625651E4A009F6906 /* CardFilterUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardFilterUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DE925651E4D009F6906 /* CardDetailUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardDetailUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DEC25651E6D009F6906 /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA354DEF25651E8D009F6906 /* WalletApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC28C6E2554A367009267A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FADA378C255087B800FA910F /* WalletChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA378F255087B800FA910F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +89,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1033622552009F0014825B /* WRootUI.framework in Frameworks */,
+				FA354DDE25651E13009F6906 /* CommonUI.framework in Frameworks */,
+				FA354DE725651E4A009F6906 /* CardFilterUI.framework in Frameworks */,
 				FADA380525509D6700FA910F /* RSThemeKit.framework in Frameworks */,
+				FA354DF025651E8D009F6906 /* WalletApi.framework in Frameworks */,
+				FA354DED25651E6D009F6906 /* WalletPresentationData.framework in Frameworks */,
+				FA354DE425651E45009F6906 /* MainUI.framework in Frameworks */,
+				FA354DEA25651E4D009F6906 /* CardDetailUI.framework in Frameworks */,
+				FA354DE125651E2C009F6906 /* WalletCore.framework in Frameworks */,
 				E573CC887EDE134BAEC778F6 /* Pods_WalletChallengeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +107,13 @@
 		7216A17120B7EA15D1989E67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA354DEF25651E8D009F6906 /* WalletApi.framework */,
+				FA354DEC25651E6D009F6906 /* WalletPresentationData.framework */,
+				FA354DE925651E4D009F6906 /* CardDetailUI.framework */,
+				FA354DE625651E4A009F6906 /* CardFilterUI.framework */,
+				FA354DE325651E45009F6906 /* MainUI.framework */,
+				FA354DE025651E2C009F6906 /* WalletCore.framework */,
+				FA354DDD25651E13009F6906 /* CommonUI.framework */,
 				FA1033612552009F0014825B /* WRootUI.framework */,
 				FADA380425509D6700FA910F /* RSThemeKit.framework */,
 				F376681FEC47501808A73C2A /* Pods_WalletChallengeApp.framework */,
@@ -396,6 +438,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WalletChallengeApp/WalletChallengeApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VY2ZB4KW5J;
@@ -408,6 +452,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rs.WalletChallengeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -420,6 +466,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WalletChallengeApp/WalletChallengeApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VY2ZB4KW5J;
@@ -432,6 +480,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rs.WalletChallengeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

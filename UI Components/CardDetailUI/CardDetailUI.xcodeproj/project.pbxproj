@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA36231925647CD40076C4C7 /* CardDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA36231825647CD40076C4C7 /* CardDetailHeaderView.xib */; };
+		FA36231D256487E00076C4C7 /* CardDetailViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36231C256487E00076C4C7 /* CardDetailViewController+UICollectionViewDataSource.swift */; };
+		FA36231F256487F10076C4C7 /* CardDetailViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36231E256487F10076C4C7 /* CardDetailViewController+UICollectionViewDelegate.swift */; };
+		FA6A80982565C12500E958AA /* BarcodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A80962565C12500E958AA /* BarcodeTableViewCell.swift */; };
+		FA6A80992565C12500E958AA /* BarcodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6A80972565C12500E958AA /* BarcodeTableViewCell.xib */; };
+		FA6A80A02567166A00E958AA /* CardDetailTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A809E2567166A00E958AA /* CardDetailTextTableViewCell.swift */; };
+		FA6A80A12567166A00E958AA /* CardDetailTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6A809F2567166A00E958AA /* CardDetailTextTableViewCell.xib */; };
 		FA77F0BC255F334C00E8906C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA77F0BB255F334C00E8906C /* Images.xcassets */; };
 		FA86C268255B317B00EBA974 /* CardDetailUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FA86C266255B317B00EBA974 /* CardDetailUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA86C273255B344100EBA974 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C271255B344100EBA974 /* CardDetailViewController.swift */; };
@@ -17,6 +24,10 @@
 		FA86C280255B3BD000EBA974 /* CardDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C27F255B3BD000EBA974 /* CardDetailInteractor.swift */; };
 		FA86C282255B45AF00EBA974 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86C281255B45AF00EBA974 /* CommonUI.framework */; };
 		FA86C283255B45AF00EBA974 /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA86C281255B45AF00EBA974 /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FADD10952564709200BC18D0 /* CardDetailViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD10942564709200BC18D0 /* CardDetailViewController+UITableViewDataSource.swift */; };
+		FADD1097256470A200BC18D0 /* CardDetailViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD1096256470A200BC18D0 /* CardDetailViewController+UITableViewDelegate.swift */; };
+		FADD109A256473DA00BC18D0 /* CardDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD1099256473DA00BC18D0 /* CardDetailItem.swift */; };
+		FADD109C256475D900BC18D0 /* CardDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD109B256475D900BC18D0 /* CardDetailHeaderView.swift */; };
 		FAF8ED9325607AE500537719 /* WalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8ED9225607AE500537719 /* WalletCore.framework */; };
 		FAF8ED9425607AE500537719 /* WalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8ED9225607AE500537719 /* WalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAF8ED9625607AEF00537719 /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8ED9525607AEF00537719 /* WalletPresentationData.framework */; };
@@ -41,6 +52,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA36231825647CD40076C4C7 /* CardDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDetailHeaderView.xib; sourceTree = "<group>"; };
+		FA36231C256487E00076C4C7 /* CardDetailViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		FA36231E256487F10076C4C7 /* CardDetailViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		FA6A80962565C12500E958AA /* BarcodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeTableViewCell.swift; sourceTree = "<group>"; };
+		FA6A80972565C12500E958AA /* BarcodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeTableViewCell.xib; sourceTree = "<group>"; };
+		FA6A809E2567166A00E958AA /* CardDetailTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailTextTableViewCell.swift; sourceTree = "<group>"; };
+		FA6A809F2567166A00E958AA /* CardDetailTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDetailTextTableViewCell.xib; sourceTree = "<group>"; };
 		FA77F0BB255F334C00E8906C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA86C263255B317B00EBA974 /* CardDetailUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardDetailUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA86C266255B317B00EBA974 /* CardDetailUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardDetailUI.h; sourceTree = "<group>"; };
@@ -51,6 +69,10 @@
 		FA86C27D255B3B7B00EBA974 /* CardDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailBuilder.swift; sourceTree = "<group>"; };
 		FA86C27F255B3BD000EBA974 /* CardDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailInteractor.swift; sourceTree = "<group>"; };
 		FA86C281255B45AF00EBA974 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADD10942564709200BC18D0 /* CardDetailViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		FADD1096256470A200BC18D0 /* CardDetailViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		FADD1099256473DA00BC18D0 /* CardDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailItem.swift; sourceTree = "<group>"; };
+		FADD109B256475D900BC18D0 /* CardDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailHeaderView.swift; sourceTree = "<group>"; };
 		FAF8ED9225607AE500537719 /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF8ED9525607AEF00537719 /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +92,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA36231A256487BC0076C4C7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FADD10942564709200BC18D0 /* CardDetailViewController+UITableViewDataSource.swift */,
+				FADD1096256470A200BC18D0 /* CardDetailViewController+UITableViewDelegate.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FA36231B256487C70076C4C7 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FA36231C256487E00076C4C7 /* CardDetailViewController+UICollectionViewDataSource.swift */,
+				FA36231E256487F10076C4C7 /* CardDetailViewController+UICollectionViewDelegate.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		FA6A809A2565C1A200E958AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A80962565C12500E958AA /* BarcodeTableViewCell.swift */,
+				FA6A80972565C12500E958AA /* BarcodeTableViewCell.xib */,
+				FA6A809E2567166A00E958AA /* CardDetailTextTableViewCell.swift */,
+				FA6A809F2567166A00E958AA /* CardDetailTextTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		FA77F0BD255F335200E8906C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +160,9 @@
 		FA86C26E255B33A900EBA974 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FADD10932564707400BC18D0 /* Extensions */,
 				FA86C26F255B33ED00EBA974 /* Controller */,
+				FADD1098256473C300BC18D0 /* Model */,
 				FA86C270255B340700EBA974 /* View */,
 			);
 			path = Source;
@@ -128,7 +181,10 @@
 		FA86C270255B340700EBA974 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A809A2565C1A200E958AA /* Cells */,
 				FA86C272255B344100EBA974 /* CardDetailViewController.xib */,
+				FADD109B256475D900BC18D0 /* CardDetailHeaderView.swift */,
+				FA36231825647CD40076C4C7 /* CardDetailHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +198,23 @@
 				FA86C276255B35CA00EBA974 /* RSThemeKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FADD10932564707400BC18D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA36231B256487C70076C4C7 /* CollectionView */,
+				FA36231A256487BC0076C4C7 /* TableView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FADD1098256473C300BC18D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADD1099256473DA00BC18D0 /* CardDetailItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +288,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6A80992565C12500E958AA /* BarcodeTableViewCell.xib in Resources */,
 				FA86C274255B344100EBA974 /* CardDetailViewController.xib in Resources */,
+				FA6A80A12567166A00E958AA /* CardDetailTextTableViewCell.xib in Resources */,
+				FA36231925647CD40076C4C7 /* CardDetailHeaderView.xib in Resources */,
 				FA77F0BC255F334C00E8906C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,8 +304,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA86C27E255B3B7B00EBA974 /* CardDetailBuilder.swift in Sources */,
+				FADD1097256470A200BC18D0 /* CardDetailViewController+UITableViewDelegate.swift in Sources */,
+				FA36231F256487F10076C4C7 /* CardDetailViewController+UICollectionViewDelegate.swift in Sources */,
+				FADD109C256475D900BC18D0 /* CardDetailHeaderView.swift in Sources */,
+				FA36231D256487E00076C4C7 /* CardDetailViewController+UICollectionViewDataSource.swift in Sources */,
 				FA86C280255B3BD000EBA974 /* CardDetailInteractor.swift in Sources */,
+				FA6A80982565C12500E958AA /* BarcodeTableViewCell.swift in Sources */,
+				FADD10952564709200BC18D0 /* CardDetailViewController+UITableViewDataSource.swift in Sources */,
 				FA86C273255B344100EBA974 /* CardDetailViewController.swift in Sources */,
+				FADD109A256473DA00BC18D0 /* CardDetailItem.swift in Sources */,
+				FA6A80A02567166A00E958AA /* CardDetailTextTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

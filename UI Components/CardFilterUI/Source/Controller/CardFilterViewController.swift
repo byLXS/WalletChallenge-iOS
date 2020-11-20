@@ -13,7 +13,7 @@ open class CardFilterViewController: ThemeViewController {
     @IBOutlet weak var collectionView: ThemeCollectionView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var cardTypeSegmentedControl: UISegmentedControl!
-    @IBOutlet weak var applyButton: UIButton!
+    @IBOutlet weak var applyButton: SuperEllipseButton!
 
     var interactor: CardFilterInteractorProtocol?
     var router: CardFilterRouter?
@@ -78,7 +78,6 @@ open class CardFilterViewController: ThemeViewController {
     }
     
     func setupApplyButton() {
-        applyButton.superEllipse(cornerRadius: 14)
         applyButton.setTitle(Strings.apply, for: .normal)
         applyButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         applyButton.addTarget(self, action: #selector(apply), for: .touchUpInside)

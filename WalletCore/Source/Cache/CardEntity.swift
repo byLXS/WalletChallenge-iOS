@@ -10,6 +10,7 @@ public class CardEntity: NSManagedObject, CDHelperEntity {
     @NSManaged public var kind: String
     @NSManaged public var texture: TextureEntity
     @NSManaged public var barcode: BarcodeEntity
+    @NSManaged public var issuer: IssuerEntity
     @NSManaged public var loyaltyCard: LoyaltyCardEntity?
     @NSManaged public var certificateCard: CertificateCardEntity?
     
@@ -27,11 +28,11 @@ extension CardEntity {
         let cardType = CardType(rawValue: kind) ?? .none
         switch cardType {
         case .loyalty:
-            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), grade: loyaltyCard?.grade ?? "", balance: Int(truncating: loyaltyCard?.balance ?? 0))
+            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), grade: loyaltyCard?.grade ?? "", balance: Int(truncating: loyaltyCard?.balance ?? 0))
         case .certificate:
-            return CertificateCard(number: number, kind: .certificate, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), value: certificateCard?.value.intValue ?? 0, expireDate: certificateCard?.expireDate ?? "")
+            return CertificateCard(number: number, kind: .certificate, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), value: certificateCard?.value.intValue ?? 0, expireDate: certificateCard?.expireDate ?? "")
         case .none:
-            return DefaultCard(number: number, kind: .none, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData())
+            return DefaultCard(number: number, kind: .none, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData())
         }
     }
 }
@@ -69,6 +70,7 @@ extension Card {
         entity.number = number
         entity.texture = texture.convertResponseInEntity()
         entity.barcode = barcode.convertResponseInEntity()
+        entity.issuer = issuer.convertResponseInEntity()
         return entity
     }
 }
