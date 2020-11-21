@@ -24,7 +24,8 @@ class MainInteractor: MainInteractorProtocol {
     
     init(accountWorker: AccountWorker) {
         self.accountWorker = accountWorker
-        self.cardFilter = CardFilter(cardPresentationStyle: .medium, cardType: .all)
+        let categoryList: [CategoryItem] = [CategoryItem(type: .appliances), CategoryItem(type: .buildingMaterials), CategoryItem(type: .goods)]
+        self.cardFilter = CardFilter(cardPresentationStyle: .medium, cardType: .all, selectedCategoryItems: categoryList, isSelected: false)
     }
     
     func fetchCardList() {
@@ -46,6 +47,24 @@ class MainInteractor: MainInteractorProtocol {
         case .loyalty:
             self.cardList = allCardList.filter({$0.kind == .loyalty})
         }
+        
+        var newCardList: [Card] = []
+        
+        if cardFilter.selectedCategoryItems.contains(where: {$0.isSelected == true}) {
+            for selectedCategoryItem in cardFilter.selectedCategoryItems {
+                if selectedCategoryItem.isSelected {
+                    newCardList.append(contentsOf: self.cardList.filter({$0.issuer.categories.contains(selectedCategoryItem.type)}))
+                }
+            }
+        } else {
+            newCardList = self.cardList
+        }
+        
+        
+        
+        self.cardList = newCardList
+        
+        
     }
     
     func numberOfItemsInSection(section: Int) -> Int {

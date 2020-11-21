@@ -45,6 +45,6 @@ class CardStyleView: SuperEllipseView {
     }
     
     func decorator(theme: ThemeModel) {
-        backgroundColor = theme.separatorColor
+        backgroundColor = theme.cellBackgroundColor
     }
 }

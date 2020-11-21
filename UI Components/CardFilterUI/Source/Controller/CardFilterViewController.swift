@@ -9,8 +9,10 @@ protocol CardFilterDisplayLogic {
 
 open class CardFilterViewController: ThemeViewController {
     
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var collectionView: ThemeCollectionView!
+    @IBOutlet weak var categoryCollectionView: ThemeCollectionView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var cardTypeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var applyButton: SuperEllipseButton!
@@ -27,9 +29,12 @@ open class CardFilterViewController: ThemeViewController {
         setupApplyButton()
         setupStackView()
         setupCollectionView()
+        setupCategoryCollectionView()
         setupCardTypeSegmentedControl()
         cancelButton.setImage(getImage(named: "cancel_circle_image", anyClass: CardLargeCollectionViewCell.self), for: .normal)
         cancelButton.addTarget(self, action: #selector(dismissController), for: .touchUpInside)
+        clearButton.addTarget(self, action: #selector(clearFilter), for: .touchUpInside)
+        clearButton.setTitle(Strings.clear, for: .normal)
         if #available(iOS 13.0, *) {
             overrideUserInterfaceStyle = .dark
             collectionView.overrideUserInterfaceStyle = .dark
@@ -55,9 +60,11 @@ open class CardFilterViewController: ThemeViewController {
 
     open override func decorator(theme: ThemeModel) {
         super.decorator(theme: theme)
+        clearButton.setTitleColor(theme.tintColor, for: .normal)
         applyButton.backgroundColor = theme.tintColor
         applyButton.setTitleColor(.white, for: .normal)
         collectionView.backgroundColor = theme.backgroundColor
+        categoryCollectionView.backgroundColor = theme.backgroundColor
         setupStackView()
     }
     
@@ -84,6 +91,7 @@ open class CardFilterViewController: ThemeViewController {
     }
     
     func setupCollectionView() {
+        categoryCollectionView.tag = CardFilterCollectionType.style.rawValue
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = false
@@ -93,6 +101,18 @@ open class CardFilterViewController: ThemeViewController {
             layout.minimumLineSpacing = 0
         }
         collectionView.isPagingEnabled = true
+    }
+    
+    func setupCategoryCollectionView() {
+        categoryCollectionView.tag = CardFilterCollectionType.category.rawValue
+        categoryCollectionView.dataSource = self
+        categoryCollectionView.delegate = self
+        categoryCollectionView.showsHorizontalScrollIndicator = false
+        categoryCollectionView.register(CategoryCollectionViewCell.nib, forCellWithReuseIdentifier: CategoryCollectionViewCell.name)
+        if let layout = categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+            layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        }
     }
     
     func setupCardTypeSegmentedControl() {
@@ -110,11 +130,20 @@ open class CardFilterViewController: ThemeViewController {
         cardTypeSegmentedControl.selectedSegmentIndex = selectedIndex
     }
     
-    @objc func apply() {
+    @objc func clearFilter() {
         guard let interactor = interactor else { return }
+        self.interactor?.clearFilter()
         self.delegate?.apply(filter: interactor.cardFilter)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @objc func apply() {
+        guard let interactor = interactor else { return }
+        self.interactor?.cardFilter.isSelected = true
+        self.delegate?.apply(filter: interactor.cardFilter)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
     
     @objc func dismissController() {

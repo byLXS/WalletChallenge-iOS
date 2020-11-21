@@ -37,7 +37,13 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
         case .certificate:
             if let certificateCard = card as? CertificateCard {
                 self.cardDetailItems.append(TextDetailItem(type: .certificateValue, value: "\(certificateCard.value)"))
-                self.cardDetailItems.append(TextDetailItem(type: .certificateExpireDate, value: "\(certificateCard.expireDate)"))
+                
+                var expireDate = ""
+                if let unix = Int(certificateCard.expireDate) {
+                    let date = Date(timeIntervalSince1970: TimeInterval(unix))
+                    expireDate = date.stringFromDate()
+                }
+                self.cardDetailItems.append(TextDetailItem(type: .certificateExpireDate, value: expireDate))
             }
             break
         case .loyalty:

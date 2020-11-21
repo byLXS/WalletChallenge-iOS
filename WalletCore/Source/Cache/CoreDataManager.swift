@@ -12,11 +12,11 @@ public class CoreDataManager {
     }
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let bundle = Bundle(identifier: "com.rs.WalletCore")!
-        let modelURL = bundle.url(forResource: "WalletDatabase", withExtension: "momd")!
+        var modelURL = Bundle(for: type(of: self)).url(forResource: "WalletDatabase", withExtension: "momd")!
         let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL)!
         
         let container = NSPersistentContainer(name: "WalletDatabase", managedObjectModel: managedObjectModel)
+        container.persistentStoreDescriptions.first?.shouldInferMappingModelAutomatically = false
         container.loadPersistentStores { (storeDescription, error) in
             
             if let err = error{

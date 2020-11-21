@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA40D722256867560098CA2A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40D720256867560098CA2A /* CategoryCollectionViewCell.swift */; };
+		FA40D723256867560098CA2A /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA40D721256867560098CA2A /* CategoryCollectionViewCell.xib */; };
+		FA40D7262568690D0098CA2A /* CardFilterCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40D7252568690D0098CA2A /* CardFilterCollectionType.swift */; };
 		FAF8EDBA256160ED00537719 /* CardFilterUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF8EDB8256160ED00537719 /* CardFilterUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF8EDC32561610D00537719 /* CardFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EDC12561610D00537719 /* CardFilterViewController.swift */; };
 		FAF8EDC42561610D00537719 /* CardFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF8EDC22561610D00537719 /* CardFilterViewController.xib */; };
@@ -44,6 +47,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA40D720256867560098CA2A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA40D721256867560098CA2A /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA40D7252568690D0098CA2A /* CardFilterCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterCollectionType.swift; sourceTree = "<group>"; };
 		FAF8EDB5256160ED00537719 /* CardFilterUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardFilterUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF8EDB8256160ED00537719 /* CardFilterUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardFilterUI.h; sourceTree = "<group>"; };
 		FAF8EDB9256160ED00537719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA40D724256868E00098CA2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA40D7252568690D0098CA2A /* CardFilterCollectionType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FAF8EDAB256160EC00537719 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +121,7 @@
 		FAF8EDC0256160F100537719 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FA40D724256868E00098CA2A /* Model */,
 				FAF8EDFA2561E56E00537719 /* Extensions */,
 				FAF8EDE62561B84D00537719 /* Controller */,
 				FAF8EDE72561B85200537719 /* View */,
@@ -142,6 +157,8 @@
 				FAF8EDC22561610D00537719 /* CardFilterViewController.xib */,
 				FAF8EE012561E73700537719 /* CardPresentationStyleCollectionViewCell.swift */,
 				FAF8EE022561E73700537719 /* CardPresentationStyleCollectionViewCell.xib */,
+				FA40D720256867560098CA2A /* CategoryCollectionViewCell.swift */,
+				FA40D721256867560098CA2A /* CategoryCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA40D723256867560098CA2A /* CategoryCollectionViewCell.xib in Resources */,
 				FAF8EE042561E73700537719 /* CardPresentationStyleCollectionViewCell.xib in Resources */,
 				FAF8EDC42561610D00537719 /* CardFilterViewController.xib in Resources */,
 			);
@@ -245,7 +263,9 @@
 				FAF8EDFC2561E59000537719 /* CardFilterViewController+UICollectionViewDataSource.swift in Sources */,
 				FAF8EDFE2561E59900537719 /* CardFilterViewController+UICollectionViewDelegate.swift in Sources */,
 				FAF8EE002561E5B100537719 /* CardFilterViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
+				FA40D722256867560098CA2A /* CategoryCollectionViewCell.swift in Sources */,
 				FAF8EDED2561C39200537719 /* CardFilterRouter.swift in Sources */,
+				FA40D7262568690D0098CA2A /* CardFilterCollectionType.swift in Sources */,
 				FAF8EDE92561BC6600537719 /* CardFilterInteractor.swift in Sources */,
 				FAF8EDC62561613400537719 /* CardFilterBuilder.swift in Sources */,
 			);

@@ -17,7 +17,7 @@ public class IssuerEntity: NSManagedObject, CDHelperEntity {
 
 extension IssuerEntity {
     public func convertEntityInPresentationData() -> Issuer {
-        return Issuer(name: name, categories: categories)
+        return Issuer(name: name, categories: categories.map({(CategoryType(rawValue: $0) ?? .unknown)}))
     }
 }
 
@@ -26,7 +26,7 @@ extension Issuer {
     public func convertResponseInEntity() -> IssuerEntity {
         let entity = IssuerEntity.newInBackgroundQueue()
         entity.name = name
-        entity.categories = categories
+        entity.categories = categories.map({$0.rawValue})
         return entity
     }
 }

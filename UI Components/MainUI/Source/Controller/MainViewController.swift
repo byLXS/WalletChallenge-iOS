@@ -59,6 +59,7 @@ public class MainViewController: ThemeViewController {
     }
     
     func setupCollectionView() {
+        collectionView.contentInset.bottom = 30
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(CardLargeCollectionViewCell.self, forCellWithReuseIdentifier: CardLargeCollectionViewCell.identifier)

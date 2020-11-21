@@ -36,14 +36,30 @@ public struct Barcode {
 
 public struct Issuer {
     public let name: String
-    public let categories: [String]
+    public let categories: [CategoryType]
     
-    public init(name: String, categories: [String]) {
+    public init(name: String, categories: [CategoryType]) {
         self.name = name
         self.categories = categories
     }
 }
 
+
+public enum CategoryType: String {
+    case appliances = "appliances"
+    case buildingMaterials = "buildingMaterials"
+    case goods = "goods"
+    case unknown
+    
+    public var title: String {
+        switch self {
+        case .appliances: return Strings.appliances
+        case .buildingMaterials: return Strings.buildingMaterials
+        case .goods: return Strings.goods
+        case .unknown: return ""
+        }
+    }
+}
 
 public struct LoyaltyCard: Card {
     public var number: String

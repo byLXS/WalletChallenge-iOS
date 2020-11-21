@@ -9,6 +9,16 @@ public enum CardPresentationStyle {
     case medium
 }
 
+public class CategoryItem {
+    public var type: CategoryType
+    public var isSelected: Bool
+    
+    public init(type: CategoryType, isSelected: Bool = false) {
+        self.type = type
+        self.isSelected = isSelected
+    }
+}
+
 public enum CardFilterType: Int {
     case all
     case loyalty
@@ -29,9 +39,13 @@ public enum CardFilterType: Int {
 public struct CardFilter {
     public var cardPresentationStyle: CardPresentationStyle
     public var cardType: CardFilterType
+    public var selectedCategoryItems: [CategoryItem]
+    public var isSelected: Bool
     
-    public init(cardPresentationStyle: CardPresentationStyle, cardType: CardFilterType) {
+    public init(cardPresentationStyle: CardPresentationStyle, cardType: CardFilterType, selectedCategoryItems: [CategoryItem], isSelected: Bool) {
         self.cardPresentationStyle = cardPresentationStyle
         self.cardType = cardType
+        self.selectedCategoryItems = selectedCategoryItems
+        self.isSelected = isSelected
     }
 }
