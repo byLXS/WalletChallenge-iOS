@@ -10,6 +10,7 @@
 		FA40D722256867560098CA2A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40D720256867560098CA2A /* CategoryCollectionViewCell.swift */; };
 		FA40D723256867560098CA2A /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA40D721256867560098CA2A /* CategoryCollectionViewCell.xib */; };
 		FA40D7262568690D0098CA2A /* CardFilterCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40D7252568690D0098CA2A /* CardFilterCollectionType.swift */; };
+		FA64F2B9256997FA002974FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA64F2B8256997FA002974FE /* Images.xcassets */; };
 		FAF8EDBA256160ED00537719 /* CardFilterUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF8EDB8256160ED00537719 /* CardFilterUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF8EDC32561610D00537719 /* CardFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8EDC12561610D00537719 /* CardFilterViewController.swift */; };
 		FAF8EDC42561610D00537719 /* CardFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF8EDC22561610D00537719 /* CardFilterViewController.xib */; };
@@ -50,6 +51,7 @@
 		FA40D720256867560098CA2A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA40D721256867560098CA2A /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA40D7252568690D0098CA2A /* CardFilterCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFilterCollectionType.swift; sourceTree = "<group>"; };
+		FA64F2B8256997FA002974FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAF8EDB5256160ED00537719 /* CardFilterUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardFilterUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF8EDB8256160ED00537719 /* CardFilterUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardFilterUI.h; sourceTree = "<group>"; };
 		FAF8EDB9256160ED00537719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,9 +93,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FA64F2B7256997E6002974FE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FA64F2B8256997FA002974FE /* Images.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		FAF8EDAB256160EC00537719 = {
 			isa = PBXGroup;
 			children = (
+				FA64F2B7256997E6002974FE /* Resource */,
 				FAF8EDC0256160F100537719 /* Source */,
 				FAF8EDB7256160ED00537719 /* CardFilterUI */,
 				FAF8EDB6256160ED00537719 /* Products */,
@@ -245,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA40D723256867560098CA2A /* CategoryCollectionViewCell.xib in Resources */,
+				FA64F2B9256997FA002974FE /* Images.xcassets in Resources */,
 				FAF8EE042561E73700537719 /* CardPresentationStyleCollectionViewCell.xib in Resources */,
 				FAF8EDC42561610D00537719 /* CardFilterViewController.xib in Resources */,
 			);

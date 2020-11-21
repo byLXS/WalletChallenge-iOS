@@ -8,7 +8,9 @@ class CategoryCollectionViewCell: ThemeCollectionCell, NibLoadable {
     
     var selectedItem = false {
         didSet {
-            decorator(theme: ThemeManager.currentTheme)
+            let themeType = ThemeType.dark
+            let darkTheme = themeType.getDarkTheme()
+            decorator(theme: darkTheme)
         }
     }
 

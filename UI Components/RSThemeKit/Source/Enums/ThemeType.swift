@@ -64,7 +64,7 @@ public enum ThemeType {
         return theme
     }
     
-    private func getDarkTheme() -> ThemeModel {
+    public func getDarkTheme() -> ThemeModel {
         let theme = ThemeModel(identifier: identifier(), textColor: UIColor.whiteColor, detailTextColor: UIColor.grayDarkColor, tintColor: UIColor.blueDarkColor, switchTintColor: UIColor.greenDarkColor, backgroundColor: UIColor.darkColor, tableViewColor: UIColor.darkColor, cellBackgroundColor: UIColor.gray6DarkColor, separatorColor: UIColor.graySeparatorDarkColor, navigationBarColor: UIColor.darkColor, statusBarStyle: .lightContent, indicatorStyle: .white, selectionStyleColor: UIColor.gray5DarkColor, accessoryTypeViewColor: UIColor.gray2DarkColor, switchBackgroundColor: UIColor.gray4DarkColor, keyboardAppearance: .dark, blurEffect: .init(style: .dark), stackViewDisabled: UIColor.grayDarkColor)
         return theme
     }

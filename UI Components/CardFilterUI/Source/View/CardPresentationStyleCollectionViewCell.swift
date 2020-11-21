@@ -41,7 +41,9 @@ class CardStyleView: SuperEllipseView {
     }
     
     @objc func changedTheme() {
-        decorator(theme: ThemeManager.currentTheme)
+        let themeType = ThemeType.dark
+        let darkTheme = themeType.getDarkTheme()
+        decorator(theme: darkTheme)
     }
     
     func decorator(theme: ThemeModel) {

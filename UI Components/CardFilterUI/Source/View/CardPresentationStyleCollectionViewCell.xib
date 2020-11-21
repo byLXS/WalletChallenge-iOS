@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="we1-9p-JTF" userLabel="MediumView" customClass="CardStyleView" customModule="CardFilterUI" customModuleProvider="target">
-                        <rect key="frame" x="5" y="5" width="358" height="140"/>
+                        <rect key="frame" x="0.0" y="5" width="368" height="140"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuG-Hw-39h" userLabel="SmallView">
@@ -122,8 +122,8 @@
                 <constraint firstItem="OuG-Hw-39h" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="GgB-sE-pUz"/>
                 <constraint firstItem="we1-9p-JTF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="JAF-QQ-FWe"/>
                 <constraint firstAttribute="bottom" secondItem="OuG-Hw-39h" secondAttribute="bottom" id="P62-wM-1dh"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="we1-9p-JTF" secondAttribute="trailing" constant="5" id="YPJ-Ku-75C"/>
-                <constraint firstItem="we1-9p-JTF" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="5" id="beN-Fh-B9t"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="we1-9p-JTF" secondAttribute="trailing" id="YPJ-Ku-75C"/>
+                <constraint firstItem="we1-9p-JTF" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="beN-Fh-B9t"/>
                 <constraint firstAttribute="bottom" secondItem="we1-9p-JTF" secondAttribute="bottom" constant="5" id="xQS-qP-u8u"/>
             </constraints>
             <size key="customSize" width="368" height="213"/>

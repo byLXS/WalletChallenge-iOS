@@ -31,7 +31,7 @@ open class CardFilterViewController: ThemeViewController {
         setupCollectionView()
         setupCategoryCollectionView()
         setupCardTypeSegmentedControl()
-        cancelButton.setImage(getImage(named: "cancel_circle_image", anyClass: CardLargeCollectionViewCell.self), for: .normal)
+        cancelButton.setImage(getImage(named: "cancel_image", anyClass: type(of: self)), for: .normal)
         cancelButton.addTarget(self, action: #selector(dismissController), for: .touchUpInside)
         clearButton.addTarget(self, action: #selector(clearFilter), for: .touchUpInside)
         clearButton.setTitle(Strings.clear, for: .normal)
@@ -59,12 +59,14 @@ open class CardFilterViewController: ThemeViewController {
     }
 
     open override func decorator(theme: ThemeModel) {
-        super.decorator(theme: theme)
-        clearButton.setTitleColor(theme.tintColor, for: .normal)
-        applyButton.backgroundColor = theme.tintColor
+        let themeType = ThemeType.dark
+        let darkTheme = themeType.getDarkTheme()
+        super.decorator(theme: darkTheme)
+        clearButton.setTitleColor(darkTheme.tintColor, for: .normal)
+        applyButton.backgroundColor = darkTheme.tintColor
         applyButton.setTitleColor(.white, for: .normal)
-        collectionView.backgroundColor = theme.backgroundColor
-        categoryCollectionView.backgroundColor = theme.backgroundColor
+        collectionView.backgroundColor = darkTheme.backgroundColor
+        categoryCollectionView.backgroundColor = darkTheme.backgroundColor
         setupStackView()
     }
     
@@ -76,8 +78,9 @@ open class CardFilterViewController: ThemeViewController {
             view.heightAnchor.constraint(equalToConstant: 7.5).isActive = true
             view.widthAnchor.constraint(equalToConstant: 7.5).isActive = true
             let isSelected = value == interactor?.cardFilter.cardPresentationStyle
-            let currentTheme = ThemeManager.currentTheme
-            view.backgroundColor = isSelected ? currentTheme.textColor : currentTheme.stackViewDisabled
+            let themeType = ThemeType.dark
+            let darkTheme = themeType.getDarkTheme()
+            view.backgroundColor = isSelected ? darkTheme.textColor : darkTheme.stackViewDisabled
             view.layer.cornerRadius = 4
             view.clipsToBounds = true
             self.stackView.addArrangedSubview(view)
