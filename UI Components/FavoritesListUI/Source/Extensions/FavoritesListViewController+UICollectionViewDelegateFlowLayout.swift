@@ -7,7 +7,7 @@ private let screenWidth = UIScreen.main.bounds.maxX
 private let smallSize = CGSize(width: (screenWidth - 3 * spacing) / 2, height: CardLayout.height)
 private let mediumSize = CGSize(width: CardLayout.width, height: CardLayout.height)
 
-extension FavoritesListViewController: UICollectionViewDelegateFlowLayout {
+extension FavouritesListViewController: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let style = interactor?.cardFilter.cardPresentationStyle ?? .medium

@@ -15,7 +15,7 @@ class SettingsRouter {
     
     func pushFavouritesList() {
         guard let viewController = viewController, let accountWorker = viewController.interactor?.accountWorker else { return }
-        let vc = FavoritesListBuilder.getScreen(cardList: accountWorker.account.cardList.filter({$0.isFavourites == true}))
+        let vc = FavouritesListBuilder.getScreen(cardList: accountWorker.account.cardList.filter({$0.isFavourites == true}))
         self.viewController?.navigationController?.pushViewController(vc, animated: true)
         UIScreen.main.setBrightness(to: 10, duration: 0.6, ticksPerSecond: 120)
     }

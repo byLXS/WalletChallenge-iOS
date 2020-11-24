@@ -19,13 +19,13 @@ protocol CardDetailInteractorProtocol {
 class CardDetailInteractor: CardDetailInteractorProtocol {
     
     var card: Card
-    
     var cardDetailItems: [CardDetailItem] = []
-    
     var selectedCardSideType: CardSideType = .front(path: "")
+    var isShowTopBar: Bool
     
-    init(card: Card) {
+    init(card: Card, isShowTopBar: Bool) {
         self.card = card
+        self.isShowTopBar = isShowTopBar
         selectedCardSideType = .front(path: card.texture.front)
         setupDisplayItems()
     }

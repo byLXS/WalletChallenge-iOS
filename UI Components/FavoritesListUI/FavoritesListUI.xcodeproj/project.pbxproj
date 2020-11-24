@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA9984CB256C802A0031FED4 /* FavoritesListUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9984C9256C802A0031FED4 /* FavoritesListUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA9984D8256C80A10031FED4 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984D6256C80A10031FED4 /* FavoritesListViewController.swift */; };
-		FA9984D9256C80A10031FED4 /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9984D7256C80A10031FED4 /* FavoritesListViewController.xib */; };
+		FA9984D8256C80A10031FED4 /* FavouritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984D6256C80A10031FED4 /* FavouritesListViewController.swift */; };
+		FA9984D9256C80A10031FED4 /* FavouritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9984D7256C80A10031FED4 /* FavouritesListViewController.xib */; };
 		FA9984DD256C81210031FED4 /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984DC256C81210031FED4 /* WalletPresentationData.framework */; };
 		FA9984DE256C81210031FED4 /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984DC256C81210031FED4 /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA9984E3256C82050031FED4 /* FavoritesListViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984E2256C82050031FED4 /* FavoritesListViewController+UICollectionViewDelegate.swift */; };
@@ -17,11 +17,11 @@
 		FA9984E6256C82210031FED4 /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984E4256C82210031FED4 /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA9984E9256C82800031FED4 /* RSThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984E8256C82800031FED4 /* RSThemeKit.framework */; };
 		FA9984EA256C82800031FED4 /* RSThemeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984E8256C82800031FED4 /* RSThemeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA9984EC256C82B20031FED4 /* FavoritesListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984EB256C82B20031FED4 /* FavoritesListBuilder.swift */; };
-		FA9984EE256C84030031FED4 /* FavoritesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984ED256C84030031FED4 /* FavoritesListInteractor.swift */; };
+		FA9984EC256C82B20031FED4 /* FavouritesListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984EB256C82B20031FED4 /* FavouritesListBuilder.swift */; };
+		FA9984EE256C84030031FED4 /* FavouritesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984ED256C84030031FED4 /* FavouritesListInteractor.swift */; };
 		FA9984F0256C87A20031FED4 /* WalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984EF256C87A20031FED4 /* WalletCore.framework */; };
 		FA9984F1256C87A20031FED4 /* WalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984EF256C87A20031FED4 /* WalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA9984F4256C88020031FED4 /* FavoritesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984F3256C88020031FED4 /* FavoritesListRouter.swift */; };
+		FA9984F4256C88020031FED4 /* FavouritesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984F3256C88020031FED4 /* FavouritesListRouter.swift */; };
 		FA9984F6256C883F0031FED4 /* CardDetailUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984F5256C883F0031FED4 /* CardDetailUI.framework */; };
 		FA9984F7256C883F0031FED4 /* CardDetailUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984F5256C883F0031FED4 /* CardDetailUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA9984F9256C88650031FED4 /* FavoritesListViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984F8256C88650031FED4 /* FavoritesListViewController+UICollectionViewDataSource.swift */; };
@@ -53,17 +53,17 @@
 		FA9984C6256C802A0031FED4 /* FavoritesListUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavoritesListUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984C9256C802A0031FED4 /* FavoritesListUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesListUI.h; sourceTree = "<group>"; };
 		FA9984CA256C802A0031FED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA9984D6256C80A10031FED4 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
-		FA9984D7256C80A10031FED4 /* FavoritesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesListViewController.xib; sourceTree = "<group>"; };
+		FA9984D6256C80A10031FED4 /* FavouritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListViewController.swift; sourceTree = "<group>"; };
+		FA9984D7256C80A10031FED4 /* FavouritesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesListViewController.xib; sourceTree = "<group>"; };
 		FA9984DC256C81210031FED4 /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984E2256C82050031FED4 /* FavoritesListViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesListViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		FA9984E4256C82210031FED4 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984E8256C82800031FED4 /* RSThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9984EB256C82B20031FED4 /* FavoritesListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListBuilder.swift; sourceTree = "<group>"; };
-		FA9984ED256C84030031FED4 /* FavoritesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListInteractor.swift; sourceTree = "<group>"; };
+		FA9984EB256C82B20031FED4 /* FavouritesListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListBuilder.swift; sourceTree = "<group>"; };
+		FA9984ED256C84030031FED4 /* FavouritesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListInteractor.swift; sourceTree = "<group>"; };
 		FA9984EF256C87A20031FED4 /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984F2256C87A80031FED4 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9984F3256C88020031FED4 /* FavoritesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListRouter.swift; sourceTree = "<group>"; };
+		FA9984F3256C88020031FED4 /* FavouritesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListRouter.swift; sourceTree = "<group>"; };
 		FA9984F5256C883F0031FED4 /* CardDetailUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardDetailUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984F8256C88650031FED4 /* FavoritesListViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesListViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		FA998500256C8AF80031FED4 /* FavoritesListViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesListViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
@@ -151,10 +151,10 @@
 		FA9984E1256C81E30031FED4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA9984D6256C80A10031FED4 /* FavoritesListViewController.swift */,
-				FA9984ED256C84030031FED4 /* FavoritesListInteractor.swift */,
-				FA9984F3256C88020031FED4 /* FavoritesListRouter.swift */,
-				FA9984EB256C82B20031FED4 /* FavoritesListBuilder.swift */,
+				FA9984D6256C80A10031FED4 /* FavouritesListViewController.swift */,
+				FA9984ED256C84030031FED4 /* FavouritesListInteractor.swift */,
+				FA9984F3256C88020031FED4 /* FavouritesListRouter.swift */,
+				FA9984EB256C82B20031FED4 /* FavouritesListBuilder.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 		FA9984E7256C82270031FED4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA9984D7256C80A10031FED4 /* FavoritesListViewController.xib */,
+				FA9984D7256C80A10031FED4 /* FavouritesListViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9984D9256C80A10031FED4 /* FavoritesListViewController.xib in Resources */,
+				FA9984D9256C80A10031FED4 /* FavouritesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,12 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9984E3256C82050031FED4 /* FavoritesListViewController+UICollectionViewDelegate.swift in Sources */,
-				FA9984D8256C80A10031FED4 /* FavoritesListViewController.swift in Sources */,
+				FA9984D8256C80A10031FED4 /* FavouritesListViewController.swift in Sources */,
 				FA9984F9256C88650031FED4 /* FavoritesListViewController+UICollectionViewDataSource.swift in Sources */,
-				FA9984EE256C84030031FED4 /* FavoritesListInteractor.swift in Sources */,
-				FA9984EC256C82B20031FED4 /* FavoritesListBuilder.swift in Sources */,
+				FA9984EE256C84030031FED4 /* FavouritesListInteractor.swift in Sources */,
+				FA9984EC256C82B20031FED4 /* FavouritesListBuilder.swift in Sources */,
 				FA998501256C8AF80031FED4 /* FavoritesListViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
-				FA9984F4256C88020031FED4 /* FavoritesListRouter.swift in Sources */,
+				FA9984F4256C88020031FED4 /* FavouritesListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

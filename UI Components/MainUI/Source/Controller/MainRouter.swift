@@ -21,7 +21,7 @@ class MainRouter {
         guard let interactor = viewController?.interactor else { return }
         let card = interactor.getCard(indexPath: indexPath)
         guard let cardView = (viewController?.collectionView.cellForItem(at: indexPath) as? CardLargeCollectionViewCell)?.cardView else { return }
-        let vc = CardDetailBuilder.getScreen(card: card)
+        let vc = CardDetailBuilder.getScreen(card: card, isShowTopBar: true)
         viewController?.presentCard(vc, cardView: cardView)
     }
     

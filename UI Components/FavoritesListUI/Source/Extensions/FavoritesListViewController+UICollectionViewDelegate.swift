@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import CommonUI
 
-extension FavoritesListViewController: UICollectionViewDelegate {
+extension FavouritesListViewController: UICollectionViewDelegate {
     
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let cell = cell as? CardLargeCollectionViewCell else { return }

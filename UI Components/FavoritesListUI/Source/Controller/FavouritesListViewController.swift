@@ -3,12 +3,12 @@ import WalletPresentationData
 import CommonUI
 import RSThemeKit
 
-public class FavoritesListViewController: UIViewController {
+public class FavouritesListViewController: UIViewController {
     
     @IBOutlet weak var collectionView: ThemeCollectionView!
     
-    var interactor: FavoritesListInteractorProtocol?
-    var router: FavoritesListRouter?
+    var interactor: FavouritesListInteractorProtocol?
+    var router: FavouritesListRouter?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ public class FavoritesListViewController: UIViewController {
     }
     
     public init() {
-        super.init(nibName: "FavoritesListViewController", bundle: Bundle(for: FavoritesListViewController.self))
+        super.init(nibName: "FavoritesListViewController", bundle: Bundle(for: FavouritesListViewController.self))
     }
     
     required public init?(coder aDecoder: NSCoder) {

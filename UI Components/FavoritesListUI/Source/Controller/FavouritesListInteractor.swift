@@ -3,14 +3,14 @@ import WalletPresentationData
 import WalletCore
 import UIKit
 
-protocol FavoritesListInteractorProtocol {
+protocol FavouritesListInteractorProtocol {
     var cardFilter: CardFilter { get set }
     func numberOfItemsInSection(section: Int) -> Int
     func getCard(indexPath: IndexPath) -> Card
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ())
 }
 
-class FavoritesListInteractor: FavoritesListInteractorProtocol {
+class FavouritesListInteractor: FavouritesListInteractorProtocol {
     
     var cardFilter: CardFilter
     

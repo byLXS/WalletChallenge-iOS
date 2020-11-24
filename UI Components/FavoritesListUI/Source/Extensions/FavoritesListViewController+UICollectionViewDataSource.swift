@@ -2,7 +2,7 @@ import Foundation
 import CommonUI
 import UIKit
 
-extension FavoritesListViewController: UICollectionViewDataSource {
+extension FavouritesListViewController: UICollectionViewDataSource {
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
