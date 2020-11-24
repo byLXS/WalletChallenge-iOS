@@ -237,7 +237,7 @@ public final class CDHelper {
         }
     }
     
-    static func synchronize() {
+    static public func synchronize() {
         do {
             try Self.backgroundContext.save()
             Self.mainContext.performAndWait {

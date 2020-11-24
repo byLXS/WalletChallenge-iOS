@@ -67,6 +67,7 @@ open class CardFilterViewController: ThemeViewController {
         applyButton.setTitleColor(.white, for: .normal)
         collectionView.backgroundColor = darkTheme.backgroundColor
         categoryCollectionView.backgroundColor = darkTheme.backgroundColor
+        cancelButton.tintColor = theme.backgroundColor
         setupStackView()
     }
     

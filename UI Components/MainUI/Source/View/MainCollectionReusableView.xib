@@ -50,6 +50,7 @@
                 <constraint firstItem="iH1-Dg-Zyi" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="xKp-51-yME"/>
             </constraints>
             <connections>
+                <outlet property="containerView" destination="iH1-Dg-Zyi" id="TL1-Rf-ccu"/>
                 <outlet property="filterButton" destination="S2h-KY-VBZ" id="8lE-FQ-20r"/>
                 <outlet property="titleLabel" destination="jgA-08-eUQ" id="iTD-x1-X87"/>
             </connections>

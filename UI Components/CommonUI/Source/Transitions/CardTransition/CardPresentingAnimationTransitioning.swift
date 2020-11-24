@@ -45,6 +45,8 @@ class CardPresentingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
         toController.view.alpha = 0
         toController.view.frame = finalFrameForPresentedView
         
+        UIScreen.main.setBrightness(to: 10, duration: 0.6, ticksPerSecond: 120)
+        
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [.curveEaseInOut, .allowUserInteraction], animations: {
             cardViewCopy.frame = finalRect
         }, completion: { finished in

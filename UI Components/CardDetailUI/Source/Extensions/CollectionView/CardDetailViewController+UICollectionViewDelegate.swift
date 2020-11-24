@@ -3,6 +3,12 @@ import UIKit
 import CommonUI 
 extension CardDetailViewController: UICollectionViewDelegate {
     
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 0 || scrollView.contentOffset.y < 0 {
+            scrollView.contentOffset.y = 0
+        }
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let cell = cell as? CardLargeCollectionViewCell else { return }
         cell.setup()

@@ -22,14 +22,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-Sb-jKB">
-                    <rect key="frame" x="364" y="64" width="30" height="30"/>
-                    <state key="normal" image="cancel_circle_image"/>
+                    <rect key="frame" x="364" y="64" width="30" height="34"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <action selector="skipScreen" destination="-1" eventType="touchUpInside" id="euh-eo-251"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQZ-Uw-4Xd">
-                    <rect key="frame" x="178.5" y="65.5" width="57" height="27.5"/>
+                    <rect key="frame" x="178.5" y="67.5" width="57" height="27.5"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -47,7 +47,6 @@
         </view>
     </objects>
     <resources>
-        <image name="cancel_circle_image" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

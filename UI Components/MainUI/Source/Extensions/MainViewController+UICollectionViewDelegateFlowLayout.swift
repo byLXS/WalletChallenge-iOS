@@ -2,14 +2,6 @@ import Foundation
 import UIKit
 import WalletPresentationData
 
-//extension MainViewController: UICollectionViewDelegateFlowLayout {
-//
-//    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: UIScreen.main.bounds.size.width - 80, height: 200)
-//    }
-//}
-
-
 private let spacing : CGFloat = 10
 private let screenWidth = UIScreen.main.bounds.maxX
 private let smallSize = CGSize(width: (screenWidth - 3 * spacing) / 2, height: CardLayout.height)

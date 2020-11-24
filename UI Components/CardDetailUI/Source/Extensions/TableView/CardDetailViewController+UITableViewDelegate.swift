@@ -11,7 +11,8 @@ extension CardDetailViewController: UITableViewDelegate {
         guard let item = interactor?.getCardDetailItem(indexPath: indexPath) else { return 70 }
         switch item.type {
         case .barcode:
-            return UIScreen.main.bounds.height * 0.2
+            return UIScreen.main.bounds.height * 0.15
+            
         default:
             return 70
         }

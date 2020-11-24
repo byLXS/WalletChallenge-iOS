@@ -20,8 +20,10 @@ public struct ThemeModel {
     public let keyboardAppearance: UIKeyboardAppearance
     public let blurEffect: UIBlurEffect
     public let stackViewDisabled: UIColor
+    public let searchBarBackgroundColor: UIColor
+    public let errorColor: UIColor
     
-    public init(identifier: String, textColor: UIColor, detailTextColor: UIColor, tintColor: UIColor, switchTintColor: UIColor, backgroundColor: UIColor, tableViewColor: UIColor, cellBackgroundColor: UIColor, separatorColor: UIColor, navigationBarColor: UIColor, statusBarStyle: UIStatusBarStyle, indicatorStyle: UIScrollView.IndicatorStyle, selectionStyleColor: UIColor, accessoryTypeViewColor: UIColor, switchBackgroundColor: UIColor, keyboardAppearance: UIKeyboardAppearance, blurEffect: UIBlurEffect, stackViewDisabled: UIColor) {
+    public init(identifier: String, textColor: UIColor, detailTextColor: UIColor, tintColor: UIColor, switchTintColor: UIColor, backgroundColor: UIColor, tableViewColor: UIColor, cellBackgroundColor: UIColor, separatorColor: UIColor, navigationBarColor: UIColor, statusBarStyle: UIStatusBarStyle, indicatorStyle: UIScrollView.IndicatorStyle, selectionStyleColor: UIColor, accessoryTypeViewColor: UIColor, switchBackgroundColor: UIColor, keyboardAppearance: UIKeyboardAppearance, blurEffect: UIBlurEffect, stackViewDisabled: UIColor, searchBarBackgroundColor: UIColor, errorColor: UIColor) {
         self.identifier = identifier
         self.textColor = textColor
         self.detailTextColor = detailTextColor
@@ -40,5 +42,7 @@ public struct ThemeModel {
         self.keyboardAppearance = keyboardAppearance
         self.blurEffect = blurEffect
         self.stackViewDisabled = stackViewDisabled
+        self.searchBarBackgroundColor = searchBarBackgroundColor
+        self.errorColor = errorColor
     }
 }

@@ -4,6 +4,7 @@ import UIKit.UIImage
 import WalletCore
 
 protocol MainInteractorProtocol {
+    var accountWorker: AccountWorker { get }
     var cardFilter: CardFilter { get set }
     func fetchCardList()
     func reloadItems()
@@ -15,11 +16,8 @@ protocol MainInteractorProtocol {
 class MainInteractor: MainInteractorProtocol {
     
     var presenter: MainPresenterProtocol?
-    
     let accountWorker: AccountWorker
-    
     var cardFilter: CardFilter
-    
     var cardList: [Card] = []
     
     init(accountWorker: AccountWorker) {

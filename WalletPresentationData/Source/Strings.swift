@@ -6,6 +6,7 @@ public struct Strings {
     static public let add = getText(value: "add")
     static public let all = getText(value: "all")
     static public let clear = getText(value: "clear")
+    static public let done = getText(value: "done")
     // MARK: Main
     static public let main = getText(value: "main")
     static public let myCard = getText(value: "myCard")
@@ -22,6 +23,19 @@ public struct Strings {
     static public let balance = getText(value: "balance")
     static public let value = getText(value: "value")
     static public let expireDate = getText(value: "expireDate")
+    static public let addToFavourites = getText(value: "addToFavourites")
+    static public let removeFromFavourites = getText(value: "removeFromFavourites")
+    // MARK: Settings
+    static public let settings = getText(value: "settings")
+    static public let statistics = getText(value: "statistics")
+    static public let language = getText(value: "language")
+    static public let decoration = getText(value: "decoration")
+    static public let favourites = getText(value: "favourites")
+    // MARK: Decoration
+    static public let choiceTheme = getText(value: "choiceTheme")
+    static public let system = getText(value: "system")
+    static public let light = getText(value: "light")
+    static public let dark = getText(value: "dark")
     
     private static func getText(value: String) -> String {
         return NSLocalizedString(value, comment: "")

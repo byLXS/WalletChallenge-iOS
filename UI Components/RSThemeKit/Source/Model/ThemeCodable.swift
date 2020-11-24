@@ -27,4 +27,6 @@ struct ThemeCodable: Codable {
     let keyboardAppearance: Int
     let blurEffect: Int
     let stackViewDisabled: String
+    let searchBarBackgroundColor: String
+    let errorColor: String
 }

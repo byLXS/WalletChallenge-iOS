@@ -17,18 +17,18 @@ extension CardResponse {
         let cardType = CardType(rawValue: kind) ?? .none
         switch cardType {
         case .loyalty:
-            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), issuer: Issuer(name: issuer.name, categories: issuer.getCategories()), grade: loyaltyCard?.grade ?? "", balance: loyaltyCard?.balance ?? 0)
+            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), issuer: Issuer(name: issuer.name, categories: issuer.getCategories()), grade: loyaltyCard?.grade ?? "", balance: loyaltyCard?.balance ?? 0, isFavourites: false)
         case .certificate:
-            return CertificateCard(number: number, kind: .certificate, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), issuer: Issuer(name: issuer.name, categories: issuer.getCategories()), value: certificate?.value ?? 0, expireDate: certificate?.expireDate ?? "")
+            return CertificateCard(number: number, kind: .certificate, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), issuer: Issuer(name: issuer.name, categories: issuer.getCategories()), value: certificate?.value ?? 0, expireDate: certificate?.expireDate ?? "", isFavourites: false)
         case .none:
-            return DefaultCard(number: number, kind: .none, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), issuer: Issuer(name: issuer.name, categories: issuer.getCategories()))
+            return DefaultCard(number: number, kind: .none, texture: texture.convertResponseInPresentationModel(), barcode: Barcode(number: barcode.number, kind: barcode.kind), issuer: Issuer(name: issuer.name, categories: issuer.getCategories()), isFavourites: false)
         }
     }
 }
 
 extension Array where Element == CardResponse {
     
-    public func convertEntityInPresentationData() -> [Card] {
+    public func convertResponseInPresentationData() -> [Card] {
         var models: [Card] = []
         for item in self {
             models.append(item.convertResponseInPresentationModel())

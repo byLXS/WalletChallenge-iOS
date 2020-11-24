@@ -8,7 +8,10 @@
 
 "noInternetConnection" = "Нет подключения к интернету";
 "add" = "Добавить";
+"done" = "Готово";
 "main" = "Главная";
+"addToFavourites" = "Добавить в избранное";
+"removeFromFavourites" = "Удалить из избранного";
 "myCard" = "Мои карты";
 "filter" = "Фильтр";
 "apply" = "Применить";
@@ -23,3 +26,12 @@
 "buildingMaterials" = "Строительные материалы";
 "goods" = "Товары";
 "clear" = "Очистить";
+"settings" = "Настройки";
+"statistics" = "Статистика";
+"language" = "Язык";
+"decoration" = "Оформление";
+"favourites" = "Избранное";
+"choiceTheme" = "Выбор темы";
+"system" = "Системная";
+"light" = "Светлая";
+"dark" = "Темная";

@@ -24,14 +24,19 @@ public class MainViewController: ThemeViewController {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.title = Strings.main
         setupNavigationBar()
         setupCollectionView()
         interactor?.fetchCardList()
-        // Do any additional setup after loading the view.
+        decorator(theme: ThemeManager.currentTheme)
+    }
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        decorator(theme: ThemeManager.currentTheme)
     }
     
     public override func decorator(theme: ThemeModel) {
@@ -39,11 +44,22 @@ public class MainViewController: ThemeViewController {
         self.collectionView.backgroundColor = theme.backgroundColor
         self.view.backgroundColor = theme.backgroundColor
         visualEffectView.effect = theme.blurEffect
+        
+        
+        let searchBar = searchController.searchBar
+        searchBar.searchBarStyle = .minimal
+        
+        searchBar.setText(color: theme.textColor)
+        searchBar.setTextField(color: theme.searchBarBackgroundColor)
+        searchBar.setPlaceholderText(color: theme.detailTextColor)
+        searchBar.setSearchImage(color: theme.detailTextColor)
+        searchBar.setClearButton(color: theme.detailTextColor)
     }
-
+    
     func setupNavigationBar() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         
         let button = AddButton()
         button.setup()
@@ -56,6 +72,7 @@ public class MainViewController: ThemeViewController {
         
         let userImage = getImage(named: "user_image", anyClass: type(of: self))
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: userImage, style: .done, target: self, action: #selector(openSettings))
+        
     }
     
     func setupCollectionView() {
@@ -65,13 +82,13 @@ public class MainViewController: ThemeViewController {
         collectionView.register(CardLargeCollectionViewCell.self, forCellWithReuseIdentifier: CardLargeCollectionViewCell.identifier)
         collectionView.register(MainCollectionReusableView.nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionReusableView.name)
     }
-
+    
     @objc func addCard() {
         print(1)
     }
     
     @objc func openSettings() {
-        print(2)
+        router?.presentSettings()
     }
     
     @objc func showFilterScreen() {

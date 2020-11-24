@@ -26,6 +26,9 @@
 		FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */; };
 		FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */; };
 		FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */; };
+		FA998449256A1E960031FED4 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA998448256A1E960031FED4 /* UISearchBar+Extensions.swift */; };
+		FA99844B256A1EBC0031FED4 /* UITextFiled+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99844A256A1EBC0031FED4 /* UITextFiled+Extensions.swift */; };
+		FA99848D256B168E0031FED4 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99848C256B168E0031FED4 /* UIScreen+Extensions.swift */; };
 		FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C6A2554A1DE009267A7 /* CardLargeCollectionViewCell.swift */; };
 		FADA382F2550AA1600FA910F /* CommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA382D2550AA1600FA910F /* CommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */; };
@@ -70,6 +73,9 @@
 		FA86C23E255B1AFB00EBA974 /* CardTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitioningDelegate.swift; sourceTree = "<group>"; };
 		FA86C240255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDismissingAnimationTransitioning.swift; sourceTree = "<group>"; };
 		FA86C242255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentingAnimationTransitioning.swift; sourceTree = "<group>"; };
+		FA998448256A1E960031FED4 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		FA99844A256A1EBC0031FED4 /* UITextFiled+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Extensions.swift"; sourceTree = "<group>"; };
+		FA99848C256B168E0031FED4 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		FAC28C6A2554A1DE009267A7 /* CardLargeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLargeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FADA382A2550AA1600FA910F /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA382D2550AA1600FA910F /* CommonUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUI.h; sourceTree = "<group>"; };
@@ -243,6 +249,9 @@
 				FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */,
 				FAF8EE052561F3A800537719 /* UIView+Extensions.swift */,
 				FA80733225630B0C000A5DB3 /* UIStackView+Extensions.swift */,
+				FA998448256A1E960031FED4 /* UISearchBar+Extensions.swift */,
+				FA99844A256A1EBC0031FED4 /* UITextFiled+Extensions.swift */,
+				FA99848C256B168E0031FED4 /* UIScreen+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,17 +357,20 @@
 				FAF8EE062561F3A800537719 /* UIView+Extensions.swift in Sources */,
 				FA80733325630B0C000A5DB3 /* UIStackView+Extensions.swift in Sources */,
 				FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */,
+				FA998449256A1E960031FED4 /* UISearchBar+Extensions.swift in Sources */,
 				FA80734325631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift in Sources */,
 				FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */,
 				FA40D71D256851FE0098CA2A /* SuperEllipseView.swift in Sources */,
 				FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */,
 				FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */,
+				FA99848D256B168E0031FED4 /* UIScreen+Extensions.swift in Sources */,
 				FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */,
 				FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */,
 				FA80734225631B4E000A5DB3 /* SPLarkPresentationController.swift in Sources */,
 				FA80734125631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift in Sources */,
 				FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */,
 				FA80734025631B4E000A5DB3 /* SPLarkController.swift in Sources */,
+				FA99844B256A1EBC0031FED4 /* UITextFiled+Extensions.swift in Sources */,
 				FA58B2132555FA98003FC1D4 /* Squircle+Internal.swift in Sources */,
 				FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */,
 				FAF8EDAA2561595400537719 /* NibLoadable.swift in Sources */,

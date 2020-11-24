@@ -12,6 +12,7 @@ public protocol Card {
     var texture: Texture { get }
     var barcode: Barcode { get }
     var issuer: Issuer { get }
+    var isFavourites: Bool { get set }
 }
 
 public struct Texture {
@@ -61,7 +62,7 @@ public enum CategoryType: String {
     }
 }
 
-public struct LoyaltyCard: Card {
+public class LoyaltyCard: Card {
     public var number: String
     public var kind: CardType
     public var texture: Texture
@@ -69,8 +70,9 @@ public struct LoyaltyCard: Card {
     public var issuer: Issuer
     public var grade: String
     public var balance: Int
+    public var isFavourites: Bool
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, grade: String, balance: Int) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, grade: String, balance: Int, isFavourites: Bool) {
         self.number = number
         self.kind = kind
         self.texture = texture
@@ -78,11 +80,12 @@ public struct LoyaltyCard: Card {
         self.issuer = issuer
         self.grade = grade
         self.balance = balance
+        self.isFavourites = isFavourites
     }
     
 }
 
-public struct CertificateCard: Card {
+public class CertificateCard: Card {
     public var number: String
     public var kind: CardType
     public var texture: Texture
@@ -90,8 +93,9 @@ public struct CertificateCard: Card {
     public var issuer: Issuer
     public var value: Int
     public var expireDate: String
+    public var isFavourites: Bool
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, value: Int, expireDate: String) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, value: Int, expireDate: String, isFavourites: Bool) {
         self.number = number
         self.kind = kind
         self.texture = texture
@@ -99,23 +103,26 @@ public struct CertificateCard: Card {
         self.issuer = issuer
         self.value = value
         self.expireDate = expireDate
+        self.isFavourites = isFavourites
     }
     
 }
 
-public struct DefaultCard: Card {
+public class DefaultCard: Card {
     public var number: String
     public var kind: CardType
     public var texture: Texture
     public var barcode: Barcode
     public var issuer: Issuer
+    public var isFavourites: Bool
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, isFavourites: Bool) {
         self.number = number
         self.kind = kind
         self.texture = texture
         self.barcode = barcode
         self.issuer = issuer
+        self.isFavourites = isFavourites
     }
     
 }

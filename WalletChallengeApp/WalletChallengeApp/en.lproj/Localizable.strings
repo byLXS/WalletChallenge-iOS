@@ -6,9 +6,12 @@
   Copyright © 2020 Robert. All rights reserved.
 */
 
-"noInternetConnection" = "No internet connection";
+"noInternetConnection" = "No Internet Connection";
 "add" = "Add";
+"done" = "Done";
 "main" = "Main";
+"addToFavourites" = "Add To Favourites";
+"removeFromFavourites" = "Remove From Favourites";
 "myCard" = "My card";
 "filter" = "Filter";
 "apply" = "Apply";
@@ -20,6 +23,15 @@
 "value" = "Value";
 "expireDate" = "Expire Date";
 "appliances" = "Appliances";
-"buildingMaterials" = "Building materials";
+"buildingMaterials" = "Building Materials";
 "goods" = "Goods";
 "clear" = "Сlear";
+"settings" = "Settings";
+"statistics" = "Statistics";
+"language" = "Language";
+"decoration" = "Decoration";
+"favourites" = "Favourites";
+"choiceTheme" = "Choice Theme";
+"system" = "System";
+"light" = "Light";
+"dark" = "Dark";

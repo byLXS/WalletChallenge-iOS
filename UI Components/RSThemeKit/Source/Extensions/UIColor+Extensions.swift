@@ -78,11 +78,11 @@ extension UIColor {
                 if UITraitCollection.userInterfaceStyle == .dark {
                     return grayDarkColor
                 } else {
-                    return whiteColor
+                    return grayLightColor
                 }
             }
         } else {
-            return whiteColor
+            return grayLightColor
         }
     }
     
@@ -186,6 +186,36 @@ extension UIColor {
 
     }
     
+    static var systemSearchBarBackgroundColor: UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return gray7DarkColor
+                } else {
+                    return gray7LightColor
+                }
+            }
+        } else {
+            return gray7LightColor
+        }
+
+    }
+    
+    static var systemErrorColor: UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { (UITraitCollection: UITraitCollection) -> UIColor in
+                if UITraitCollection.userInterfaceStyle == .dark {
+                    return redDarkColor
+                } else {
+                    return redLightColor
+                }
+            }
+        } else {
+            return redLightColor
+        }
+
+    }
+    
     static var whiteColor: UIColor {
         return UIColor(cgColor: #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1))
     }
@@ -243,6 +273,14 @@ extension UIColor {
     }
     
     static var gray6DarkColor: UIColor {
+        return UIColor(cgColor: #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1))
+    }
+    
+    static var gray7LightColor: UIColor {
+        return UIColor(cgColor: #colorLiteral(red: 0.462745098, green: 0.462745098, blue: 0.5019607843, alpha: 0.12))
+    }
+    
+    static var gray7DarkColor: UIColor {
         return UIColor(cgColor: #colorLiteral(red: 0.1098039216, green: 0.1098039216, blue: 0.1176470588, alpha: 1))
     }
     

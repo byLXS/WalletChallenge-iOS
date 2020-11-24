@@ -6,12 +6,14 @@ import WalletCore
 protocol CardDetailInteractorProtocol {
     var selectedCardSideType: CardSideType { get set }
     func numberOfRowsInSection(section: Int) -> Int
+    func isFavourites() -> Bool
     func getNameCard() -> String
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ())
     func generateBarcode() -> UIImage?
     func getCardDetailItem(indexPath: IndexPath) -> CardDetailItem
     func getCardSideTypes() -> [CardSideType]
     func selectItem(index: Int)
+    func addFavourites()
 }
 
 class CardDetailInteractor: CardDetailInteractorProtocol {
@@ -26,6 +28,10 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
         self.card = card
         selectedCardSideType = .front(path: card.texture.front)
         setupDisplayItems()
+    }
+    
+    func isFavourites() -> Bool {
+        return card.isFavourites
     }
     
     func getNameCard() -> String {
@@ -75,6 +81,15 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
                     completion(image)
                 }
             })
+        }
+    }
+    
+    func addFavourites() {
+        card.isFavourites = !card.isFavourites
+        CardEntity.asynchronouslyFind("number=\"\(card.number)\"") { [weak self] (entityList) in
+            _ = entityList.map({$0.destroyInBackgroundQueue()})
+            let _ = self?.card.convertPresentationDataInEntity()
+            CDHelper.synchronize()
         }
     }
     

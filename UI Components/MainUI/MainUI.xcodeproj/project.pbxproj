@@ -14,6 +14,8 @@
 		FA58B2032555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B2022555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift */; };
 		FA58B22325571AE5003FC1D4 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B22225571AE5003FC1D4 /* CommonUI.framework */; };
 		FA58B22425571AE5003FC1D4 /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B22225571AE5003FC1D4 /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA64F2FB2569C555002974FE /* SettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA64F2FA2569C555002974FE /* SettingsUI.framework */; };
+		FA64F2FC2569C555002974FE /* SettingsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA64F2FA2569C555002974FE /* SettingsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA86C27B255B3B6C00EBA974 /* CardDetailUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86C27A255B3B6C00EBA974 /* CardDetailUI.framework */; };
 		FA86C27C255B3B6C00EBA974 /* CardDetailUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA86C27A255B3B6C00EBA974 /* CardDetailUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAC28C6425549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C6325549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift */; };
@@ -42,6 +44,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA58B22425571AE5003FC1D4 /* CommonUI.framework in Embed Frameworks */,
+				FA64F2FC2569C555002974FE /* SettingsUI.framework in Embed Frameworks */,
 				FAF8ED9F2561365A00537719 /* WalletPresentationData.framework in Embed Frameworks */,
 				FA86C27C255B3B6C00EBA974 /* CardDetailUI.framework in Embed Frameworks */,
 				FADDE6682552ECB200934B8D /* RSThemeKit.framework in Embed Frameworks */,
@@ -59,6 +62,7 @@
 		FA10335F2551FED30014825B /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		FA58B2022555F4B0003FC1D4 /* MainViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
 		FA58B22225571AE5003FC1D4 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA64F2FA2569C555002974FE /* SettingsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SettingsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA86C27A255B3B6C00EBA974 /* CardDetailUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardDetailUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC28C6325549FE7009267A7 /* MainViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		FAC28C652554A134009267A7 /* MainViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA58B22325571AE5003FC1D4 /* CommonUI.framework in Frameworks */,
+				FA64F2FB2569C555002974FE /* SettingsUI.framework in Frameworks */,
 				FAF8ED9E2561365A00537719 /* WalletPresentationData.framework in Frameworks */,
 				FA86C27B255B3B6C00EBA974 /* CardDetailUI.framework in Frameworks */,
 				FADDE6672552ECB200934B8D /* RSThemeKit.framework in Frameworks */,
@@ -107,6 +112,7 @@
 		FA1033542551FE360014825B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA64F2FA2569C555002974FE /* SettingsUI.framework */,
 				FAF8EDC7256161A200537719 /* CardFilterUI.framework */,
 				FAF8ED9D2561365A00537719 /* WalletPresentationData.framework */,
 				FA86C27A255B3B6C00EBA974 /* CardDetailUI.framework */,

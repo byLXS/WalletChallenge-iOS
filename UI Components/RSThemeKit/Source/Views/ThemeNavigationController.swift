@@ -30,13 +30,22 @@ open class ThemeNavigationController: UINavigationController {
     }
     
     open func decorator(theme: ThemeModel) {
-        navigationBar.shadowImage = theme.separatorColor.as1ptImage()
-        navigationBar.tintColor = theme.tintColor
-        navigationBar.barTintColor = theme.navigationBarColor
-        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]
-        if #available(iOS 11.0, *) {
+        if theme.identifier == ThemeType.system.identifier(), #available(iOS 13.0, *) {
+            navigationBar.shadowImage = nil
+            navigationBar.tintColor = nil
+            navigationBar.barTintColor = nil
+            navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]
             navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]
+        } else {
+            navigationBar.shadowImage = theme.separatorColor.as1ptImage()
+            navigationBar.tintColor = theme.tintColor
+            navigationBar.barTintColor = theme.navigationBarColor
+            navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]
+            if #available(iOS 11.0, *) {
+                navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: theme.textColor]
+            }
         }
+       
     }
     
     deinit {

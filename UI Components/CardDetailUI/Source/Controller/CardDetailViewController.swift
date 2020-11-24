@@ -8,6 +8,7 @@ public class CardDetailViewController: ThemeViewController {
     var tableView = ThemeTableView()
     @IBOutlet public var titleLabel: UILabel!
     @IBOutlet public var cancelButton: UIButton!
+    let addFavouritesButton = UIButton()
 
     var interactor: CardDetailInteractorProtocol?
     let cardDetailHeaderView = CardDetailHeaderView.loadFromNib()
@@ -15,16 +16,27 @@ public class CardDetailViewController: ThemeViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = interactor?.getNameCard()
-        cancelButton.setImage(getImage(named: "cancel_circle_image", anyClass: CardLargeCollectionViewCell.self), for: .normal)
         setupTableView()
         setupStackView()
         cardDetailHeaderView.addThemeObserver()
+        setupAddFavouritesView()
     }
     
     public override func decorator(theme: ThemeModel) {
         super.decorator(theme: theme)
         self.view.backgroundColor = theme.tableViewColor
         self.tableView.backgroundColor = theme.tableViewColor
+        self.titleLabel.textColor = theme.textColor
+        self.addFavouritesButton.tintColor = theme.errorColor
+        self.addFavouritesButton.backgroundColor = interactor?.isFavourites() ?? false ? theme.errorColor : theme.tintColor
+        self.addFavouritesButton.setTitle(interactor?.isFavourites() ?? false ? Strings.removeFromFavourites : Strings.addToFavourites, for: .normal)
+        if theme.identifier == ThemeType.system.identifier() {
+            cancelButton.setImage(getImage(named: "cancel_circle_image", anyClass: CardLargeCollectionViewCell.self), for: .normal)
+        } else {
+            self.cancelButton.setImage(getImage(named: theme.identifier == ThemeType.dark.identifier() ? "cancel_dark_image" : "cancel_light_image", anyClass: type(of: self)), for: .normal)
+        }
+        
+        
     }
     
     public init() {
@@ -44,7 +56,7 @@ public class CardDetailViewController: ThemeViewController {
         tableView.setNeedsLayout()
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
-        tableView.isScrollEnabled = false
+//        tableView.isScrollEnabled = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(BarcodeTableViewCell.nib, forCellReuseIdentifier: BarcodeTableViewCell.name)
@@ -68,8 +80,29 @@ public class CardDetailViewController: ThemeViewController {
         }
     }
     
+    func setupAddFavouritesView() {
+        self.view.addSubview(addFavouritesButton)
+        addFavouritesButton.translatesAutoresizingMaskIntoConstraints = false
+        addFavouritesButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        let window = UIApplication.shared.windows[0]
+        let bottomPadding = window.safeAreaInsets.bottom
+        addFavouritesButton.contentEdgeInsets.bottom = bottomPadding / 2
+        addFavouritesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        addFavouritesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        addFavouritesButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+        addFavouritesButton.heightAnchor.constraint(equalToConstant: 40 + bottomPadding).isActive = true
+        
+        addFavouritesButton.addTarget(self, action: #selector(addFavourites), for: .touchUpInside)
+        
+    }
+    
     @IBAction func skipScreen() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func addFavourites() {
+        interactor?.addFavourites()
+        decorator(theme: ThemeManager.currentTheme)
     }
 
 }

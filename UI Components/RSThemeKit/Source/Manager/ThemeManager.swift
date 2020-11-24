@@ -61,17 +61,15 @@ public class ThemeManager {
     }
     
     private static func animation() {
-        if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
-            let snapshot = (UIApplication.shared.keyWindow?.snapshotView(afterScreenUpdates: true))!
-            rootVC.view.addSubview(snapshot)
-            NotificationCenter.default.post(name: .themeUpdated, object: nil)
-            UIApplication.shared.keyWindow?.rootViewController = rootVC
-            UIView.transition(with: snapshot, duration: 0.3, options: .transitionCrossDissolve, animations: {
-                snapshot.layer.opacity = 0
-            }, completion: { status in
-                snapshot.removeFromSuperview()
-            })
-        }
+        NotificationCenter.default.post(name: .themeUpdated, object: nil)
+        let window = UIApplication.shared.delegate!.window!!
+        UIView.transition(
+            with: window,
+            duration: 0.3,
+            options: [.transitionCrossDissolve],
+            animations: {},
+            completion: nil
+        )
     }
     
     static public func addThemeObserver(_ observer: Any, selector: Selector) {

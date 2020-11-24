@@ -1,18 +1,26 @@
 import Foundation
 import UIKit
 import CommonUI
+import RSThemeKit
 import CardDetailUI
 import CardFilterUI
+import SettingsUI
 
 class MainRouter {
     
     var viewController: MainViewController?
     
+    func presentSettings() {
+        guard let interactor = viewController?.interactor else { return }
+        let vc = SettingsBuilder.getScreen(accountWorker: interactor.accountWorker)
+        let navC = ThemeNavigationController(rootViewController: vc)
+        viewController?.present(navC, animated: true, completion: nil)
+    }
+    
     func presentCardDetail(indexPath: IndexPath) {
         guard let interactor = viewController?.interactor else { return }
         let card = interactor.getCard(indexPath: indexPath)
-        
-        guard let subviews = viewController?.collectionView.cellForItem(at: indexPath)?.subviews, let cardView = subviews.compactMap({$0 as? CardView}).first else { return }
+        guard let cardView = (viewController?.collectionView.cellForItem(at: indexPath) as? CardLargeCollectionViewCell)?.cardView else { return }
         let vc = CardDetailBuilder.getScreen(card: card)
         viewController?.presentCard(vc, cardView: cardView)
     }

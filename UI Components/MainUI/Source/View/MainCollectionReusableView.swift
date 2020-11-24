@@ -5,6 +5,7 @@ import RSThemeKit
 
 class MainCollectionReusableView: UICollectionReusableView, NibLoadable {
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var filterButton: UIButton!
     
@@ -28,6 +29,9 @@ class MainCollectionReusableView: UICollectionReusableView, NibLoadable {
     
     func decorator(theme: ThemeModel) {
         backgroundColor = theme.backgroundColor
+        containerView.backgroundColor = theme.backgroundColor
+        titleLabel.textColor = theme.textColor
+        filterButton.tintColor = theme.tintColor
     }
     
 }
