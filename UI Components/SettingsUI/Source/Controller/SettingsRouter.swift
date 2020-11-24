@@ -1,6 +1,6 @@
 import Foundation
 import DecorationUI
-import FavoritesListUI
+import FavouritesListUI
 import WalletCore
 import UIKit
 

@@ -17,7 +17,7 @@ public class FavouritesListViewController: UIViewController {
     }
     
     public init() {
-        super.init(nibName: "FavoritesListViewController", bundle: Bundle(for: FavouritesListViewController.self))
+        super.init(nibName: "FavouritesListViewController", bundle: Bundle(for: FavouritesListViewController.self))
     }
     
     required public init?(coder aDecoder: NSCoder) {

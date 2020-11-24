@@ -25,12 +25,12 @@
 		FA354DEE25651E6D009F6906 /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEC25651E6D009F6906 /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA354DF025651E8D009F6906 /* WalletApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEF25651E8D009F6906 /* WalletApi.framework */; };
 		FA354DF125651E8D009F6906 /* WalletApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DEF25651E8D009F6906 /* WalletApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA3BD7F9256DA2D0007E30D2 /* FavouritesListUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BD7F8256DA2D0007E30D2 /* FavouritesListUI.framework */; };
+		FA3BD7FA256DA2D0007E30D2 /* FavouritesListUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BD7F8256DA2D0007E30D2 /* FavouritesListUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA998487256AA1970031FED4 /* SettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA998486256AA1970031FED4 /* SettingsUI.framework */; };
 		FA998488256AA1980031FED4 /* SettingsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA998486256AA1970031FED4 /* SettingsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA99848A256AA2680031FED4 /* DecorationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA998489256AA2680031FED4 /* DecorationUI.framework */; };
 		FA99848B256AA2680031FED4 /* DecorationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA998489256AA2680031FED4 /* DecorationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA9984D3256C803B0031FED4 /* FavoritesListUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984D2256C803B0031FED4 /* FavoritesListUI.framework */; };
-		FA9984D4256C803B0031FED4 /* FavoritesListUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA9984D2256C803B0031FED4 /* FavoritesListUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FADA3790255087B800FA910F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA378F255087B800FA910F /* AppDelegate.swift */; };
 		FADA3794255087B800FA910F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA3793255087B800FA910F /* ViewController.swift */; };
 		FADA3797255087B800FA910F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA3795255087B800FA910F /* Main.storyboard */; };
@@ -47,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA3BD7FA256DA2D0007E30D2 /* FavouritesListUI.framework in Embed Frameworks */,
 				FA354DDF25651E13009F6906 /* CommonUI.framework in Embed Frameworks */,
 				FA354DEB25651E4D009F6906 /* CardDetailUI.framework in Embed Frameworks */,
 				FA1033632552009F0014825B /* WRootUI.framework in Embed Frameworks */,
@@ -57,7 +58,6 @@
 				FA354DE225651E2C009F6906 /* WalletCore.framework in Embed Frameworks */,
 				FA354DE825651E4A009F6906 /* CardFilterUI.framework in Embed Frameworks */,
 				FA354DEE25651E6D009F6906 /* WalletPresentationData.framework in Embed Frameworks */,
-				FA9984D4256C803B0031FED4 /* FavoritesListUI.framework in Embed Frameworks */,
 				FADA380625509D6700FA910F /* RSThemeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -80,6 +80,7 @@
 		FA354DE925651E4D009F6906 /* CardDetailUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardDetailUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA354DEC25651E6D009F6906 /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA354DEF25651E8D009F6906 /* WalletApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3BD7F8256DA2D0007E30D2 /* FavouritesListUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FavouritesListUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA998486256AA1970031FED4 /* SettingsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SettingsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA998489256AA2680031FED4 /* DecorationUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DecorationUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984D2256C803B0031FED4 /* FavoritesListUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FavoritesListUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +103,6 @@
 			files = (
 				FA1033622552009F0014825B /* WRootUI.framework in Frameworks */,
 				FA354DDE25651E13009F6906 /* CommonUI.framework in Frameworks */,
-				FA9984D3256C803B0031FED4 /* FavoritesListUI.framework in Frameworks */,
 				FA354DE725651E4A009F6906 /* CardFilterUI.framework in Frameworks */,
 				FADA380525509D6700FA910F /* RSThemeKit.framework in Frameworks */,
 				FA354DF025651E8D009F6906 /* WalletApi.framework in Frameworks */,
@@ -111,6 +111,7 @@
 				FA354DEA25651E4D009F6906 /* CardDetailUI.framework in Frameworks */,
 				FA99848A256AA2680031FED4 /* DecorationUI.framework in Frameworks */,
 				FA354DE125651E2C009F6906 /* WalletCore.framework in Frameworks */,
+				FA3BD7F9256DA2D0007E30D2 /* FavouritesListUI.framework in Frameworks */,
 				FA998487256AA1970031FED4 /* SettingsUI.framework in Frameworks */,
 				E573CC887EDE134BAEC778F6 /* Pods_WalletChallengeApp.framework in Frameworks */,
 			);
@@ -122,6 +123,7 @@
 		7216A17120B7EA15D1989E67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA3BD7F8256DA2D0007E30D2 /* FavouritesListUI.framework */,
 				FA9984D2256C803B0031FED4 /* FavoritesListUI.framework */,
 				FA998489256AA2680031FED4 /* DecorationUI.framework */,
 				FA998486256AA1970031FED4 /* SettingsUI.framework */,
