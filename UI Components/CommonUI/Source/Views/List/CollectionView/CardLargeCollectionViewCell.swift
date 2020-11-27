@@ -31,6 +31,7 @@ public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
     public override func decorator(theme: ThemeModel) {
         super.decorator(theme: theme)
         backgroundColor = theme.backgroundColor
+        cardView?.backgroundColor = theme.searchBarBackgroundColor
     }
 
 }

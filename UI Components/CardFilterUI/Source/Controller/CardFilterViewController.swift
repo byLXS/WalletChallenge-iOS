@@ -164,6 +164,8 @@ open class CardFilterViewController: ThemeViewController {
 
 extension CardFilterViewController: CardFilterDisplayLogic {
     func scrollToItem(indexPath: IndexPath) {
+        self.collectionView.isPagingEnabled = false
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+        self.collectionView.isPagingEnabled = true
     }
 }

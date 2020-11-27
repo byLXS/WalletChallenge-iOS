@@ -30,7 +30,7 @@ public class MainViewController: ThemeViewController {
         self.title = Strings.main
         setupNavigationBar()
         setupCollectionView()
-        interactor?.fetchCardList()
+        fetchCardList()
         decorator(theme: ThemeManager.currentTheme)
     }
     
@@ -44,7 +44,6 @@ public class MainViewController: ThemeViewController {
         self.collectionView.backgroundColor = theme.backgroundColor
         self.view.backgroundColor = theme.backgroundColor
         visualEffectView.effect = theme.blurEffect
-        
         
         let searchBar = searchController.searchBar
         searchBar.searchBarStyle = .minimal
@@ -85,9 +84,14 @@ public class MainViewController: ThemeViewController {
         collectionView.register(MainCollectionReusableView.nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionReusableView.name)
     }
     
+    public func fetchCardList() {
+        interactor?.fetchCardList()
+    }
+    
     @objc func addCard() {
         print(1)
     }
+    
     
     @objc func openSettings() {
         router?.presentSettings()

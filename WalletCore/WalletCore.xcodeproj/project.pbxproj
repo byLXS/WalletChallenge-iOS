@@ -19,6 +19,7 @@
 		FA58B235255755F9003FC1D4 /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B234255755F9003FC1D4 /* WalletPresentationData.framework */; };
 		FA58B236255755F9003FC1D4 /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA58B234255755F9003FC1D4 /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA58B23825575BC7003FC1D4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B23725575BC7003FC1D4 /* CoreDataManager.swift */; };
+		FA66DE7E257170A500CB4D41 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66DE7D257170A500CB4D41 /* Reachability.swift */; };
 		FA6A80A325672E5200E958AA /* IssuerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A80A225672E5200E958AA /* IssuerEntity.swift */; };
 		FADA38842550AEE100FA910F /* WalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA38822550AEE100FA910F /* WalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADDE6732552FCF300934B8D /* CardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE6722552FCF300934B8D /* CardWorker.swift */; };
@@ -59,6 +60,7 @@
 		FA58B2552559DFCF003FC1D4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA58B25B2559E28B003FC1D4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA58B25E2559E295003FC1D4 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA66DE7D257170A500CB4D41 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		FA6A80A225672E5200E958AA /* IssuerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuerEntity.swift; sourceTree = "<group>"; };
 		FADA387F2550AEE100FA910F /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA38822550AEE100FA910F /* WalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletCore.h; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		FA1033442551F56B0014825B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FA66DE7C2571706100CB4D41 /* Reachability */,
 				FA58B22525571EB9003FC1D4 /* Database */,
 				FA58B21925570249003FC1D4 /* WalletDatabase.xcdatamodeld */,
 				FA58B21425560577003FC1D4 /* Cache */,
@@ -154,6 +157,14 @@
 				FAF8EDF82561D38200537719 /* CertificateCardEntity.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA66DE7C2571706100CB4D41 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FA66DE7D257170A500CB4D41 /* Reachability.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		FADA38752550AEE100FA910F = {
@@ -287,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA66DE7E257170A500CB4D41 /* Reachability.swift in Sources */,
 				FAF8EDF92561D38200537719 /* CertificateCardEntity.swift in Sources */,
 				FA1033472551F5850014825B /* AccountWorker.swift in Sources */,
 				FAF8ED992560913300537719 /* BarcodeEntity.swift in Sources */,

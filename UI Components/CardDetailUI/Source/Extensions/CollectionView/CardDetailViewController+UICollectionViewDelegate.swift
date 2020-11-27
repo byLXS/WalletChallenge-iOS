@@ -13,6 +13,7 @@ extension CardDetailViewController: UICollectionViewDelegate {
         guard let cell = cell as? CardLargeCollectionViewCell else { return }
         cell.setup()
         cardDetailHeaderView.cardView = cell.cardView
+        cell.addThemeObserver()
         cell.cardView?.imageView.image = nil
         interactor?.loadImage(indexPath: indexPath, completion: { (image) in
             cell.cardView?.imageView.image = image
