@@ -9,7 +9,7 @@ extension CardFilterViewController: UICollectionViewDelegate {
         case .style:
             return
         case .category:
-            let item = interactor?.selectCategory(indexPath: indexPath)
+            _ = interactor?.selectCategory(indexPath: indexPath)
             categoryCollectionView.reloadItems(at: [indexPath])
         }
         

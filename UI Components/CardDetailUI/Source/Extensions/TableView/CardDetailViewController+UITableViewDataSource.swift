@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 import RSThemeKit
+import CommonUI
 
 extension CardDetailViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -11,8 +12,8 @@ extension CardDetailViewController: UITableViewDataSource {
         guard let item = interactor?.getCardDetailItem(indexPath: indexPath)  else { return UITableViewCell() }
         switch item.type {
         case .barcode:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: BarcodeTableViewCell.name, for: indexPath) as? BarcodeTableViewCell else { return ThemeTableCell() }
-            cell.barcodeImageView.image = (item as? BarcodeDetailItem)?.image
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: BarcodeTableViewCell.name, for: indexPath) as? BarcodeTableViewCell, let barcode = (item as? BarcodeDetailItem)?.item else { return ThemeTableCell() }
+            cell.barcodeImageView.image = generateBarcode(item: barcode)
             cell.selectionStyle = .none
             return cell
         case .certificateExpireDate, .certificateValue, .loyaltyBalance, .loyaltyGrade:

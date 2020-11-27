@@ -25,6 +25,7 @@ public struct Strings {
     static public let expireDate = getText(value: "expireDate")
     static public let addToFavourites = getText(value: "addToFavourites")
     static public let removeFromFavourites = getText(value: "removeFromFavourites")
+    static public let addedToFavourites = getText(value: "addedToFavourites")
     // MARK: Settings
     static public let settings = getText(value: "settings")
     static public let statistics = getText(value: "statistics")

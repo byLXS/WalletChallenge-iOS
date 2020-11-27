@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93973093BFD24F4A4708DC1B /* Pods_WalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84340169FF0EF90DE0F7DDEC /* Pods_WalletCore.framework */; };
 		FA1033472551F5850014825B /* AccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033462551F5850014825B /* AccountWorker.swift */; };
 		FA1033492551F6E30014825B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033482551F6E30014825B /* Account.swift */; };
 		FA10334C2551F7C20014825B /* WalletApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10334B2551F7C20014825B /* WalletApi.framework */; };
@@ -77,7 +76,6 @@
 			files = (
 				FA58B235255755F9003FC1D4 /* WalletPresentationData.framework in Frameworks */,
 				FA10334C2551F7C20014825B /* WalletApi.framework in Frameworks */,
-				93973093BFD24F4A4708DC1B /* Pods_WalletCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +439,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WalletCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +467,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WalletCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -57,9 +57,11 @@ public class MainViewController: ThemeViewController {
     }
     
     func setupNavigationBar() {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+            self.navigationItem.searchController = searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
+        } 
         
         let button = AddButton()
         button.setup()

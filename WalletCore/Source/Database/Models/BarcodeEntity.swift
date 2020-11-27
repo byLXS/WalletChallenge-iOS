@@ -13,7 +13,7 @@ public class BarcodeEntity: NSManagedObject, CDHelperEntity {
 
 extension BarcodeEntity {
     public func convertEntityInPresentationData() -> Barcode {
-        return Barcode(number: number, kind: kind)
+        return Barcode(number: number, kind: BarcodeKind(rawValue: kind) ?? .code128)
     }
 }
 
@@ -22,7 +22,7 @@ extension Barcode {
     public func convertResponseInEntity() -> BarcodeEntity {
         let entity = BarcodeEntity.newInBackgroundQueue()
         entity.number = number
-        entity.kind = kind
+        entity.kind = kind.rawValue
         return entity
     }
 }

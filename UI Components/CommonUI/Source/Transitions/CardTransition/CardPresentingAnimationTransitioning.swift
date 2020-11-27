@@ -47,22 +47,20 @@ class CardPresentingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
         
         UIScreen.main.setBrightness(to: 10, duration: 0.6, ticksPerSecond: 120)
         
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [.curveEaseInOut, .allowUserInteraction], animations: {
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             cardViewCopy.frame = finalRect
-        }, completion: { finished in
-        })
-        
-        UIView.animate(withDuration: 0.4, delay: 0.0, animations: {
             backView.alpha = 1
-        }, completion: nil)
-        UIView.animate(withDuration: 0.4, delay: 0.6, animations: {
-            toController.view.alpha = 1
-            presentedCardView?.isHidden = false
         }, completion: { finished in
-            presentedCardView?.isHidden = false
-            self.cardView.isHidden = false
-            cardViewCopy.removeFromSuperview()
-            transitionContext.completeTransition(finished)
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(UINotificationFeedbackGenerator.FeedbackType.success)
+            UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
+                toController.view.alpha = 1
+            }, completion: { finished in
+                presentedCardView?.isHidden = false
+                self.cardView.isHidden = false
+                cardViewCopy.removeFromSuperview()
+                transitionContext.completeTransition(finished)
+            })
         })
     }
     

@@ -9,6 +9,35 @@
 /* Begin PBXBuildFile section */
 		FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B041255C675D00CFD6C2 /* CardProtocol.swift */; };
 		FA14B044255C688500CFD6C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B043255C688500CFD6C2 /* CardView.swift */; };
+		FA3BD835256DC0CB007E30D2 /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */; };
+		FA3BD836256DC0CB007E30D2 /* SPAlertHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD816256DC0CA007E30D2 /* SPAlertHaptic.swift */; };
+		FA3BD837256DC0CB007E30D2 /* SPAlertLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD817256DC0CA007E30D2 /* SPAlertLayout.swift */; };
+		FA3BD838256DC0CB007E30D2 /* SPAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD819256DC0CB007E30D2 /* SPAlertView.swift */; };
+		FA3BD839256DC0CB007E30D2 /* SPAlertIconBoltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD81B256DC0CB007E30D2 /* SPAlertIconBoltView.swift */; };
+		FA3BD83A256DC0CB007E30D2 /* SPAlertIconEjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD81C256DC0CB007E30D2 /* SPAlertIconEjectView.swift */; };
+		FA3BD83B256DC0CB007E30D2 /* SPAlertIconAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD81D256DC0CB007E30D2 /* SPAlertIconAddView.swift */; };
+		FA3BD83C256DC0CB007E30D2 /* SPAlertIconHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD81E256DC0CB007E30D2 /* SPAlertIconHeartView.swift */; };
+		FA3BD83D256DC0CB007E30D2 /* SPAlertIconShuffleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD81F256DC0CB007E30D2 /* SPAlertIconShuffleView.swift */; };
+		FA3BD83E256DC0CB007E30D2 /* SPAlertIconSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD820256DC0CB007E30D2 /* SPAlertIconSearchView.swift */; };
+		FA3BD83F256DC0CB007E30D2 /* SPAlertIconStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD821256DC0CB007E30D2 /* SPAlertIconStarView.swift */; };
+		FA3BD840256DC0CB007E30D2 /* SPAlertIconCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD822256DC0CB007E30D2 /* SPAlertIconCardView.swift */; };
+		FA3BD841256DC0CB007E30D2 /* SPAlertIconLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD823256DC0CB007E30D2 /* SPAlertIconLikeView.swift */; };
+		FA3BD842256DC0CB007E30D2 /* SPAlertIconErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD824256DC0CB007E30D2 /* SPAlertIconErrorView.swift */; };
+		FA3BD843256DC0CB007E30D2 /* SPAlertIconQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD825256DC0CB007E30D2 /* SPAlertIconQuestionView.swift */; };
+		FA3BD844256DC0CB007E30D2 /* SPAlertIconExclamationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD826256DC0CB007E30D2 /* SPAlertIconExclamationView.swift */; };
+		FA3BD845256DC0CB007E30D2 /* SPAlertIconMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD827256DC0CB007E30D2 /* SPAlertIconMessageView.swift */; };
+		FA3BD846256DC0CB007E30D2 /* SPAlertIconDislikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD828256DC0CB007E30D2 /* SPAlertIconDislikeView.swift */; };
+		FA3BD847256DC0CB007E30D2 /* SPAlertIconBookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD829256DC0CB007E30D2 /* SPAlertIconBookmarkView.swift */; };
+		FA3BD848256DC0CB007E30D2 /* SPAlertIconFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD82A256DC0CB007E30D2 /* SPAlertIconFlagView.swift */; };
+		FA3BD849256DC0CB007E30D2 /* SPAlertIconRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD82B256DC0CB007E30D2 /* SPAlertIconRotateView.swift */; };
+		FA3BD84A256DC0CB007E30D2 /* SPAlertIconDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD82C256DC0CB007E30D2 /* SPAlertIconDocView.swift */; };
+		FA3BD84B256DC0CB007E30D2 /* SPAlertIconPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD82D256DC0CB007E30D2 /* SPAlertIconPrivacyView.swift */; };
+		FA3BD84C256DC0CB007E30D2 /* SPAlertIconCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD82E256DC0CB007E30D2 /* SPAlertIconCartView.swift */; };
+		FA3BD84D256DC0CB007E30D2 /* SPAlertIconDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD82F256DC0CB007E30D2 /* SPAlertIconDoneView.swift */; };
+		FA3BD84E256DC0CB007E30D2 /* SPAlertIconRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD830256DC0CB007E30D2 /* SPAlertIconRepeatView.swift */; };
+		FA3BD84F256DC0CB007E30D2 /* SPAlertIconMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD831256DC0CB007E30D2 /* SPAlertIconMoonView.swift */; };
+		FA3BD850256DC0CB007E30D2 /* SPAlertIconAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD833256DC0CB007E30D2 /* SPAlertIconAnimatable.swift */; };
+		FA3BD851256DC0CB007E30D2 /* SPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD834256DC0CB007E30D2 /* SPAlert.swift */; };
 		FA40D71D256851FE0098CA2A /* SuperEllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40D71C256851FE0098CA2A /* SuperEllipseView.swift */; };
 		FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B2072555FA98003FC1D4 /* Squircle.swift */; };
 		FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58B20A2555FA98003FC1D4 /* CGPoint+Delta.swift */; };
@@ -29,6 +58,7 @@
 		FA998449256A1E960031FED4 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA998448256A1E960031FED4 /* UISearchBar+Extensions.swift */; };
 		FA99844B256A1EBC0031FED4 /* UITextFiled+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99844A256A1EBC0031FED4 /* UITextFiled+Extensions.swift */; };
 		FA99848D256B168E0031FED4 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99848C256B168E0031FED4 /* UIScreen+Extensions.swift */; };
+		FABB1799257068D000EB44AE /* BarcodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1798257068D000EB44AE /* BarcodeHelper.swift */; };
 		FAC28C6C2554A1DE009267A7 /* CardLargeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC28C6A2554A1DE009267A7 /* CardLargeCollectionViewCell.swift */; };
 		FADA382F2550AA1600FA910F /* CommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA382D2550AA1600FA910F /* CommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE66B2552EE6F00934B8D /* UIViewController+Extensions.swift */; };
@@ -56,6 +86,35 @@
 /* Begin PBXFileReference section */
 		FA14B041255C675D00CFD6C2 /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
 		FA14B043255C688500CFD6C2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertPreset.swift; sourceTree = "<group>"; };
+		FA3BD816256DC0CA007E30D2 /* SPAlertHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertHaptic.swift; sourceTree = "<group>"; };
+		FA3BD817256DC0CA007E30D2 /* SPAlertLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertLayout.swift; sourceTree = "<group>"; };
+		FA3BD819256DC0CB007E30D2 /* SPAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertView.swift; sourceTree = "<group>"; };
+		FA3BD81B256DC0CB007E30D2 /* SPAlertIconBoltView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconBoltView.swift; sourceTree = "<group>"; };
+		FA3BD81C256DC0CB007E30D2 /* SPAlertIconEjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconEjectView.swift; sourceTree = "<group>"; };
+		FA3BD81D256DC0CB007E30D2 /* SPAlertIconAddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconAddView.swift; sourceTree = "<group>"; };
+		FA3BD81E256DC0CB007E30D2 /* SPAlertIconHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconHeartView.swift; sourceTree = "<group>"; };
+		FA3BD81F256DC0CB007E30D2 /* SPAlertIconShuffleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconShuffleView.swift; sourceTree = "<group>"; };
+		FA3BD820256DC0CB007E30D2 /* SPAlertIconSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconSearchView.swift; sourceTree = "<group>"; };
+		FA3BD821256DC0CB007E30D2 /* SPAlertIconStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconStarView.swift; sourceTree = "<group>"; };
+		FA3BD822256DC0CB007E30D2 /* SPAlertIconCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconCardView.swift; sourceTree = "<group>"; };
+		FA3BD823256DC0CB007E30D2 /* SPAlertIconLikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconLikeView.swift; sourceTree = "<group>"; };
+		FA3BD824256DC0CB007E30D2 /* SPAlertIconErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconErrorView.swift; sourceTree = "<group>"; };
+		FA3BD825256DC0CB007E30D2 /* SPAlertIconQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconQuestionView.swift; sourceTree = "<group>"; };
+		FA3BD826256DC0CB007E30D2 /* SPAlertIconExclamationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconExclamationView.swift; sourceTree = "<group>"; };
+		FA3BD827256DC0CB007E30D2 /* SPAlertIconMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconMessageView.swift; sourceTree = "<group>"; };
+		FA3BD828256DC0CB007E30D2 /* SPAlertIconDislikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconDislikeView.swift; sourceTree = "<group>"; };
+		FA3BD829256DC0CB007E30D2 /* SPAlertIconBookmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconBookmarkView.swift; sourceTree = "<group>"; };
+		FA3BD82A256DC0CB007E30D2 /* SPAlertIconFlagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconFlagView.swift; sourceTree = "<group>"; };
+		FA3BD82B256DC0CB007E30D2 /* SPAlertIconRotateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconRotateView.swift; sourceTree = "<group>"; };
+		FA3BD82C256DC0CB007E30D2 /* SPAlertIconDocView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconDocView.swift; sourceTree = "<group>"; };
+		FA3BD82D256DC0CB007E30D2 /* SPAlertIconPrivacyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconPrivacyView.swift; sourceTree = "<group>"; };
+		FA3BD82E256DC0CB007E30D2 /* SPAlertIconCartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconCartView.swift; sourceTree = "<group>"; };
+		FA3BD82F256DC0CB007E30D2 /* SPAlertIconDoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconDoneView.swift; sourceTree = "<group>"; };
+		FA3BD830256DC0CB007E30D2 /* SPAlertIconRepeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconRepeatView.swift; sourceTree = "<group>"; };
+		FA3BD831256DC0CB007E30D2 /* SPAlertIconMoonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconMoonView.swift; sourceTree = "<group>"; };
+		FA3BD833256DC0CB007E30D2 /* SPAlertIconAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconAnimatable.swift; sourceTree = "<group>"; };
+		FA3BD834256DC0CB007E30D2 /* SPAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlert.swift; sourceTree = "<group>"; };
 		FA40D71C256851FE0098CA2A /* SuperEllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperEllipseView.swift; sourceTree = "<group>"; };
 		FA58B2072555FA98003FC1D4 /* Squircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squircle.swift; sourceTree = "<group>"; };
 		FA58B20A2555FA98003FC1D4 /* CGPoint+Delta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Delta.swift"; sourceTree = "<group>"; };
@@ -76,6 +135,7 @@
 		FA998448256A1E960031FED4 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
 		FA99844A256A1EBC0031FED4 /* UITextFiled+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Extensions.swift"; sourceTree = "<group>"; };
 		FA99848C256B168E0031FED4 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		FABB1798257068D000EB44AE /* BarcodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeHelper.swift; sourceTree = "<group>"; };
 		FAC28C6A2554A1DE009267A7 /* CardLargeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLargeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FADA382A2550AA1600FA910F /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA382D2550AA1600FA910F /* CommonUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUI.h; sourceTree = "<group>"; };
@@ -106,6 +166,74 @@
 				FA14B043255C688500CFD6C2 /* CardView.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		FA3BD813256DC0BE007E30D2 /* SPAlert */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BD814256DC0CA007E30D2 /* Models */,
+				FA3BD832256DC0CB007E30D2 /* Protocol */,
+				FA3BD834256DC0CB007E30D2 /* SPAlert.swift */,
+				FA3BD818256DC0CB007E30D2 /* Views */,
+			);
+			path = SPAlert;
+			sourceTree = "<group>";
+		};
+		FA3BD814256DC0CA007E30D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */,
+				FA3BD816256DC0CA007E30D2 /* SPAlertHaptic.swift */,
+				FA3BD817256DC0CA007E30D2 /* SPAlertLayout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA3BD818256DC0CB007E30D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BD819256DC0CB007E30D2 /* SPAlertView.swift */,
+				FA3BD81A256DC0CB007E30D2 /* Icons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA3BD81A256DC0CB007E30D2 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BD81B256DC0CB007E30D2 /* SPAlertIconBoltView.swift */,
+				FA3BD81C256DC0CB007E30D2 /* SPAlertIconEjectView.swift */,
+				FA3BD81D256DC0CB007E30D2 /* SPAlertIconAddView.swift */,
+				FA3BD81E256DC0CB007E30D2 /* SPAlertIconHeartView.swift */,
+				FA3BD81F256DC0CB007E30D2 /* SPAlertIconShuffleView.swift */,
+				FA3BD820256DC0CB007E30D2 /* SPAlertIconSearchView.swift */,
+				FA3BD821256DC0CB007E30D2 /* SPAlertIconStarView.swift */,
+				FA3BD822256DC0CB007E30D2 /* SPAlertIconCardView.swift */,
+				FA3BD823256DC0CB007E30D2 /* SPAlertIconLikeView.swift */,
+				FA3BD824256DC0CB007E30D2 /* SPAlertIconErrorView.swift */,
+				FA3BD825256DC0CB007E30D2 /* SPAlertIconQuestionView.swift */,
+				FA3BD826256DC0CB007E30D2 /* SPAlertIconExclamationView.swift */,
+				FA3BD827256DC0CB007E30D2 /* SPAlertIconMessageView.swift */,
+				FA3BD828256DC0CB007E30D2 /* SPAlertIconDislikeView.swift */,
+				FA3BD829256DC0CB007E30D2 /* SPAlertIconBookmarkView.swift */,
+				FA3BD82A256DC0CB007E30D2 /* SPAlertIconFlagView.swift */,
+				FA3BD82B256DC0CB007E30D2 /* SPAlertIconRotateView.swift */,
+				FA3BD82C256DC0CB007E30D2 /* SPAlertIconDocView.swift */,
+				FA3BD82D256DC0CB007E30D2 /* SPAlertIconPrivacyView.swift */,
+				FA3BD82E256DC0CB007E30D2 /* SPAlertIconCartView.swift */,
+				FA3BD82F256DC0CB007E30D2 /* SPAlertIconDoneView.swift */,
+				FA3BD830256DC0CB007E30D2 /* SPAlertIconRepeatView.swift */,
+				FA3BD831256DC0CB007E30D2 /* SPAlertIconMoonView.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		FA3BD832256DC0CB007E30D2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BD833256DC0CB007E30D2 /* SPAlertIconAnimatable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		FA58B2042555FA65003FC1D4 /* Squircle */ = {
@@ -177,6 +305,14 @@
 			path = CardTransition;
 			sourceTree = "<group>";
 		};
+		FABB1797257068B100EB44AE /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				FABB1798257068D000EB44AE /* BarcodeHelper.swift */,
+			);
+			path = Barcode;
+			sourceTree = "<group>";
+		};
 		FAC28C672554A175009267A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +371,8 @@
 		FADDE6692552EE4E00934B8D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FABB1797257068B100EB44AE /* Barcode */,
+				FA3BD813256DC0BE007E30D2 /* SPAlert */,
 				FA58B2612559F391003FC1D4 /* Transitions */,
 				FA58B2042555FA65003FC1D4 /* Squircle */,
 				FAC28C672554A175009267A7 /* Views */,
@@ -356,9 +494,15 @@
 			files = (
 				FAF8EE062561F3A800537719 /* UIView+Extensions.swift in Sources */,
 				FA80733325630B0C000A5DB3 /* UIStackView+Extensions.swift in Sources */,
+				FA3BD83F256DC0CB007E30D2 /* SPAlertIconStarView.swift in Sources */,
 				FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */,
+				FA3BD847256DC0CB007E30D2 /* SPAlertIconBookmarkView.swift in Sources */,
 				FA998449256A1E960031FED4 /* UISearchBar+Extensions.swift in Sources */,
+				FA3BD84E256DC0CB007E30D2 /* SPAlertIconRepeatView.swift in Sources */,
 				FA80734325631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift in Sources */,
+				FA3BD842256DC0CB007E30D2 /* SPAlertIconErrorView.swift in Sources */,
+				FA3BD84A256DC0CB007E30D2 /* SPAlertIconDocView.swift in Sources */,
+				FA3BD84C256DC0CB007E30D2 /* SPAlertIconCartView.swift in Sources */,
 				FA58B2112555FA98003FC1D4 /* CGPoint+Delta.swift in Sources */,
 				FA40D71D256851FE0098CA2A /* SuperEllipseView.swift in Sources */,
 				FA86C241255B1B8C00EBA974 /* CardDismissingAnimationTransitioning.swift in Sources */,
@@ -366,20 +510,44 @@
 				FA99848D256B168E0031FED4 /* UIScreen+Extensions.swift in Sources */,
 				FA58B20F2555FA98003FC1D4 /* Squircle.swift in Sources */,
 				FADDE66C2552EE6F00934B8D /* UIViewController+Extensions.swift in Sources */,
+				FA3BD838256DC0CB007E30D2 /* SPAlertView.swift in Sources */,
+				FA3BD851256DC0CB007E30D2 /* SPAlert.swift in Sources */,
+				FA3BD839256DC0CB007E30D2 /* SPAlertIconBoltView.swift in Sources */,
+				FA3BD84F256DC0CB007E30D2 /* SPAlertIconMoonView.swift in Sources */,
 				FA80734225631B4E000A5DB3 /* SPLarkPresentationController.swift in Sources */,
+				FA3BD843256DC0CB007E30D2 /* SPAlertIconQuestionView.swift in Sources */,
+				FA3BD83E256DC0CB007E30D2 /* SPAlertIconSearchView.swift in Sources */,
+				FA3BD846256DC0CB007E30D2 /* SPAlertIconDislikeView.swift in Sources */,
+				FA3BD845256DC0CB007E30D2 /* SPAlertIconMessageView.swift in Sources */,
 				FA80734125631B4E000A5DB3 /* SPLarkPresentingAnimationController.swift in Sources */,
+				FA3BD836256DC0CB007E30D2 /* SPAlertHaptic.swift in Sources */,
+				FA3BD850256DC0CB007E30D2 /* SPAlertIconAnimatable.swift in Sources */,
 				FA86C243255B1BDA00EBA974 /* CardPresentingAnimationTransitioning.swift in Sources */,
 				FA80734025631B4E000A5DB3 /* SPLarkController.swift in Sources */,
 				FA99844B256A1EBC0031FED4 /* UITextFiled+Extensions.swift in Sources */,
+				FA3BD841256DC0CB007E30D2 /* SPAlertIconLikeView.swift in Sources */,
+				FA3BD837256DC0CB007E30D2 /* SPAlertLayout.swift in Sources */,
+				FA3BD844256DC0CB007E30D2 /* SPAlertIconExclamationView.swift in Sources */,
 				FA58B2132555FA98003FC1D4 /* Squircle+Internal.swift in Sources */,
 				FA58B2122555FA98003FC1D4 /* Checkpoints.swift in Sources */,
 				FAF8EDAA2561595400537719 /* NibLoadable.swift in Sources */,
+				FA3BD83C256DC0CB007E30D2 /* SPAlertIconHeartView.swift in Sources */,
+				FABB1799257068D000EB44AE /* BarcodeHelper.swift in Sources */,
+				FA3BD840256DC0CB007E30D2 /* SPAlertIconCardView.swift in Sources */,
 				FA14B044255C688500CFD6C2 /* CardView.swift in Sources */,
+				FA3BD835256DC0CB007E30D2 /* SPAlertPreset.swift in Sources */,
 				FA77F0F3255F5BC000E8906C /* CardPresentationController.swift in Sources */,
+				FA3BD83B256DC0CB007E30D2 /* SPAlertIconAddView.swift in Sources */,
 				FA80734425631B4E000A5DB3 /* SPLarkTransitioningDelegate.swift in Sources */,
+				FA3BD84B256DC0CB007E30D2 /* SPAlertIconPrivacyView.swift in Sources */,
 				FAF8ED9C256132E500537719 /* AddButton.swift in Sources */,
 				FA80734525631B4E000A5DB3 /* SPLarkControllerExtenshion.swift in Sources */,
 				FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */,
+				FA3BD848256DC0CB007E30D2 /* SPAlertIconFlagView.swift in Sources */,
+				FA3BD83A256DC0CB007E30D2 /* SPAlertIconEjectView.swift in Sources */,
+				FA3BD83D256DC0CB007E30D2 /* SPAlertIconShuffleView.swift in Sources */,
+				FA3BD849256DC0CB007E30D2 /* SPAlertIconRotateView.swift in Sources */,
+				FA3BD84D256DC0CB007E30D2 /* SPAlertIconDoneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +686,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CommonUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,7 +713,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CommonUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

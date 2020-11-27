@@ -5,11 +5,11 @@ import WalletCore
 
 protocol CardDetailInteractorProtocol {
     var selectedCardSideType: CardSideType { get set }
+    var isShowTopBar: Bool { get }
     func numberOfRowsInSection(section: Int) -> Int
     func isFavourites() -> Bool
     func getNameCard() -> String
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ())
-    func generateBarcode() -> UIImage?
     func getCardDetailItem(indexPath: IndexPath) -> CardDetailItem
     func getCardSideTypes() -> [CardSideType]
     func selectItem(index: Int)
@@ -61,8 +61,7 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
             break
         }
         
-        self.cardDetailItems.append(BarcodeDetailItem(type: .barcode, image: generateBarcode()))
-        
+        self.cardDetailItems.append(BarcodeDetailItem(item: card.barcode))
     }
     
     func numberOfRowsInSection(section: Int) -> Int {
@@ -100,21 +99,6 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
     func getCardSideTypes() -> [CardSideType] {
         let items: [CardSideType] = [.front(path: card.texture.front), .back(path: card.texture.back)]
         return items
-    }
-    
-    func generateBarcode() -> UIImage? {
-        let data = card.barcode.number.data(using: String.Encoding.ascii)
-        
-        if let filter = CIFilter(name: "CICode128BarcodeGenerator") {
-            filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 15, y: 15)
-            
-            if let output = filter.outputImage?.transformed(by: transform) {
-                return UIImage(ciImage: output)
-            }
-        }
-        
-        return nil
     }
     
     

@@ -52,6 +52,6 @@ struct TextDetailItem: CardDetailItem {
 
 struct BarcodeDetailItem: CardDetailItem {
     var type: CardDetailType = .barcode
-    let image: UIImage?
+    let item: Barcode
 }
 

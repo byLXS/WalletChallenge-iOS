@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E573CC887EDE134BAEC778F6 /* Pods_WalletChallengeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F376681FEC47501808A73C2A /* Pods_WalletChallengeApp.framework */; };
 		FA10333C2551F1290014825B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA10333E2551F1290014825B /* Localizable.strings */; };
 		FA1033622552009F0014825B /* WRootUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033612552009F0014825B /* WRootUI.framework */; };
 		FA1033632552009F0014825B /* WRootUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033612552009F0014825B /* WRootUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,7 +112,6 @@
 				FA354DE125651E2C009F6906 /* WalletCore.framework in Frameworks */,
 				FA3BD7F9256DA2D0007E30D2 /* FavouritesListUI.framework in Frameworks */,
 				FA998487256AA1970031FED4 /* SettingsUI.framework in Frameworks */,
-				E573CC887EDE134BAEC778F6 /* Pods_WalletChallengeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,8 +461,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VY2ZB4KW5J;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = WalletChallengeApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,8 +490,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VY2ZB4KW5J;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = WalletChallengeApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

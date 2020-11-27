@@ -25,11 +25,17 @@ public struct Texture {
     }
 }
 
+public enum BarcodeKind: String {
+    case code128 = "CODE128"
+    case ean13 = "EAN13"
+    case qr = "QR"
+}
+
 public struct Barcode {
     public let number: String
-    public let kind: String
+    public let kind: BarcodeKind
     
-    public init(number: String, kind: String) {
+    public init(number: String, kind: BarcodeKind) {
         self.number = number
         self.kind = kind
     }

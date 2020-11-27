@@ -12,9 +12,12 @@ public class CardDetailViewController: ThemeViewController {
 
     var interactor: CardDetailInteractorProtocol?
     let cardDetailHeaderView = CardDetailHeaderView.loadFromNib()
+    
+    var startCardAnimation = false
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = interactor?.getNameCard()
         titleLabel.text = interactor?.getNameCard()
         setupTableView()
         setupStackView()
@@ -51,7 +54,13 @@ public class CardDetailViewController: ThemeViewController {
         cardDetailHeaderView.collectionView.dataSource = self
         cardDetailHeaderView.collectionView.delegate = self
         let y = cancelButton.frame.origin.y + 30 + 18
-        tableView.frame = CGRect(x: 0, y: cancelButton.frame.origin.y + 30 + 18, width: UIScreen.main.bounds.width, height: self.view.frame.height - y)
+        
+        if interactor?.isShowTopBar ?? false {
+            tableView.frame = CGRect(x: 0, y: cancelButton.frame.origin.y + 30 + 18, width: UIScreen.main.bounds.width, height: self.view.frame.height - y)
+        } else {
+            tableView.frame = CGRect(x: 0, y: self.navigationBarHeight + 12, width: UIScreen.main.bounds.width, height: self.view.frame.height - y)
+        }
+        
         self.view.addSubview(tableView)
         tableView.setNeedsLayout()
         tableView.tableFooterView = UIView()
@@ -85,7 +94,10 @@ public class CardDetailViewController: ThemeViewController {
         addFavouritesButton.translatesAutoresizingMaskIntoConstraints = false
         addFavouritesButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         let window = UIApplication.shared.windows[0]
-        let bottomPadding = window.safeAreaInsets.bottom
+        var bottomPadding: CGFloat = 0
+        if #available(iOS 11.0, *) {
+            bottomPadding = window.safeAreaInsets.bottom
+        }
         addFavouritesButton.contentEdgeInsets.bottom = bottomPadding / 2
         addFavouritesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         addFavouritesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
@@ -96,12 +108,24 @@ public class CardDetailViewController: ThemeViewController {
         
     }
     
+    func generateBarcode(item: Barcode) -> UIImage? {
+        switch item.kind {
+        case .code128, .ean13:
+            return BarcodeHelper.generateBarcode(text: item.number)
+        case .qr:
+            return BarcodeHelper.generateQRCode(text: item.number)
+        }
+    }
+    
     @IBAction func skipScreen() {
         self.dismiss(animated: true, completion: nil)
     }
     
     @objc func addFavourites() {
         interactor?.addFavourites()
+        if interactor?.isFavourites() ?? false {
+            SPAlert.present(title: Strings.addedToFavourites, preset: .heart)
+        }
         decorator(theme: ThemeManager.currentTheme)
     }
 
