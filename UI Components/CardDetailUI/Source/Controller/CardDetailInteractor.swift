@@ -14,6 +14,7 @@ protocol CardDetailInteractorProtocol {
     func getCardSideTypes() -> [CardSideType]
     func selectItem(index: Int)
     func addFavourites()
+    func addViewCount()
 }
 
 class CardDetailInteractor: CardDetailInteractorProtocol {
@@ -28,6 +29,7 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
         self.isShowTopBar = isShowTopBar
         selectedCardSideType = .front(path: card.texture.front)
         setupDisplayItems()
+        addViewCount()
     }
     
     func isFavourites() -> Bool {
@@ -85,6 +87,16 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
     
     func addFavourites() {
         card.isFavourites = !card.isFavourites
+        saveCard()
+    }
+    
+    func addViewCount() {
+        card.viewsCount += 1
+        saveCard()
+    }
+    
+    
+    func saveCard() {
         CardEntity.asynchronouslyFind("number=\"\(card.number)\"") { [weak self] (entityList) in
             _ = entityList.map({$0.destroyInBackgroundQueue()})
             let _ = self?.card.convertPresentationDataInEntity()

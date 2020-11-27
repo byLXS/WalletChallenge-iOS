@@ -18,6 +18,7 @@ public struct Strings {
     static public let appliances = getText(value: "appliances")
     static public let buildingMaterials = getText(value: "buildingMaterials")
     static public let goods = getText(value: "goods")
+    static public let mostUsed = getText(value: "mostUsed")
     // MARK: CardDetail
     static public let grade = getText(value: "grade")
     static public let balance = getText(value: "balance")

@@ -56,7 +56,7 @@ public class CardDetailViewController: ThemeViewController {
         let y = cancelButton.frame.origin.y + 30 + 18
         
         if interactor?.isShowTopBar ?? false {
-            tableView.frame = CGRect(x: 0, y: cancelButton.frame.origin.y + 30 + 18, width: UIScreen.main.bounds.width, height: self.view.frame.height - y)
+            tableView.frame = CGRect(x: 0, y: 75 + bottomPadding, width: UIScreen.main.bounds.width, height: self.view.frame.height - y)
         } else {
             tableView.frame = CGRect(x: 0, y: self.navigationBarHeight + 12, width: UIScreen.main.bounds.width, height: self.view.frame.height - y)
         }
@@ -93,11 +93,6 @@ public class CardDetailViewController: ThemeViewController {
         self.view.addSubview(addFavouritesButton)
         addFavouritesButton.translatesAutoresizingMaskIntoConstraints = false
         addFavouritesButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-        let window = UIApplication.shared.windows[0]
-        var bottomPadding: CGFloat = 0
-        if #available(iOS 11.0, *) {
-            bottomPadding = window.safeAreaInsets.bottom
-        }
         addFavouritesButton.contentEdgeInsets.bottom = bottomPadding / 2
         addFavouritesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         addFavouritesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true

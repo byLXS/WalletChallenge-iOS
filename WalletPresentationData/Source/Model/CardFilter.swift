@@ -17,6 +17,10 @@ public class CategoryItem {
         self.type = type
         self.isSelected = isSelected
     }
+    
+    public static func getDefaultItems() -> [CategoryItem] {
+        return [CategoryItem(type: .mostUsed), CategoryItem(type: .appliances), CategoryItem(type: .buildingMaterials), CategoryItem(type: .goods)]
+    }
 }
 
 public enum CardFilterType: Int {

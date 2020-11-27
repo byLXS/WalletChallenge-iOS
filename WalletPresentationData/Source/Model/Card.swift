@@ -8,11 +8,12 @@ public enum CardType: String {
 
 public protocol Card {
     var number: String { get }
+    var isFavourites: Bool { get set }
+    var viewsCount: Int { get set }
     var kind: CardType { get }
     var texture: Texture { get }
     var barcode: Barcode { get }
     var issuer: Issuer { get }
-    var isFavourites: Bool { get set }
 }
 
 public struct Texture {
@@ -56,6 +57,7 @@ public enum CategoryType: String {
     case appliances = "appliances"
     case buildingMaterials = "buildingMaterials"
     case goods = "goods"
+    case mostUsed
     case unknown
     
     public var title: String {
@@ -63,6 +65,7 @@ public enum CategoryType: String {
         case .appliances: return Strings.appliances
         case .buildingMaterials: return Strings.buildingMaterials
         case .goods: return Strings.goods
+        case .mostUsed: return Strings.mostUsed
         case .unknown: return ""
         }
     }
@@ -77,8 +80,9 @@ public class LoyaltyCard: Card {
     public var grade: String
     public var balance: Int
     public var isFavourites: Bool
+    public var viewsCount: Int
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, grade: String, balance: Int, isFavourites: Bool) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, grade: String, balance: Int, isFavourites: Bool, viewsCount: Int) {
         self.number = number
         self.kind = kind
         self.texture = texture
@@ -87,6 +91,7 @@ public class LoyaltyCard: Card {
         self.grade = grade
         self.balance = balance
         self.isFavourites = isFavourites
+        self.viewsCount = viewsCount
     }
     
 }
@@ -100,8 +105,9 @@ public class CertificateCard: Card {
     public var value: Int
     public var expireDate: String
     public var isFavourites: Bool
+    public var viewsCount: Int
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, value: Int, expireDate: String, isFavourites: Bool) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, value: Int, expireDate: String, isFavourites: Bool, viewsCount: Int) {
         self.number = number
         self.kind = kind
         self.texture = texture
@@ -110,6 +116,7 @@ public class CertificateCard: Card {
         self.value = value
         self.expireDate = expireDate
         self.isFavourites = isFavourites
+        self.viewsCount = viewsCount
     }
     
 }
@@ -121,14 +128,16 @@ public class DefaultCard: Card {
     public var barcode: Barcode
     public var issuer: Issuer
     public var isFavourites: Bool
+    public var viewsCount: Int
     
-    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, isFavourites: Bool) {
+    public init(number: String, kind: CardType, texture: Texture, barcode: Barcode, issuer: Issuer, isFavourites: Bool, viewsCount: Int) {
         self.number = number
         self.kind = kind
         self.texture = texture
         self.barcode = barcode
         self.issuer = issuer
         self.isFavourites = isFavourites
+        self.viewsCount = viewsCount
     }
     
 }

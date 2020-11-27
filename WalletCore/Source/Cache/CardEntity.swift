@@ -9,6 +9,7 @@ public class CardEntity: NSManagedObject, CDHelperEntity {
     @NSManaged public var number: String
     @NSManaged public var kind: String
     @NSManaged public var isFavourites: Bool
+    @NSManaged public var viewsCount: NSNumber
     @NSManaged public var texture: TextureEntity
     @NSManaged public var barcode: BarcodeEntity
     @NSManaged public var issuer: IssuerEntity
@@ -29,11 +30,11 @@ extension CardEntity {
         let cardType = CardType(rawValue: kind) ?? .none
         switch cardType {
         case .loyalty:
-            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), grade: loyaltyCard?.grade ?? "", balance: Int(truncating: loyaltyCard?.balance ?? 0), isFavourites: isFavourites)
+            return LoyaltyCard(number: number, kind: .loyalty, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), grade: loyaltyCard?.grade ?? "", balance: Int(truncating: loyaltyCard?.balance ?? 0), isFavourites: isFavourites, viewsCount: viewsCount.intValue)
         case .certificate:
-            return CertificateCard(number: number, kind: .certificate, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), value: certificateCard?.value.intValue ?? 0, expireDate: certificateCard?.expireDate ?? "", isFavourites: isFavourites)
+            return CertificateCard(number: number, kind: .certificate, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), value: certificateCard?.value.intValue ?? 0, expireDate: certificateCard?.expireDate ?? "", isFavourites: isFavourites, viewsCount: viewsCount.intValue)
         case .none:
-            return DefaultCard(number: number, kind: .none, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), isFavourites: isFavourites)
+            return DefaultCard(number: number, kind: .none, texture: texture.convertEntityInPresentationData(), barcode: barcode.convertEntityInPresentationData(), issuer: issuer.convertEntityInPresentationData(), isFavourites: isFavourites, viewsCount: viewsCount.intValue)
         }
     }
 }
@@ -70,6 +71,7 @@ extension Card {
         }
         entity.number = number
         entity.isFavourites = isFavourites
+        entity.viewsCount = NSNumber(value: viewsCount)
         entity.texture = texture.convertResponseInEntity()
         entity.barcode = barcode.convertResponseInEntity()
         entity.issuer = issuer.convertResponseInEntity()

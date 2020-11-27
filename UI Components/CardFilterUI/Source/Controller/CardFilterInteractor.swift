@@ -60,7 +60,7 @@ class CardFilterInteractor: CardFilterInteractorProtocol {
     }
     
     func clearFilter() {
-        let categoryList: [CategoryItem] = [CategoryItem(type: .appliances), CategoryItem(type: .buildingMaterials), CategoryItem(type: .goods)]
+        let categoryList: [CategoryItem] = CategoryItem.getDefaultItems()
         self.cardFilter = CardFilter(cardPresentationStyle: .medium, cardType: .all, selectedCategoryItems: categoryList, isSelected: false)
     }
 }

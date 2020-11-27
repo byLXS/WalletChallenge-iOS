@@ -24,30 +24,34 @@ public class AccountWorker {
             
         }
         api.getCards() { (result: CompletionApiArray<CardResponse>) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let data):
-                    var cardList = data.convertResponseInPresentationData().sorted(by: {$0.number < $1.number})
-                    let oldItems = self.account.cardList.filter({$0.isFavourites == true})
-                    for oldItem in oldItems {
-                        if let index = cardList.firstIndex(where: {$0.number == oldItem.number}) {
-                            cardList[index].isFavourites = true
-                        }
+            switch result {
+            case .success(let data):
+                var cardList = data.convertResponseInPresentationData().sorted(by: {$0.number < $1.number})
+                let oldItems = self.account.cardList.filter({$0.isFavourites == true})
+                let oldItemsViewsCount = self.account.cardList.filter({$0.viewsCount > 0})
+                for oldItem in oldItems {
+                    if let index = cardList.firstIndex(where: {$0.number == oldItem.number}) {
+                        cardList[index].isFavourites = true
                     }
-                    self.account.cardList = cardList
-                    
-                    
-                    CardEntity.destroy() {
-                        CardEntity.save(data: self.account.cardList) {
-                        }
+                }
+                for oldItem in oldItemsViewsCount {
+                    if let index = cardList.firstIndex(where: {$0.number == oldItem.number}) {
+                        cardList[index].viewsCount = oldItem.viewsCount
                     }
-                    DispatchQueue.main.async {
-                        completionSuccess(cardList)
+                }
+                self.account.cardList = cardList
+                
+                
+                CardEntity.destroy() {
+                    CardEntity.save(data: self.account.cardList) {
                     }
-                case .failure( _):
-                    DispatchQueue.main.async {
-                        completionFailure(.alert)
-                    }
+                }
+                DispatchQueue.main.async {
+                    completionSuccess(cardList)
+                }
+            case .failure( _):
+                DispatchQueue.main.async {
+                    completionFailure(.alert)
                 }
             }
         }

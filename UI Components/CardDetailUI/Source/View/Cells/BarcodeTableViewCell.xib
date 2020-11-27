@@ -22,10 +22,12 @@
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="ngB-Ok-go2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Qi-Eh-Ep5"/>
                     <constraint firstAttribute="bottom" secondItem="ngB-Ok-go2" secondAttribute="bottom" id="IGX-ku-OFC"/>
+                    <constraint firstItem="ngB-Ok-go2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PVB-Lt-AKJ"/>
+                    <constraint firstAttribute="trailing" secondItem="ngB-Ok-go2" secondAttribute="trailing" constant="20" id="XPd-hb-WsR"/>
                     <constraint firstItem="ngB-Ok-go2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cCi-RK-NVN"/>
-                    <constraint firstItem="ngB-Ok-go2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cqK-H2-Ivh"/>
-                    <constraint firstAttribute="trailing" secondItem="ngB-Ok-go2" secondAttribute="trailing" constant="20" id="rLp-FL-gDe"/>
+                    <constraint firstItem="ngB-Ok-go2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gXR-SP-dsA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

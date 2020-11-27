@@ -22,7 +22,7 @@ class MainInteractor: MainInteractorProtocol {
     
     init(accountWorker: AccountWorker) {
         self.accountWorker = accountWorker
-        let categoryList: [CategoryItem] = [CategoryItem(type: .appliances), CategoryItem(type: .buildingMaterials), CategoryItem(type: .goods)]
+        let categoryList: [CategoryItem] = CategoryItem.getDefaultItems()
         self.cardFilter = CardFilter(cardPresentationStyle: .medium, cardType: .all, selectedCategoryItems: categoryList, isSelected: false)
     }
     
@@ -54,11 +54,15 @@ class MainInteractor: MainInteractorProtocol {
                     newCardList.append(contentsOf: self.cardList.filter({$0.issuer.categories.contains(selectedCategoryItem.type)}))
                 }
             }
-        } else {
+        }
+        
+        if newCardList.isEmpty {
             newCardList = self.cardList
         }
         
-        
+        if let _ = cardFilter.selectedCategoryItems.filter({$0.type == .mostUsed}).first {
+            newCardList = newCardList.sorted(by: {$0.viewsCount > $1.viewsCount})
+        }
         
         self.cardList = newCardList
         

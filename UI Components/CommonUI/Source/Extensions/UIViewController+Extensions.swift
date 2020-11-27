@@ -20,4 +20,12 @@ extension UIViewController {
     public var navigationBarHeight: CGFloat {
         return self.navigationController?.navigationBar.frame.height ?? 0.0
     }
+    
+    public var bottomPadding: CGFloat {
+        let window = UIApplication.shared.windows[0]
+        if #available(iOS 11.0, *) {
+            return window.safeAreaInsets.bottom
+        }
+        return 0
+    }
 }
