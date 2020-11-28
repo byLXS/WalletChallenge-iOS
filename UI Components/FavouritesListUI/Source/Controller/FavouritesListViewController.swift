@@ -3,6 +3,10 @@ import WalletPresentationData
 import CommonUI
 import RSThemeKit
 
+protocol FavouritesListDisplayLogic {
+    func reloadList()
+}
+
 public class FavouritesListViewController: UIViewController {
     
     @IBOutlet weak var collectionView: ThemeCollectionView!
@@ -29,5 +33,11 @@ public class FavouritesListViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(CardLargeCollectionViewCell.self, forCellWithReuseIdentifier: CardLargeCollectionViewCell.identifier)
+    }
+}
+
+extension FavouritesListViewController: FavouritesListDisplayLogic {
+    func reloadList() {
+        collectionView.reloadData()
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA960FCE2572794D00D5AACE /* FavouritesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA960FCD2572794D00D5AACE /* FavouritesListPresenter.swift */; };
 		FA9984CB256C802A0031FED4 /* FavoritesListUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9984C9256C802A0031FED4 /* FavoritesListUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9984D8256C80A10031FED4 /* FavouritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9984D6256C80A10031FED4 /* FavouritesListViewController.swift */; };
 		FA9984D9256C80A10031FED4 /* FavouritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9984D7256C80A10031FED4 /* FavouritesListViewController.xib */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA960FCD2572794D00D5AACE /* FavouritesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListPresenter.swift; sourceTree = "<group>"; };
 		FA9984C6256C802A0031FED4 /* FavouritesListUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavouritesListUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9984C9256C802A0031FED4 /* FavoritesListUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesListUI.h; sourceTree = "<group>"; };
 		FA9984CA256C802A0031FED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				FA9984D6256C80A10031FED4 /* FavouritesListViewController.swift */,
 				FA9984ED256C84030031FED4 /* FavouritesListInteractor.swift */,
+				FA960FCD2572794D00D5AACE /* FavouritesListPresenter.swift */,
 				FA9984F3256C88020031FED4 /* FavouritesListRouter.swift */,
 				FA9984EB256C82B20031FED4 /* FavouritesListBuilder.swift */,
 			);
@@ -252,6 +255,7 @@
 				FA9984D8256C80A10031FED4 /* FavouritesListViewController.swift in Sources */,
 				FA9984F9256C88650031FED4 /* FavouritesListViewController+UICollectionViewDataSource.swift in Sources */,
 				FA9984EE256C84030031FED4 /* FavouritesListInteractor.swift in Sources */,
+				FA960FCE2572794D00D5AACE /* FavouritesListPresenter.swift in Sources */,
 				FA9984EC256C82B20031FED4 /* FavouritesListBuilder.swift in Sources */,
 				FA998501256C8AF80031FED4 /* FavouritesListViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
 				FA9984F4256C88020031FED4 /* FavouritesListRouter.swift in Sources */,

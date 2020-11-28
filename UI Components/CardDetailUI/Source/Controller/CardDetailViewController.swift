@@ -3,15 +3,20 @@ import RSThemeKit
 import CommonUI
 import WalletPresentationData
 
+public protocol CardDetailViewDelegate: class {
+    func cardChanged(_ card: Card)
+}
+
 public class CardDetailViewController: ThemeViewController {
     
     var tableView = ThemeTableView()
     @IBOutlet public var titleLabel: UILabel!
     @IBOutlet public var cancelButton: UIButton!
     let addFavouritesButton = UIButton()
+    let cardDetailHeaderView = CardDetailHeaderView.loadFromNib()
 
     var interactor: CardDetailInteractorProtocol?
-    let cardDetailHeaderView = CardDetailHeaderView.loadFromNib()
+    public weak var delegate: CardDetailViewDelegate?
     
     var startCardAnimation = false
 
@@ -117,10 +122,12 @@ public class CardDetailViewController: ThemeViewController {
     }
     
     @objc func addFavourites() {
-        interactor?.addFavourites()
-        if interactor?.isFavourites() ?? false {
+        guard let interactor = interactor else { return }
+        interactor.addFavourites()
+        if interactor.isFavourites() {
             SPAlert.present(title: Strings.addedToFavourites, preset: .heart)
         }
+        delegate?.cardChanged(interactor.getCard())
         decorator(theme: ThemeManager.currentTheme)
     }
 

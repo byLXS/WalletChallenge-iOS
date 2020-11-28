@@ -8,9 +8,12 @@ protocol FavouritesListInteractorProtocol {
     func numberOfItemsInSection(section: Int) -> Int
     func getCard(indexPath: IndexPath) -> Card
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ())
+    func cardChanged(card: Card)
 }
 
 class FavouritesListInteractor: FavouritesListInteractorProtocol {
+    
+    var presenter: FavouritesListPresenterProtocol?
     
     var cardFilter: CardFilter
     
@@ -37,6 +40,18 @@ class FavouritesListInteractor: FavouritesListInteractorProtocol {
                     completion(image)
                 }
             })
+        }
+    }
+    
+    func cardChanged(card: Card) {
+        if card.isFavourites {
+            cardList.append(card)
+            presenter?.reloadList()
+        } else {
+            if let index = cardList.firstIndex(where: {$0.number == card.number}) {
+                cardList.remove(at: index)
+                presenter?.reloadList()
+            }
         }
     }
 }

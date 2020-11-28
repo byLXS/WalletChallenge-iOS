@@ -7,6 +7,7 @@ protocol CardDetailInteractorProtocol {
     var selectedCardSideType: CardSideType { get set }
     var isShowTopBar: Bool { get }
     func numberOfRowsInSection(section: Int) -> Int
+    func getCard() -> Card
     func isFavourites() -> Bool
     func getNameCard() -> String
     func loadImage(indexPath: IndexPath, completion: @escaping (UIImage?) -> ())
@@ -30,6 +31,10 @@ class CardDetailInteractor: CardDetailInteractorProtocol {
         selectedCardSideType = .front(path: card.texture.front)
         setupDisplayItems()
         addViewCount()
+    }
+    
+    func getCard() -> Card {
+        return card
     }
     
     func isFavourites() -> Bool {
