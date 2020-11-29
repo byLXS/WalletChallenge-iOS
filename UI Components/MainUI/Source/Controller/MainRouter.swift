@@ -26,6 +26,7 @@ class MainRouter {
     }
     
     func presentFilterScreen() {
+        viewController?.statusBar(isHidden: true)
         guard let viewController = viewController, let interactor = viewController.interactor else { return }
         let vc = CardFilterBuilder.getScreen(delegate: viewController, cardFilter: interactor.cardFilter)
         viewController.presentAsLark(vc, height: 500, completion: nil)

@@ -2,6 +2,7 @@ import Foundation
 
 public protocol CardFilterDelegate: class {
     func apply(filter: CardFilter)
+    func setStatusBar(isHidden: Bool)
 }
 
 public enum CardPresentationStyle {

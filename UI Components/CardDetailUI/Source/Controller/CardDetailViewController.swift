@@ -28,6 +28,12 @@ public class CardDetailViewController: ThemeViewController {
         setupStackView()
         cardDetailHeaderView.addThemeObserver()
         setupAddFavouritesView()
+        
+        if interactor?.getCard().number == "111154" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                NotificationMessage.shared.present(title: "iOS is better than Android", message: "")
+            }
+        }
     }
     
     public override func decorator(theme: ThemeModel) {

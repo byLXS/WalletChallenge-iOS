@@ -17,6 +17,16 @@ public class MainViewController: ThemeViewController {
     var interactor: MainInteractorProtocol?
     var router: MainRouter?
     
+    var isStatusBarHidden = false
+    
+    open override var prefersStatusBarHidden: Bool {
+        return isStatusBarHidden
+    }
+    
+    open override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
     public init() {
         super.init(nibName: "MainViewController", bundle: Bundle(for: MainViewController.self))
     }
@@ -60,7 +70,7 @@ public class MainViewController: ThemeViewController {
             self.navigationController?.navigationBar.prefersLargeTitles = true
             self.navigationItem.searchController = searchController
             navigationItem.hidesSearchBarWhenScrolling = false
-        } 
+        }
         
         let button = AddButton()
         button.setup()
@@ -83,6 +93,15 @@ public class MainViewController: ThemeViewController {
         collectionView.register(CardLargeCollectionViewCell.self, forCellWithReuseIdentifier: CardLargeCollectionViewCell.identifier)
         collectionView.register(MainCollectionReusableView.nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionReusableView.name)
     }
+    
+    public func statusBar(isHidden: Bool) {
+        self.isStatusBarHidden = isHidden
+        
+        UIView.animate(withDuration: 0.3) {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
     
     public func fetchCardList() {
         interactor?.fetchCardList()
@@ -114,5 +133,9 @@ extension MainViewController: CardFilterDelegate {
         self.interactor?.cardFilter = filter
         self.interactor?.reloadItems()
         self.collectionView.reloadData()
+    }
+    
+    public func setStatusBar(isHidden: Bool) {
+        statusBar(isHidden: isHidden)
     }
 }

@@ -57,6 +57,11 @@ open class CardFilterViewController: ThemeViewController {
             onceOnly = true
         }
     }
+    
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        delegate?.setStatusBar(isHidden: false)
+    }
 
     open override func decorator(theme: ThemeModel) {
         let themeType = ThemeType.dark

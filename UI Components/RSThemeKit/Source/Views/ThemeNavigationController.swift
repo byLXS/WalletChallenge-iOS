@@ -12,11 +12,11 @@ open class ThemeNavigationController: UINavigationController {
         changedTheme()
     }
 
-    override public var childForStatusBarHidden: UIViewController? {
+    override open var childForStatusBarHidden: UIViewController? {
         return self.topViewController
     }
     
-    override public var childForStatusBarStyle: UIViewController? {
+    override open var childForStatusBarStyle: UIViewController? {
         return self.topViewController
     }
     

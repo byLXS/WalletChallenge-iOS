@@ -7,6 +7,10 @@ public struct Strings {
     static public let all = getText(value: "all")
     static public let clear = getText(value: "clear")
     static public let done = getText(value: "done")
+    static public let internetIsNotAvailable = getText(value: "internetIsNotAvailable")
+    static public let checkTheConnection = getText(value: "checkTheConnection")
+    static public let internetIsConnected = getText(value: "internetIsConnected")
+    static public let dataUpdated = getText(value: "dataUpdated")
     // MARK: Main
     static public let main = getText(value: "main")
     static public let myCard = getText(value: "myCard")

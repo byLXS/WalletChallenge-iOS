@@ -4,6 +4,7 @@ import WalletCore
 import CommonUI
 import MainUI
 import RSThemeKit
+import WalletPresentationData
 
 open class WRootController: ThemeNavigationController {
     
@@ -54,15 +55,18 @@ open class WRootController: ThemeNavigationController {
         switch reachability.connection {
         case .wifi:
             if networkNotReachable == true {
+                NotificationMessage.shared.present(title: Strings.internetIsConnected, message: Strings.dataUpdated)
                 networkNotReachable = false
                 mainController?.fetchCardList()
             }
         case .cellular:
             if networkNotReachable == true {
+                NotificationMessage.shared.present(title: Strings.internetIsConnected, message: Strings.dataUpdated)
                 networkNotReachable = false
                 mainController?.fetchCardList()
             }
         case .unavailable:
+            NotificationMessage.shared.present(title: Strings.internetIsNotAvailable, message: Strings.checkTheConnection)
             networkNotReachable = true
         case .none:
             print("none")

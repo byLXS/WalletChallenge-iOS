@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A26C82573217E00A8D6FB /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A26C72573217E00A8D6FB /* WalletPresentationData.framework */; };
+		FA0A26C92573217E00A8D6FB /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A26C72573217E00A8D6FB /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA10335A2551FE580014825B /* MainUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033592551FE580014825B /* MainUI.framework */; };
 		FA10335B2551FE580014825B /* MainUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033592551FE580014825B /* MainUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA354DDB25651D9B009F6906 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA354DDA25651D9B009F6906 /* CommonUI.framework */; };
@@ -27,6 +29,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FADA380A25509DFE00FA910F /* RSThemeKit.framework in Embed Frameworks */,
+				FA0A26C92573217E00A8D6FB /* WalletPresentationData.framework in Embed Frameworks */,
 				FA354DDC25651D9B009F6906 /* CommonUI.framework in Embed Frameworks */,
 				FA58B25A2559E079003FC1D4 /* WalletCore.framework in Embed Frameworks */,
 				FA10335B2551FE580014825B /* MainUI.framework in Embed Frameworks */,
@@ -37,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA0A26C72573217E00A8D6FB /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1033592551FE580014825B /* MainUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MainUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA354DDA25651D9B009F6906 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA58B2582559E079003FC1D4 /* WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADA380925509DFE00FA910F /* RSThemeKit.framework in Frameworks */,
+				FA0A26C82573217E00A8D6FB /* WalletPresentationData.framework in Frameworks */,
 				FA354DDB25651D9B009F6906 /* CommonUI.framework in Frameworks */,
 				FA58B2592559E079003FC1D4 /* WalletCore.framework in Frameworks */,
 				FA10335A2551FE580014825B /* MainUI.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		FADA37FF25509C7A00FA910F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA0A26C72573217E00A8D6FB /* WalletPresentationData.framework */,
 				FA354DDA25651D9B009F6906 /* CommonUI.framework */,
 				FA58B2582559E079003FC1D4 /* WalletCore.framework */,
 				FA1033592551FE580014825B /* MainUI.framework */,

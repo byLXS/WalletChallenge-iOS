@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A26C12573042C00A8D6FB /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A26C02573042C00A8D6FB /* NotificationsView.swift */; };
 		FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B041255C675D00CFD6C2 /* CardProtocol.swift */; };
 		FA14B044255C688500CFD6C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B043255C688500CFD6C2 /* CardView.swift */; };
 		FA3BD835256DC0CB007E30D2 /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA0A26C02573042C00A8D6FB /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		FA14B041255C675D00CFD6C2 /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
 		FA14B043255C688500CFD6C2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertPreset.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				FAF8ED9A256132BE00537719 /* Buttons */,
 				FAC28C682554A17C009267A7 /* List */,
 				FAF8EDA92561595400537719 /* NibLoadable.swift */,
+				FA0A26C02573042C00A8D6FB /* NotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				FA3BD83F256DC0CB007E30D2 /* SPAlertIconStarView.swift in Sources */,
 				FA86C23F255B1AFB00EBA974 /* CardTransitioningDelegate.swift in Sources */,
 				FA3BD847256DC0CB007E30D2 /* SPAlertIconBookmarkView.swift in Sources */,
+				FA0A26C12573042C00A8D6FB /* NotificationsView.swift in Sources */,
 				FA998449256A1E960031FED4 /* UISearchBar+Extensions.swift in Sources */,
 				FA3BD84E256DC0CB007E30D2 /* SPAlertIconRepeatView.swift in Sources */,
 				FA80734325631B4E000A5DB3 /* SPLarkDismissingAnimationController.swift in Sources */,

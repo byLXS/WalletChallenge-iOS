@@ -7,6 +7,10 @@
 */
 
 "noInternetConnection" = "Нет подключения к интернету";
+"internetIsNotAvailable" = "Интернет недоступен";
+"checkTheConnection" = "Проверьте соединение";
+"internetIsConnected" = "Интернет подключен";
+"dataUpdated" = "Данные обновлены";
 "add" = "Добавить";
 "done" = "Готово";
 "main" = "Главная";

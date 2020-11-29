@@ -7,6 +7,10 @@
 */
 
 "noInternetConnection" = "No Internet Connection";
+"internetIsNotAvailable" = "Internet Is Not Available";
+"checkTheConnection" = "Сheck The Connection";
+"internetIsConnected" = "Internet Is Connected";
+"dataUpdated" = "Data Updated";
 "add" = "Add";
 "done" = "Done";
 "main" = "Main";
