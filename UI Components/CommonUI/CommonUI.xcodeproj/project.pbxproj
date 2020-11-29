@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA0A26C12573042C00A8D6FB /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A26C02573042C00A8D6FB /* NotificationsView.swift */; };
+		FA0A26CB2573D67D00A8D6FB /* WalletPresentationData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A26CA2573D67D00A8D6FB /* WalletPresentationData.framework */; };
+		FA0A26CC2573D67D00A8D6FB /* WalletPresentationData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A26CA2573D67D00A8D6FB /* WalletPresentationData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA14B042255C675D00CFD6C2 /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B041255C675D00CFD6C2 /* CardProtocol.swift */; };
 		FA14B044255C688500CFD6C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14B043255C688500CFD6C2 /* CardView.swift */; };
 		FA3BD835256DC0CB007E30D2 /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */; };
@@ -77,6 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA0A26CC2573D67D00A8D6FB /* WalletPresentationData.framework in Embed Frameworks */,
 				FADDE6702552EE8A00934B8D /* RSThemeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -86,6 +89,7 @@
 
 /* Begin PBXFileReference section */
 		FA0A26C02573042C00A8D6FB /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		FA0A26CA2573D67D00A8D6FB /* WalletPresentationData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletPresentationData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA14B041255C675D00CFD6C2 /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
 		FA14B043255C688500CFD6C2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA3BD815256DC0CA007E30D2 /* SPAlertPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertPreset.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0A26CB2573D67D00A8D6FB /* WalletPresentationData.framework in Frameworks */,
 				FADDE66F2552EE8A00934B8D /* RSThemeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +405,7 @@
 		FADDE66D2552EE8900934B8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA0A26CA2573D67D00A8D6FB /* WalletPresentationData.framework */,
 				FADDE66E2552EE8A00934B8D /* RSThemeKit.framework */,
 			);
 			name = Frameworks;
