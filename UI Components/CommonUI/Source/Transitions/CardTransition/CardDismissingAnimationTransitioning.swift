@@ -39,8 +39,8 @@ class CardDismissingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
         UIView.animate(withDuration: 0.2, delay: 0.0, animations: {
             fromController.view.alpha = 0
         }, completion: { _ in
-            let generator = UINotificationFeedbackGenerator()
-            generator.notificationOccurred(UINotificationFeedbackGenerator.FeedbackType.success)
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
         })
         UIView.animate(withDuration: 0.6, delay: 0.6, animations: {
             snapshotView?.alpha = 1

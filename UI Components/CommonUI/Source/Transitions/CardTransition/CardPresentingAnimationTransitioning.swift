@@ -51,8 +51,8 @@ class CardPresentingAnimationTransitioning: NSObject, UIViewControllerAnimatedTr
             cardViewCopy.frame = finalRect
             backView.alpha = 1
         }, completion: { finished in
-            let generator = UINotificationFeedbackGenerator()
-            generator.notificationOccurred(UINotificationFeedbackGenerator.FeedbackType.success)
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
             UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
                 toController.view.alpha = 1
             }, completion: { finished in
