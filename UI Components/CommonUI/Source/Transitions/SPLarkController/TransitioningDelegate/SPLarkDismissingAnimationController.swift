@@ -25,6 +25,9 @@ final class SPLarkDismissingAnimationController: NSObject, UIViewControllerAnima
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+        
         UIView.animate(
             withDuration: transitionDuration(using: transitionContext),
             delay: 0,

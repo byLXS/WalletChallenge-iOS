@@ -33,6 +33,8 @@ final class SPLarkPresentingAnimationController: NSObject, UIViewControllerAnima
         let finalFrameForPresentedView = transitionContext.finalFrame(for: presentedViewController)
         presentedViewController.view.frame = finalFrameForPresentedView
         
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
         UIView.animate(
             withDuration: transitionDuration(using: transitionContext),
             delay: 0,

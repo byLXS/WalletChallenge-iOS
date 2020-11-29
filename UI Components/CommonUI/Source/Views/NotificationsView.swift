@@ -68,7 +68,7 @@ public class NotificationMessage {
     }
     
     private func playFadeOutAnimation(animated: Bool, _ completion: ((Bool) -> Void)?) {
-        guard let window = keyWindow, let notificationView = notificationView else {
+        guard let notificationView = notificationView else {
             completion?(false)
             return
         }
