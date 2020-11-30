@@ -15,7 +15,12 @@ public class AccountWorker {
     public func fetchCardList(completionSuccess: @escaping ([Card]) -> (), completionFailure: @escaping (ErrorMessage) -> ()) {
         CardEntity.asynchronouslyFindAll() { (entityList) in
             var cardList = entityList.convertEntityInPresentationData()
-            guard !cardList.isEmpty else { return }
+            guard !cardList.isEmpty else {
+                DispatchQueue.main.async {
+                    completionSuccess([])
+                }
+                return
+            }
             cardList = cardList.sorted(by: {$0.number < $1.number})
             self.account.cardList = cardList
             DispatchQueue.main.async {
@@ -54,6 +59,23 @@ public class AccountWorker {
                     completionFailure(.alert)
                 }
             }
+        }
+    }
+    
+    public func fetchFolders(completionSuccess: @escaping ([Folder]) -> (), completionFailure: @escaping (ErrorMessage) -> ()) {
+        FolderEntity.asynchronouslyFindAll() { (entityList) in
+            let folders = entityList.convertEntityInPresentationData()
+            guard !folders.isEmpty else {
+                DispatchQueue.main.async {
+                    completionSuccess([])
+                }
+                return
+            }
+            self.account.folders = folders
+            DispatchQueue.main.async {
+                completionSuccess(folders)
+            }
+            
         }
     }
 }

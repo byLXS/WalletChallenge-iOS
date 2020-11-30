@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A27102574219800A8D6FB /* FoldersUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A270F2574219800A8D6FB /* FoldersUI.framework */; };
+		FA0A27112574219800A8D6FB /* FoldersUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A270F2574219800A8D6FB /* FoldersUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA3BD7FC256DA2E3007E30D2 /* FavouritesListUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BD7FB256DA2E3007E30D2 /* FavouritesListUI.framework */; };
 		FA3BD7FD256DA2E3007E30D2 /* FavouritesListUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BD7FB256DA2E3007E30D2 /* FavouritesListUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA64F2C925699990002974FE /* SettingsUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FA64F2C725699990002974FE /* SettingsUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +47,7 @@
 			files = (
 				FA3BD7FD256DA2E3007E30D2 /* FavouritesListUI.framework in Embed Frameworks */,
 				FA9F4BE12569DC8A00252446 /* DecorationUI.framework in Embed Frameworks */,
+				FA0A27112574219800A8D6FB /* FoldersUI.framework in Embed Frameworks */,
 				FA64F2F92569C0AE002974FE /* CommonUI.framework in Embed Frameworks */,
 				FA64F2F12569BD1A002974FE /* WalletPresentationData.framework in Embed Frameworks */,
 				FA9984FC256C89060031FED4 /* WalletCore.framework in Embed Frameworks */,
@@ -56,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA0A270F2574219800A8D6FB /* FoldersUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoldersUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3BD7FB256DA2E3007E30D2 /* FavouritesListUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FavouritesListUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA64F2C425699990002974FE /* SettingsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SettingsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA64F2C725699990002974FE /* SettingsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsUI.h; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			files = (
 				FA3BD7FC256DA2E3007E30D2 /* FavouritesListUI.framework in Frameworks */,
 				FA9F4BE02569DC8A00252446 /* DecorationUI.framework in Frameworks */,
+				FA0A27102574219800A8D6FB /* FoldersUI.framework in Frameworks */,
 				FA64F2F82569C0AE002974FE /* CommonUI.framework in Frameworks */,
 				FA64F2F02569BD1A002974FE /* WalletPresentationData.framework in Frameworks */,
 				FA9984FB256C89060031FED4 /* WalletCore.framework in Frameworks */,
@@ -130,6 +135,7 @@
 		FA64F2D02569999A002974FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA0A270F2574219800A8D6FB /* FoldersUI.framework */,
 				FA3BD7FB256DA2E3007E30D2 /* FavouritesListUI.framework */,
 				FA9984FD256C891F0031FED4 /* FavoritesListUI.framework */,
 				FA9984FA256C89060031FED4 /* WalletCore.framework */,
@@ -444,7 +450,7 @@
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = SettingsUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +480,7 @@
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = SettingsUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,6 +7,12 @@
 */
 
 "noInternetConnection" = "No Internet Connection";
+"cancel" = "Cancel";
+"edit" = "Edit";
+"create" = "Create";
+"createNewFolder" = "Create New Folder";
+"addCards" = "Add Cards";
+"enterFolderName" = "Enter Folder Name";
 "internetIsNotAvailable" = "Internet Is Not Available";
 "checkTheConnection" = "Сheck The Connection";
 "internetIsConnected" = "Internet Is Connected";
@@ -36,6 +42,7 @@
 "language" = "Language";
 "decoration" = "Decoration";
 "favourites" = "Favourites";
+"cardFolders" = "Сard Folders";
 "choiceTheme" = "Choice Theme";
 "system" = "System";
 "light" = "Light";

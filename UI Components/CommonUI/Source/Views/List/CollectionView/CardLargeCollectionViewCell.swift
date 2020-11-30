@@ -2,11 +2,19 @@ import UIKit
 import RSThemeKit
 import WalletPresentationData
 
+public protocol CardLargeViewDelegate: class {
+    func tapCard(cardView: CardView, card: Card)
+}
+
 public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
   
     public weak var cardView: CardView?
     
     static public var identifier = "CardLargeCollectionViewCell"
+    
+    public var card: Card?
+    
+    public weak var delegate: CardLargeViewDelegate?
     
     public func setup() {
         if cardView == nil {
@@ -21,6 +29,7 @@ public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
             cardView?.addSubview(view)
             cardView?.imageView = view.imageView
             cardView = view
+            cardView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapCard)))
         }
     }
     
@@ -34,4 +43,8 @@ public class CardLargeCollectionViewCell: ThemeCollectionCell, CardProtocol {
         cardView?.backgroundColor = theme.searchBarBackgroundColor
     }
 
+    @objc func tapCard() {
+        guard let card = card, let cardView = cardView else { return }
+        delegate?.tapCard(cardView: cardView, card: card)
+    }
 }

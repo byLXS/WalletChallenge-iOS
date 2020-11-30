@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A2701257407AE00A8D6FB /* FolderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A2700257407AE00A8D6FB /* FolderEntity.swift */; };
 		FA1033472551F5850014825B /* AccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033462551F5850014825B /* AccountWorker.swift */; };
 		FA1033492551F6E30014825B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1033482551F6E30014825B /* Account.swift */; };
 		FA10334C2551F7C20014825B /* WalletApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10334B2551F7C20014825B /* WalletApi.framework */; };
@@ -47,6 +48,7 @@
 		44BDD0C0D86E96827DCF0118 /* Pods-WalletCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCore.release.xcconfig"; path = "../Pods/Target Support Files/Pods-WalletCore/Pods-WalletCore.release.xcconfig"; sourceTree = "<group>"; };
 		84340169FF0EF90DE0F7DDEC /* Pods_WalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B3030417D1980122483D5F /* Pods-WalletCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCore.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-WalletCore/Pods-WalletCore.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0A2700257407AE00A8D6FB /* FolderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderEntity.swift; sourceTree = "<group>"; };
 		FA1033462551F5850014825B /* AccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWorker.swift; sourceTree = "<group>"; };
 		FA1033482551F6E30014825B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FA10334B2551F7C20014825B /* WalletApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				FA6A80A225672E5200E958AA /* IssuerEntity.swift */,
 				FAF8EDF62561D2E400537719 /* LoyaltyCardEntity.swift */,
 				FAF8EDF82561D38200537719 /* CertificateCardEntity.swift */,
+				FA0A2700257407AE00A8D6FB /* FolderEntity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				FA58B23825575BC7003FC1D4 /* CoreDataManager.swift in Sources */,
 				FA1033492551F6E30014825B /* Account.swift in Sources */,
 				FA6A80A325672E5200E958AA /* IssuerEntity.swift in Sources */,
+				FA0A2701257407AE00A8D6FB /* FolderEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +455,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WalletCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +485,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WalletCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

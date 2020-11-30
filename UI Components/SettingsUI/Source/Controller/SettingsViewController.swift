@@ -58,6 +58,8 @@ public class SettingsViewController: ThemeViewController {
             return getImage(named: "decoration_settings_image", anyClass: type(of: self))
         case .favourites:
             return getImage(named: "favourites_settings_image", anyClass: type(of: self))
+        case .folders:
+            return getImage(named: "folders_settings_image", anyClass: type(of: self))
         }
     }
     

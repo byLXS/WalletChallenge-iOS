@@ -24,12 +24,18 @@ open class ThemeAlertController: UIAlertController {
         switch preferredStyle {
         case .alert:
             if let subview = view.subviews.first, let alertContentView = subview.subviews.first {
+                for textField in self.textFields ?? [] {
+                    textField.textColor = theme.textColor
+                    let container = textField.superview
+                    container?.superview?.subviews[0].backgroundColor = theme.separatorColor
+                    container?.backgroundColor = theme.navigationBarColor
+                }
+                
                 if let alertContentView1 = subview.subviews.last {
                     alertContentView.layer.cornerRadius = 10
                     alertContentView.alpha = 1
                     alertContentView.layer.borderWidth = 1
                     alertContentView.layer.borderColor = theme.cellBackgroundColor.withAlphaComponent(0.9).cgColor
-                    
                     
                     setBackgroundColor(color: theme.separatorColor.withAlphaComponent(0.4))
                     alertContentView1.backgroundColor = theme.cellBackgroundColor
@@ -48,14 +54,14 @@ open class ThemeAlertController: UIAlertController {
                 if let contentView1 = alertContentView.subviews.first?.subviews.first {
                     contentView1.backgroundColor = theme.cellBackgroundColor
                     if #available(iOS 8.2, *) {
-                        setTitlet(font: UIFont.systemFont(ofSize: 17, weight: .semibold), color: theme.textColor)
+                        setTitle(font: UIFont.systemFont(ofSize: 17, weight: .semibold), color: theme.textColor)
                     } else {
-                        setTitlet(font: UIFont.systemFont(ofSize: 17), color: theme.textColor)
+                        setTitle(font: UIFont.systemFont(ofSize: 17), color: theme.textColor)
                     }
                     if #available(iOS 8.2, *) {
                         setMessage(font: UIFont.systemFont(ofSize: 13, weight: .regular), color: theme.textColor)
                     } else {
-                        setTitlet(font: UIFont.systemFont(ofSize: 13), color: theme.textColor)
+                        setTitle(font: UIFont.systemFont(ofSize: 13), color: theme.textColor)
                     }
                 }
                 
@@ -82,14 +88,14 @@ open class ThemeAlertController: UIAlertController {
                 if let contentView1 = alertContentView.subviews.first?.subviews.first {
                     contentView1.backgroundColor = theme.cellBackgroundColor.withAlphaComponent(0.9)
                     if #available(iOS 8.2, *) {
-                        setTitlet(font: UIFont.systemFont(ofSize: 13, weight: .semibold), color: theme.textColor)
+                        setTitle(font: UIFont.systemFont(ofSize: 13, weight: .semibold), color: theme.textColor)
                     } else {
-                        setTitlet(font: UIFont.systemFont(ofSize: 13), color: theme.textColor)
+                        setTitle(font: UIFont.systemFont(ofSize: 13), color: theme.textColor)
                     }
                     if #available(iOS 8.2, *) {
                         setMessage(font: UIFont.systemFont(ofSize: 13, weight: .regular), color: theme.textColor)
                     } else {
-                       setTitlet(font: UIFont.systemFont(ofSize: 13), color: theme.textColor)
+                        setTitle(font: UIFont.systemFont(ofSize: 13), color: theme.textColor)
                     }
                 }
                 if let contentView2 = alertContentView.subviews.first?.subviews.last {
@@ -122,17 +128,15 @@ open class ThemeAlertController: UIAlertController {
         }
     }
     
-    func setTitlet(font: UIFont?, color: UIColor?) {
+    func setTitle(font: UIFont?, color: UIColor?) {
         guard let title = self.title else { return }
-        let attributeString = NSMutableAttributedString(string: title)//1
+        let attributeString = NSMutableAttributedString(string: title)
         if let titleFont = font {
-            attributeString.addAttributes([NSAttributedString.Key.font : titleFont],//2
-                range: NSMakeRange(0, title.utf8.count))
+            attributeString.addAttributes([NSAttributedString.Key.font : titleFont], range: NSMakeRange(0, title.count))
         }
         
         if let titleColor = color {
-            attributeString.addAttributes([NSAttributedString.Key.foregroundColor : titleColor],//3
-                range: NSMakeRange(0, title.utf8.count))
+            attributeString.addAttributes([NSAttributedString.Key.foregroundColor : titleColor], range: NSMakeRange(0, title.count))
         }
         self.setValue(attributeString, forKey: "attributedTitle")//4
     }
@@ -141,13 +145,11 @@ open class ThemeAlertController: UIAlertController {
         guard let message = self.message else { return }
         let attributeString = NSMutableAttributedString(string: message)
         if let messageFont = font {
-            attributeString.addAttributes([NSAttributedString.Key.font : messageFont],
-                                          range: NSMakeRange(0, message.utf8.count))
+            attributeString.addAttributes([NSAttributedString.Key.font : messageFont], range: NSMakeRange(0, message.count))
         }
         
         if let messageColorColor = color {
-            attributeString.addAttributes([NSAttributedString.Key.foregroundColor : messageColorColor],
-                                          range: NSMakeRange(0, message.utf8.count))
+            attributeString.addAttributes([NSAttributedString.Key.foregroundColor : messageColorColor], range: NSMakeRange(0, message.count))
         }
         self.setValue(attributeString, forKey: "attributedMessage")
     }

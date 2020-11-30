@@ -17,12 +17,13 @@ class SettingsInteractor: SettingsInteractorProtocol {
     init(accountWorker: AccountWorker) {
         self.accountWorker = accountWorker
         appendItems()
+        accountWorker.fetchFolders { (_) in} completionFailure: { (_) in}
     }
     
     func appendItems() {
         self.displayItems = []
         self.displayItems.append(SettingsSection.section0(rows: [.profile]))
-        self.displayItems.append(SettingsSection.section1(rows: [.favourites, .statistics]))
+        self.displayItems.append(SettingsSection.section1(rows: [.favourites, .folders, .statistics]))
         self.displayItems.append(SettingsSection.section2(rows: [.language, .decoration]))
     }
     

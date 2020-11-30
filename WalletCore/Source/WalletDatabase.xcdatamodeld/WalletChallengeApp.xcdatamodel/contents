@@ -21,6 +21,11 @@
         <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CardEntity" inverseName="certificateCard" inverseEntity="CardEntity"/>
     </entity>
+    <entity name="FolderEntity" representedClassName="WalletCore.FolderEntity" syncable="YES">
+        <attribute name="cardNumbers" optional="YES" attributeType="Transformable" customClassName="WalletCore."/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="IssuerEntity" representedClassName="WalletCore.IssuerEntity" syncable="YES">
         <attribute name="categories" optional="YES" attributeType="Transformable" customClassName="WalletCore.[String]"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -43,5 +48,6 @@
         <element name="IssuerEntity" positionX="-54" positionY="54" width="128" height="88"/>
         <element name="LoyaltyCardEntity" positionX="-45" positionY="45" width="128" height="88"/>
         <element name="TextureEntity" positionX="-54" positionY="18" width="128" height="88"/>
+        <element name="FolderEntity" positionX="-54" positionY="54" width="128" height="88"/>
     </elements>
 </model>

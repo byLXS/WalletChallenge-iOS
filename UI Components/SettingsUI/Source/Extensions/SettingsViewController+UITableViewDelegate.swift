@@ -20,6 +20,8 @@ extension SettingsViewController: UITableViewDelegate {
             router?.pushDecoration()
         case .favourites:
             router?.pushFavouritesList()
+        case .folders:
+            router?.pushFolders()
         default:
             break
         }

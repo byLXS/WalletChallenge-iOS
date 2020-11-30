@@ -7,6 +7,12 @@
 */
 
 "noInternetConnection" = "Нет подключения к интернету";
+"cancel" = "Отмена";
+"edit" = "Изменить";
+"create" = "Создать";
+"createNewFolder" = "Cоздать новую папку";
+"addCards" = "Добавить карты";
+"enterFolderName" = "Введите название папки";
 "internetIsNotAvailable" = "Интернет недоступен";
 "checkTheConnection" = "Проверьте соединение";
 "internetIsConnected" = "Интернет подключен";
@@ -36,6 +42,7 @@
 "language" = "Язык";
 "decoration" = "Оформление";
 "favourites" = "Избранное";
+"cardFolders" = "Папки с картами";
 "choiceTheme" = "Выбор темы";
 "system" = "Системная";
 "light" = "Светлая";

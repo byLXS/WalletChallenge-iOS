@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A274325750D5900A8D6FB /* FoldersUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A274225750D5900A8D6FB /* FoldersUI.framework */; };
+		FA0A274425750D5900A8D6FB /* FoldersUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A274225750D5900A8D6FB /* FoldersUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA10333C2551F1290014825B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA10333E2551F1290014825B /* Localizable.strings */; };
 		FA1033622552009F0014825B /* WRootUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033612552009F0014825B /* WRootUI.framework */; };
 		FA1033632552009F0014825B /* WRootUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1033612552009F0014825B /* WRootUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -48,6 +50,7 @@
 			files = (
 				FA3BD7FA256DA2D0007E30D2 /* FavouritesListUI.framework in Embed Frameworks */,
 				FA354DDF25651E13009F6906 /* CommonUI.framework in Embed Frameworks */,
+				FA0A274425750D5900A8D6FB /* FoldersUI.framework in Embed Frameworks */,
 				FA354DEB25651E4D009F6906 /* CardDetailUI.framework in Embed Frameworks */,
 				FA1033632552009F0014825B /* WRootUI.framework in Embed Frameworks */,
 				FA998488256AA1980031FED4 /* SettingsUI.framework in Embed Frameworks */,
@@ -68,6 +71,7 @@
 		C19F4787A190CEB27159BFF2 /* Pods-WalletChallengeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletChallengeApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-WalletChallengeApp/Pods-WalletChallengeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E986B7C4EC85FACD4F763620 /* Pods-WalletChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletChallengeApp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-WalletChallengeApp/Pods-WalletChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		F376681FEC47501808A73C2A /* Pods_WalletChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0A274225750D5900A8D6FB /* FoldersUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoldersUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1033382551F0F60014825B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		FA1033392551F0F60014825B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FA10333D2551F1290014825B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			files = (
 				FA1033622552009F0014825B /* WRootUI.framework in Frameworks */,
 				FA354DDE25651E13009F6906 /* CommonUI.framework in Frameworks */,
+				FA0A274325750D5900A8D6FB /* FoldersUI.framework in Frameworks */,
 				FA354DE725651E4A009F6906 /* CardFilterUI.framework in Frameworks */,
 				FADA380525509D6700FA910F /* RSThemeKit.framework in Frameworks */,
 				FA354DF025651E8D009F6906 /* WalletApi.framework in Frameworks */,
@@ -121,6 +126,7 @@
 		7216A17120B7EA15D1989E67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA0A274225750D5900A8D6FB /* FoldersUI.framework */,
 				FA3BD7F8256DA2D0007E30D2 /* FavouritesListUI.framework */,
 				FA9984D2256C803B0031FED4 /* FavoritesListUI.framework */,
 				FA998489256AA2680031FED4 /* DecorationUI.framework */,
@@ -463,7 +469,7 @@
 				DEVELOPMENT_TEAM = VY2ZB4KW5J;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = WalletChallengeApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +498,7 @@
 				DEVELOPMENT_TEAM = VY2ZB4KW5J;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = WalletChallengeApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

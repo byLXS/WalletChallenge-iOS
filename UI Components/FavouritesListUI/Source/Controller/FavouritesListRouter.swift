@@ -7,9 +7,7 @@ class FavouritesListRouter {
     
     var viewController: FavouritesListViewController?
     
-    func presentCardDetail(indexPath: IndexPath) {
-        guard let interactor = viewController?.interactor else { return }
-        let card = interactor.getCard(indexPath: indexPath)
+    func presentCardDetail(card: Card) {
         let vc = CardDetailBuilder.getScreen(card: card, isShowTopBar: false)
         vc.delegate = self
         viewController?.navigationController?.pushViewController(vc, animated: true)

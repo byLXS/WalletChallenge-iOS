@@ -12,6 +12,7 @@ public enum AccountNetworkState: Equatable {
 public class Account {
     public var networkState: AccountNetworkState = .waitingForNetwork
     public var cardList: [Card] = []
+    public var folders: [Folder] = []
     public var id: Int
     
     public init(id: Int) {

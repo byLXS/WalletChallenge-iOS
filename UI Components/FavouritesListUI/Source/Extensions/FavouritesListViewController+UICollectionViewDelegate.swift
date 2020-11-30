@@ -6,6 +6,5 @@ extension FavouritesListViewController: UICollectionViewDelegate {
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        router?.presentCardDetail(indexPath: indexPath)
     }
 }

@@ -8,6 +8,7 @@ enum SettingsPresentationType {
     case language
     case decoration
     case favourites
+    case folders
     
     
     var title: String {
@@ -22,6 +23,8 @@ enum SettingsPresentationType {
             return Strings.decoration
         case .favourites:
             return Strings.favourites
+        case .folders:
+            return Strings.cardFolders
         }
     }
     
@@ -36,6 +39,8 @@ enum SettingsPresentationType {
         case .decoration:
             return .disclosureIndicator
         case .favourites:
+            return .disclosureIndicator
+        case .folders:
             return .disclosureIndicator
         }
     }

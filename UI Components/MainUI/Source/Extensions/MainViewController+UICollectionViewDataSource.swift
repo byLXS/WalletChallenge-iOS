@@ -1,6 +1,7 @@
 import Foundation
 import CommonUI
 import UIKit
+import WalletPresentationData
 
 extension MainViewController: UICollectionViewDataSource {
     
@@ -14,6 +15,8 @@ extension MainViewController: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardLargeCollectionViewCell.identifier, for: indexPath) as? CardLargeCollectionViewCell else { return UICollectionViewCell() }
+        cell.delegate = self
+        cell.card = interactor?.getCard(indexPath: indexPath)
         cell.setup()
         cell.addThemeObserver()
         cell.cardView?.imageView.image = nil
@@ -28,5 +31,13 @@ extension MainViewController: UICollectionViewDataSource {
         headerView.filterButton.addTarget(self, action: #selector(showFilterScreen), for: .touchUpInside)
         return headerView
     }
+    
+}
+
+extension MainViewController: CardLargeViewDelegate {
+    public func tapCard(cardView: CardView, card: Card) {
+        router?.presentCardDetail(cardView: cardView, card: card)
+    }
+    
     
 }

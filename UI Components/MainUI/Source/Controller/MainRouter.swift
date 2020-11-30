@@ -5,6 +5,7 @@ import RSThemeKit
 import CardDetailUI
 import CardFilterUI
 import SettingsUI
+import WalletPresentationData
 
 class MainRouter {
     
@@ -17,10 +18,7 @@ class MainRouter {
         viewController?.present(navC, animated: true, completion: nil)
     }
     
-    func presentCardDetail(indexPath: IndexPath) {
-        guard let interactor = viewController?.interactor else { return }
-        let card = interactor.getCard(indexPath: indexPath)
-        guard let cardView = (viewController?.collectionView.cellForItem(at: indexPath) as? CardLargeCollectionViewCell)?.cardView else { return }
+    func presentCardDetail(cardView: CardView, card: Card) {
         let vc = CardDetailBuilder.getScreen(card: card, isShowTopBar: true)
         viewController?.presentCard(vc, cardView: cardView)
     }
