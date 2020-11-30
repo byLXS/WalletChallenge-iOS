@@ -45,28 +45,23 @@ class MainInteractor: MainInteractorProtocol {
         case .loyalty:
             self.cardList = allCardList.filter({$0.kind == .loyalty})
         }
-        
-        var newCardList: [Card] = []
-        
         if cardFilter.selectedCategoryItems.contains(where: {$0.isSelected == true}) {
             for selectedCategoryItem in cardFilter.selectedCategoryItems {
                 if selectedCategoryItem.isSelected {
-                    newCardList.append(contentsOf: self.cardList.filter({$0.issuer.categories.contains(selectedCategoryItem.type)}))
+                    if selectedCategoryItem.type != .mostUsed {
+                        let oldCardList = self.cardList
+                        self.cardList = []
+                        self.cardList.append(contentsOf: oldCardList.filter({$0.issuer.categories.contains(selectedCategoryItem.type)}))
+                    }
                 }
             }
         }
-        
-        if newCardList.isEmpty {
-            newCardList = self.cardList
+        let selectedCategoryItems = cardFilter.selectedCategoryItems.filter({$0.isSelected == true})
+        if let _ = selectedCategoryItems.filter({$0.type == .mostUsed}).first {
+            let oldCardList = self.cardList
+            self.cardList = []
+            self.cardList.append(contentsOf: oldCardList.sorted(by: {$0.viewsCount > $1.viewsCount}))
         }
-        
-        if let _ = cardFilter.selectedCategoryItems.filter({$0.type == .mostUsed}).first {
-            newCardList = newCardList.sorted(by: {$0.viewsCount > $1.viewsCount})
-        }
-        
-        self.cardList = newCardList
-        
-        
     }
     
     func numberOfItemsInSection(section: Int) -> Int {
